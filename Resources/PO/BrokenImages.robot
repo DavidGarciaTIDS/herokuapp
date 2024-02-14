@@ -5,7 +5,8 @@ Library           RequestsLibrary
 Resource      ../../Data/Variables.robot
 
 *** Variables ***
-${count}=    0
+${broken}=    0
+${functional}=    0
 *** Keywords ***
 BrokenImages Page loaded
     wait until page contains    ${BrokenImagesTitle}
@@ -14,11 +15,25 @@ Validate Broken Images
     @{images}=  Get WebElements    ${BrokenImageContainer}//img
     FOR    ${image}    IN    @{images}
         ${imageSrc}=    Get Element Attribute    ${image}    src
-        ${resp}=    run keyword and continue on failure    HEAD    url=${imageSrc}    expected_status=404
-        log   ${resp}
-        IF   ${resp.status_code} != 200
-                ${count}=    Evaluate    ${count}+1
+        ${resp}=   Run Keyword And Return Status   HEAD    url=${imageSrc}    expected_status=200
+        IF   ${resp}
+                log    ${imageSrc} is not broken
         ELSE
-                log    ${imageSrc}    is not broken only ${count} broken images found
+                ${broken}=  Evaluate  ${broken}+1
         END
     END
+    log     ${broken} broken images found
+
+Validate Functional Images
+
+    @{images}=  Get WebElements    ${BrokenImageContainer}//img
+    FOR    ${image}    IN    @{images}
+        ${imageSrc}=    Get Element Attribute    ${image}    src
+        ${resp}=   Run Keyword And Return Status   HEAD    url=${imageSrc}    expected_status=404
+        IF   ${resp}
+                ${functional}=  Evaluate  ${functional}+1
+        ELSE
+                log    ${imageSrc} is not broken
+        END
+    END
+    log     ${functional} functional images found

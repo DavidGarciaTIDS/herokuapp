@@ -28,7 +28,7 @@ Count Elements Added
     AddRemove.Count Elements    ${Expected}
 
 Verify Basic Auth Page
-    log     verify
+    BasicAuth.Login Status Page
 
 Basic Auth
     [Arguments]    ${username}    ${password}
@@ -44,3 +44,6 @@ Verify Broken Images Page
 
 Validate Broken Images
     BrokenImages.Validate Broken Images
+
+Validate Functional Images
+    BrokenImages.Validate Functional Images

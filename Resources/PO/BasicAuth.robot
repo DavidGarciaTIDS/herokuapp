@@ -22,6 +22,14 @@ Login to the BasicAuth
     #log     ${login}
     go to   https://${login}
 
+Login Status Page
+    page should contain   ${BACongratulations}
+    IF
+        log    Login Successful
+    ELSE
+        log    Login Failed
+    END
+
 #Did not work with the code below
 Fill Username
     [Arguments]    ${Username}

@@ -31,6 +31,7 @@ Verify Broken Images
     Herokuapp.Select Test Link  ${BrokenImages}
     Herokuapp.Verify Broken Images Page
     Herokuapp.Validate Broken Images
+    Herokuapp.Validate Functional Images
 
 
 
