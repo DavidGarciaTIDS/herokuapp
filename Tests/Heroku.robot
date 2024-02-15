@@ -45,3 +45,14 @@ Verify Basic Bad Auth Page
     Herokuapp.Verify Landing Page
     Herokuapp.Select Test Link  ${BasicAuth}
     Herokuapp.Basic Auth  ${BAUsernameBAD}  ${BAPasswordBAD}    401
+
+Verify Checkboxes Page
+    [Documentation]     This test verifies the checkboxes
+    [Tags]              1004    Checkboxes   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link      ${Checkboxes}
+    Herokuapp.Verify Checkboxes Page
+    Herokuapp.Tick Checkboxes       1
+    Herokuapp.Validate Checkboxes Are Tick  1
+    Herokuapp.Tick Checkboxes       2
+    Herokuapp.Validate Checkboxes Are Tick  2

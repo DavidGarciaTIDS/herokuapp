@@ -1,319 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T09:09:21.779022" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T11:10:48.953322" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Verify Basic Good Auth Page" line="35">
+<test id="s1-t1" name="Verify Checkboxes Page" line="49">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:22.153251" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<msg time="2024-02-15T11:10:49.308115" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-15T09:09:22.153251" elapsed="5.266215"/>
+<status status="PASS" start="2024-02-15T11:10:49.308115" elapsed="5.347653"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:27.419466" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-15T11:10:54.656767" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-15T09:09:27.419466" elapsed="1.264639"/>
+<status status="PASS" start="2024-02-15T11:10:54.655768" elapsed="1.396937"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:22.153251" elapsed="6.530854"/>
+<status status="PASS" start="2024-02-15T11:10:49.307089" elapsed="6.746588"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.685102" elapsed="0.007978"/>
+<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:28.685102" elapsed="0.008976"/>
+<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:28.684105" elapsed="0.009973"/>
+<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:28.695075" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[3]/a'.</msg>
+<msg time="2024-02-15T11:10:56.064629" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[6]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.695075" elapsed="0.145702"/>
+<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.165707"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-15T09:09:28.694078" elapsed="0.146699"/>
+<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.165707"/>
 </kw>
-<arg>${BasicAuth}</arg>
-<status status="PASS" start="2024-02-15T09:09:28.694078" elapsed="0.146699"/>
+<arg>${Checkboxes}</arg>
+<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.166706"/>
 </kw>
-<kw name="Basic Auth" owner="Herokuapp">
-<kw name="Login to the BasicAuth" owner="BasicAuth">
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:28.842907" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>DISMISS</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.842907" elapsed="0.027189"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:28.871093" level="INFO">${curURL} = https://the-internet.herokuapp.com/basic_auth</msg>
-<var>${curURL}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.870096" elapsed="0.000997"/>
-</kw>
-<kw name="Fetch From Right" owner="String">
-<msg time="2024-02-15T09:09:28.871093" level="INFO">${curURL} = the-internet.herokuapp.com/basic_auth</msg>
-<var>${curURL}</var>
-<arg>${curURL}</arg>
-<arg>//</arg>
-<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.871093" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-15T09:09:28.872090" level="INFO">${login} = admin:admin@the-internet.herokuapp.com/basic_auth</msg>
-<var>${login}</var>
-<arg>${Username}:${Password}@${curURL}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.872090" elapsed="0.000000"/>
-</kw>
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-15T09:09:29.859700" level="INFO">HEAD Request : url=https://admin:admin@the-internet.herokuapp.com/basic_auth 
- path_url=/basic_auth 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic YWRtaW46YWRtaW4='} 
- body=None 
- </msg>
-<msg time="2024-02-15T09:09:29.859700" level="INFO">HEAD Response : url=https://admin:admin@the-internet.herokuapp.com/basic_auth 
- status=200, reason=OK 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708013369&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=obk1SsxQXgn8834IVoXJb3kyf5rgb0hUMNemzkmTnmw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708013369&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=obk1SsxQXgn8834IVoXJb3kyf5rgb0hUMNemzkmTnmw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'Content-Length': '1643', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Thu, 15 Feb 2024 16:09:29 GMT', 'Set-Cookie': 'rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiRTljMDdiYTg4NjQ1OWIwNzY0YmRm%0ANTM1YjRmZDNkMjBmMmY0ODE3NTYzMmRhOTZiZDJhZjVkOWQ1YzUwZDNkMzkG%0AOwBGSSIJY3NyZgY7AEZJIiVkMjg4Y2JhMmQ0ZTVhNzlhNjQ1MDgxOTAxM2Yw%0ANDYzNQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBGSSIKZmxhc2gGOwBG%0AewA%3D%0A--7065f2a9c5a724d64b9dc4de3904027a83b2b774; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<msg time="2024-02-15T09:09:29.860696" level="INFO">${status} = &lt;Response [200]&gt;</msg>
-<var>${status}</var>
-<arg>https://${login}</arg>
-<arg>expected_status=${StatusExpected}</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="PASS" start="2024-02-15T09:09:28.872090" elapsed="0.988606"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T09:09:31.862162" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T09:09:29.861684" elapsed="2.000478"/>
-</kw>
-<if>
-<branch type="IF" condition="${status}">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-15T09:09:31.862925" level="INFO">&lt;Response [200]&gt;</msg>
-<arg>${status}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.000763"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-15T09:09:31.862925" level="INFO">200</msg>
-<arg>${StatusExpected}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-15T09:09:31.862925" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.000763"/>
-</branch>
-<branch type="ELSE">
-<kw name="Log" owner="BuiltIn">
-<arg>${status}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>${StatusExpected}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000995"/>
-</kw>
-<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000995"/>
-</branch>
-<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.001758"/>
-</if>
-<arg>${username}</arg>
-<arg>${password}</arg>
-<arg>${StatusExpected}</arg>
-<status status="PASS" start="2024-02-15T09:09:28.841882" elapsed="3.022038"/>
-</kw>
-<arg>${BAUsername}</arg>
-<arg>${BAPassword}</arg>
-<arg>200</arg>
-<status status="PASS" start="2024-02-15T09:09:28.841882" elapsed="3.022038"/>
-</kw>
-<kw name="End Web Test" owner="Common" type="TEARDOWN">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-15T09:09:31.864886" elapsed="6.786400"/>
-</kw>
-<status status="PASS" start="2024-02-15T09:09:31.864886" elapsed="6.786400"/>
-</kw>
-<doc>This test Logs into the Basic Auth Page</doc>
-<tag>1003a</tag>
-<tag>BasicAuth</tag>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-15T09:09:22.152251" elapsed="16.499997"/>
-</test>
-<test id="s1-t2" name="Verify Basic Bad Auth Page" line="42">
-<kw name="Start Web Test" owner="Common" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:38.660306" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-15T09:09:38.660306" elapsed="5.278760"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:43.940063" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-15T09:09:43.940063" elapsed="1.415595"/>
-</kw>
-<status status="PASS" start="2024-02-15T09:09:38.658315" elapsed="6.697343"/>
-</kw>
-<kw name="Verify Landing Page" owner="Herokuapp">
-<kw name="Landing Page loaded" owner="Landing">
+<kw name="Verify Checkboxes Page" owner="Herokuapp">
+<kw name="Checkboxes Page loaded" owner="Checkboxes">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${LandingPageTitle}</arg>
+<arg>${CheckboxesTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.008980"/>
+<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.010001"/>
+<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.010001"/>
+<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
 </kw>
-<kw name="Select Test Link" owner="Herokuapp">
-<kw name="Select Test Link" owner="Landing">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:45.366895" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[3]/a'.</msg>
-<arg>${TestLink}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.144300"/>
-</kw>
-<arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.145272"/>
-</kw>
-<arg>${BasicAuth}</arg>
-<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.145272"/>
-</kw>
-<kw name="Basic Auth" owner="Herokuapp">
-<kw name="Login to the BasicAuth" owner="BasicAuth">
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:45.513163" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>DISMISS</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.513163" elapsed="0.018950"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-02-15T09:09:45.541118" level="INFO">${curURL} = https://the-internet.herokuapp.com/basic_auth</msg>
-<var>${curURL}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.532113" elapsed="0.009005"/>
-</kw>
-<kw name="Fetch From Right" owner="String">
-<msg time="2024-02-15T09:09:45.541118" level="INFO">${curURL} = the-internet.herokuapp.com/basic_auth</msg>
-<var>${curURL}</var>
-<arg>${curURL}</arg>
-<arg>//</arg>
-<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-15T09:09:45.541118" level="INFO">${login} = admin1:admin1@the-internet.herokuapp.com/basic_auth</msg>
-<var>${login}</var>
-<arg>${Username}:${Password}@${curURL}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="0.000000"/>
-</kw>
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-15T09:09:46.571527" level="INFO">HEAD Request : url=https://admin1:admin1@the-internet.herokuapp.com/basic_auth 
- path_url=/basic_auth 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic YWRtaW4xOmFkbWluMQ=='} 
- body=None 
- </msg>
-<msg time="2024-02-15T09:09:46.571527" level="INFO">HEAD Response : url=https://admin1:admin1@the-internet.herokuapp.com/basic_auth 
- status=401, reason=Unauthorized 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708013386&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=w3tcJYOny%2Bz%2BBU3LQ01kOiMEbBRV165r103TYv3cVD8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708013386&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=w3tcJYOny%2Bz%2BBU3LQ01kOiMEbBRV165r103TYv3cVD8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'Www-Authenticate': 'Basic realm="Restricted Area"', 'Content-Length': '15', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Thu, 15 Feb 2024 16:09:46 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRWQ2MTE3ODJhYjlmYjgzZDgzMWUx%0ANTI2YWI0YzAwYWVkNDdmNmJlNmVhNmU5NWRmZjI4MmFmYTUwNTA1YjIwOTUG%0AOwBGSSIJY3NyZgY7AEZJIiU3OTM2YjUyMWQxMGI5YjVkMzMwMDRjYjI2OTE4%0AMTE3OAY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--398e0c338ad5398af86bce1c68e8e897793857d3; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<msg time="2024-02-15T09:09:46.572525" level="INFO">${status} = &lt;Response [401]&gt;</msg>
-<var>${status}</var>
-<arg>https://${login}</arg>
-<arg>expected_status=${StatusExpected}</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="1.031407"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T09:09:48.573977" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T09:09:46.572525" elapsed="2.001452"/>
-</kw>
-<if>
-<branch type="IF" condition="${status}">
+<kw name="Tick Checkboxes" owner="Herokuapp">
 <kw name="Log" owner="BuiltIn">
-<arg>${status}</arg>
+<msg time="2024-02-15T11:10:56.236296" level="INFO">2</msg>
+<arg>${CheckboxToTick}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-15T09:09:48.575022" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.000000"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<arg>${StatusExpected}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-15T09:09:48.576019" elapsed="0.000000"/>
+<kw name="Tick box" owner="Checkboxes">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-15T11:10:56.237321" level="INFO">${locator} = xpath=//*[@id="checkboxes"]/input [2]</msg>
+<var>${locator}</var>
+<arg>${CheckboxesOnPage}</arg>
+<arg>[${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.001025"/>
 </kw>
-<status status="NOT RUN" start="2024-02-15T09:09:48.573977" elapsed="0.002042"/>
-</branch>
-<branch type="ELSE">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-15T09:09:48.577014" level="INFO">&lt;Response [401]&gt;</msg>
-<arg>${status}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-15T09:09:48.577014" elapsed="0.000997"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-15T11:10:56.237321" level="INFO">Selecting checkbox 'xpath=//*[@id="checkboxes"]/input [2]'.</msg>
+<arg>${locator}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T11:10:56.237321" elapsed="0.013528"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-15T09:09:48.579009" level="INFO">401</msg>
-<arg>${StatusExpected}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-15T09:09:48.578011" elapsed="0.000998"/>
+<arg>${CheckboxToTick}</arg>
+<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.015564"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:48.576019" elapsed="0.002990"/>
-</branch>
-<status status="PASS" start="2024-02-15T09:09:48.573977" elapsed="0.005032"/>
-</if>
-<arg>${username}</arg>
-<arg>${password}</arg>
-<arg>${StatusExpected}</arg>
-<status status="PASS" start="2024-02-15T09:09:45.513163" elapsed="3.065846"/>
+<arg>2</arg>
+<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.015564"/>
 </kw>
-<arg>${BAUsernameBAD}</arg>
-<arg>${BAPasswordBAD}</arg>
-<arg>401</arg>
-<status status="PASS" start="2024-02-15T09:09:45.512167" elapsed="3.066842"/>
+<kw name="Validate Checkboxes Are Tick" owner="Herokuapp">
+<kw name="Validate Checkboxes are Checked" owner="Checkboxes">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-15T11:10:56.252843" level="INFO">${locator} = xpath=//*[@id="checkboxes"]/input [1]</msg>
+<var>${locator}</var>
+<arg>${CheckboxesOnPage}</arg>
+<arg>[${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-15T11:10:56.252843" elapsed="0.000000"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-02-15T11:10:56.253862" level="INFO">Verifying checkbox 'xpath=//*[@id="checkboxes"]/input [1]' is selected.</msg>
+<msg time="2024-02-15T11:10:56.288917" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-15T11:10:56.288917" level="FAIL">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="FAIL" start="2024-02-15T11:10:56.253862" elapsed="0.038045">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+</kw>
+<arg>${index}</arg>
+<status status="FAIL" start="2024-02-15T11:10:56.252843" elapsed="0.039064">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+</kw>
+<arg>1</arg>
+<status status="FAIL" start="2024-02-15T11:10:56.252843" elapsed="0.039064">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+</kw>
+<kw name="Tick Checkboxes" owner="Herokuapp">
+<arg>1</arg>
+<status status="NOT RUN" start="2024-02-15T11:10:56.292904" elapsed="0.000000"/>
+</kw>
+<kw name="Validate Checkboxes Are Tick" owner="Herokuapp">
+<arg>2</arg>
+<status status="NOT RUN" start="2024-02-15T11:10:56.292904" elapsed="0.000000"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-15T09:09:48.579996" elapsed="7.516240"/>
+<status status="PASS" start="2024-02-15T11:10:56.293901" elapsed="2.813162"/>
 </kw>
-<status status="PASS" start="2024-02-15T09:09:48.579996" elapsed="7.516240"/>
+<status status="PASS" start="2024-02-15T11:10:56.293901" elapsed="2.813162"/>
 </kw>
-<doc>This test Logs into the Basic Auth Page</doc>
-<tag>1003b</tag>
-<tag>BasicAuth</tag>
+<doc>This test verifies the checkboxes</doc>
+<tag>1004</tag>
+<tag>Checkboxes</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-15T09:09:38.656319" elapsed="17.440924"/>
+<status status="FAIL" start="2024-02-15T11:10:49.307089" elapsed="9.802581">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-15T09:09:21.781048" elapsed="34.319186"/>
+<status status="FAIL" start="2024-02-15T11:10:48.955317" elapsed="10.160043"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1003a</stat>
-<stat pass="1" fail="0" skip="0">1003b</stat>
-<stat pass="2" fail="0" skip="0">BasicAuth</stat>
-<stat pass="2" fail="0" skip="0">Functional</stat>
+<stat pass="0" fail="1" skip="0">1004</stat>
+<stat pass="0" fail="1" skip="0">Checkboxes</stat>
+<stat pass="0" fail="1" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>

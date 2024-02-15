@@ -1,8 +1,9 @@
 *** Settings ***
-Resource    ../Resources/PO/AddRemove.robot
-Resource    ../Resources/PO/Landing.robot
-Resource    ../Resources/PO/BasicAuth.robot
-Resource    ../Resources/PO/BrokenImages.robot
+Resource            ../Resources/PO/AddRemove.robot
+Resource            ../Resources/PO/Landing.robot
+Resource            ../Resources/PO/BasicAuth.robot
+Resource            ../Resources/PO/BrokenImages.robot
+Resource            ../Resources/PO/Checkboxes.robot
 
 *** Keywords ***
 
@@ -39,3 +40,15 @@ Validate Broken Images
 
 Validate Functional Images
     BrokenImages.Validate Functional Images
+
+Verify Checkboxes Page
+    Checkboxes.Checkboxes Page loaded
+
+Validate Checkboxes Are Tick
+    [Arguments]    ${index}
+    Checkboxes.Validate Checkboxes are Checked  ${index}
+
+Tick Checkboxes
+    [Arguments]    ${CheckboxToTick}
+    log    ${CheckboxToTick}
+    Checkboxes.Tick box     ${CheckboxToTick}
