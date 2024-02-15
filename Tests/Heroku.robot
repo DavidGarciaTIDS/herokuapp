@@ -12,7 +12,7 @@ Test Teardown    End Web Test
 #robot -d results Tests\Heroku.robot
 
 *** Test Cases ***
-Verify Add Remove Elements Page
+Add Remove Elements Page
     [Documentation]     This test Adds a new item
     [Tags]              1001    AddRemove  Functional
     Herokuapp.Verify Landing Page
@@ -23,7 +23,7 @@ Verify Add Remove Elements Page
     Herokuapp.Delete Elements
     Herokuapp.Count Elements Added  0
 
-Verify Broken Images
+Broken Images
     [Documentation]     This test verifies the broken images
     [Tags]              1002    BrokenImages   Functional
     Herokuapp.Verify Landing Page
@@ -32,21 +32,21 @@ Verify Broken Images
     Herokuapp.Validate Broken Images
     Herokuapp.Validate Functional Images
 
-Verify Basic Good Auth Page
+Basic Good Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003a   BasicAuth    Functional
     Herokuapp.Verify Landing Page
     Herokuapp.Select Test Link  ${BasicAuth}
     Herokuapp.Basic Auth  ${BAUsername}  ${BAPassword}  200
 
-Verify Basic Bad Auth Page
+Basic Bad Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003b   BasicAuth    Functional
     Herokuapp.Verify Landing Page
     Herokuapp.Select Test Link  ${BasicAuth}
     Herokuapp.Basic Auth  ${BAUsernameBAD}  ${BAPasswordBAD}    401
 
-Verify Checkboxes Page
+Checkboxes Page
     [Documentation]     This test verifies the checkboxes
     [Tags]              1004    Checkboxes   Functional
     Herokuapp.Verify Landing Page
@@ -57,7 +57,7 @@ Verify Checkboxes Page
     Herokuapp.Tick Checkboxes       2
     Herokuapp.Validate Checkboxes Are Tick  2
 
-Verify Context Menu Page
+Context Menu Page
     [Documentation]     This test verifies the context menu
     [Tags]              1005    ContextMenu   Functional
     Herokuapp.Verify Landing Page
@@ -67,7 +67,7 @@ Verify Context Menu Page
     Herokuapp.Validate Context Menu Alert
     Herokuapp.Validate Context Menu Alert Dismiss
 
-Verify Dissaapearing Elements Page
+Dissaapearing Elements Page
     [Documentation]     This test verifies the disappearing elements
     [Tags]              1006    DisappearingElements   Functional
     Herokuapp.Verify Landing Page
@@ -75,3 +75,14 @@ Verify Dissaapearing Elements Page
     Herokuapp.Verify Disappearing Elements Page
     Herokuapp.Validate Gallery Button Exists
     Herokuapp.Validate Gallery Button Does Not Exists
+
+Drag and Drop
+    [Documentation]     This test verifies the drag and drop
+    [Tags]              1007    DragAndDrop   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${DragAndDrop}
+    Herokuapp.Verify Drag And Drop Page
+    Herokuapp.Drag And Drop                 ${DragAndDropA}  ${DragAndDropB}
+    Herokuapp.Validate Drag And Drop        ${DragAndDropA}  ${DragAndDropB}
+    Herokuapp.Drag And Drop                 ${DragAndDropB}  ${DragAndDropA}
+    Herokuapp.Validate Drag And Drop        ${DragAndDropB}  ${DragAndDropA}

@@ -6,6 +6,7 @@ Resource            ../Resources/PO/BrokenImages.robot
 Resource            ../Resources/PO/Checkboxes.robot
 Resource            ../Resources/PO/ContextMenu.robot
 Resource            ../Resources/PO/DisappearingElements.robot
+Resource            ../Resources/PO/DragAndDrop.robot
 
 *** Keywords ***
 
@@ -76,3 +77,13 @@ Validate Gallery Button Exists
 Validate Gallery Button Does Not Exists
     DisappearingElements.Refresh Until Not Visibile
 
+Verify Drag And Drop Page
+    DragAndDrop.Drag And Drop Page loaded
+
+Drag And Drop
+    [Arguments]    ${From}   ${To}
+    DragAndDrop.Drag And Drop    ${From}   ${To}
+
+Validate Drag And Drop
+    [Arguments]    ${From}   ${To}
+    DragAndDrop.Validate Drag And Drop    ${From}   ${To}
