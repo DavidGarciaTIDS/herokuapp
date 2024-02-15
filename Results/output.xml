@@ -1,146 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T11:10:48.953322" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T14:41:32.194296" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Verify Checkboxes Page" line="49">
+<test id="s1-t1" name="Verify Context Menu Page" line="60">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-15T11:10:49.308115" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<msg time="2024-02-15T14:41:32.580028" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-15T11:10:49.308115" elapsed="5.347653"/>
+<status status="PASS" start="2024-02-15T14:41:32.580028" elapsed="5.144842"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-15T11:10:54.656767" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-15T14:41:37.724870" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-15T11:10:54.655768" elapsed="1.396937"/>
+<status status="PASS" start="2024-02-15T14:41:37.724870" elapsed="1.586313"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:49.307089" elapsed="6.746588"/>
+<status status="PASS" start="2024-02-15T14:41:32.580028" elapsed="6.731155"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
+<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
+<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:56.054029" elapsed="0.008569"/>
+<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T11:10:56.064629" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[6]/a'.</msg>
+<msg time="2024-02-15T14:41:39.323866" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[7]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.165707"/>
+<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.165707"/>
+<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
 </kw>
-<arg>${Checkboxes}</arg>
-<status status="PASS" start="2024-02-15T11:10:56.063607" elapsed="0.166706"/>
+<arg>${ContextMenu}</arg>
+<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
 </kw>
-<kw name="Verify Checkboxes Page" owner="Herokuapp">
-<kw name="Checkboxes Page loaded" owner="Checkboxes">
+<kw name="Verify Context Menu Page" owner="Herokuapp">
+<kw name="Context Menu Page loaded" owner="ContextMenu">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${CheckboxesTitle}</arg>
+<arg>${ContextMenuTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
+<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
+<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:56.230313" elapsed="0.004987"/>
+<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
 </kw>
-<kw name="Tick Checkboxes" owner="Herokuapp">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-15T11:10:56.236296" level="INFO">2</msg>
-<arg>${CheckboxToTick}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.000000"/>
+<kw name="Right Click Context Menu" owner="Herokuapp">
+<kw name="Right Click Context Menu" owner="ContextMenu">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T14:41:40.491780" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.000391"/>
 </kw>
-<kw name="Tick box" owner="Checkboxes">
-<kw name="Catenate" owner="BuiltIn">
-<msg time="2024-02-15T11:10:56.237321" level="INFO">${locator} = xpath=//*[@id="checkboxes"]/input [2]</msg>
-<var>${locator}</var>
-<arg>${CheckboxesOnPage}</arg>
-<arg>[${index}]</arg>
-<doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.001025"/>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>${ContextMenuArea}</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T14:41:40.491780" elapsed="0.330754"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-02-15T11:10:56.237321" level="INFO">Selecting checkbox 'xpath=//*[@id="checkboxes"]/input [2]'.</msg>
-<arg>${locator}</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.237321" elapsed="0.013528"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T14:41:41.322932" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T14:41:40.822534" elapsed="0.500398"/>
 </kw>
-<arg>${CheckboxToTick}</arg>
-<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.015564"/>
+<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.831543"/>
 </kw>
-<arg>2</arg>
-<status status="PASS" start="2024-02-15T11:10:56.236296" elapsed="0.015564"/>
+<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.831543"/>
 </kw>
-<kw name="Validate Checkboxes Are Tick" owner="Herokuapp">
-<kw name="Validate Checkboxes are Checked" owner="Checkboxes">
-<kw name="Catenate" owner="BuiltIn">
-<msg time="2024-02-15T11:10:56.252843" level="INFO">${locator} = xpath=//*[@id="checkboxes"]/input [1]</msg>
-<var>${locator}</var>
-<arg>${CheckboxesOnPage}</arg>
-<arg>[${index}]</arg>
-<doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.252843" elapsed="0.000000"/>
+<kw name="Validate Context Menu Alert" owner="Herokuapp">
+<kw name="Validate Alert" owner="ContextMenu">
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:41:41.324668" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-02-15T14:41:41.324668" elapsed="0.012074"/>
 </kw>
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-02-15T11:10:56.253862" level="INFO">Verifying checkbox 'xpath=//*[@id="checkboxes"]/input [1]' is selected.</msg>
-<msg time="2024-02-15T11:10:56.288917" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-15T11:10:56.288917" level="FAIL">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</msg>
-<arg>${locator}</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="FAIL" start="2024-02-15T11:10:56.253862" elapsed="0.038045">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T14:41:43.337899" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T14:41:41.336742" elapsed="2.001157"/>
 </kw>
-<arg>${index}</arg>
-<status status="FAIL" start="2024-02-15T11:10:56.252843" elapsed="0.039064">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
+<doc>Verifies that no alert is present.</doc>
+<status status="PASS" start="2024-02-15T14:41:43.338916" elapsed="5.055084"/>
 </kw>
-<arg>1</arg>
-<status status="FAIL" start="2024-02-15T11:10:56.252843" elapsed="0.039064">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+<status status="PASS" start="2024-02-15T14:41:41.323634" elapsed="7.070366"/>
 </kw>
-<kw name="Tick Checkboxes" owner="Herokuapp">
-<arg>1</arg>
-<status status="NOT RUN" start="2024-02-15T11:10:56.292904" elapsed="0.000000"/>
-</kw>
-<kw name="Validate Checkboxes Are Tick" owner="Herokuapp">
-<arg>2</arg>
-<status status="NOT RUN" start="2024-02-15T11:10:56.292904" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-15T14:41:41.323634" elapsed="7.070366"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-15T11:10:56.293901" elapsed="2.813162"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-15T14:41:48.395894" elapsed="2.696024"/>
 </kw>
-<status status="PASS" start="2024-02-15T11:10:56.293901" elapsed="2.813162"/>
+<status status="PASS" start="2024-02-15T14:41:48.394857" elapsed="2.697061"/>
 </kw>
-<doc>This test verifies the checkboxes</doc>
-<tag>1004</tag>
-<tag>Checkboxes</tag>
+<doc>This test verifies the context menu</doc>
+<tag>1005</tag>
+<tag>ContextMenu</tag>
 <tag>Functional</tag>
-<status status="FAIL" start="2024-02-15T11:10:49.307089" elapsed="9.802581">Checkbox 'xpath=//*[@id="checkboxes"]/input [1]' should have been selected but was not.</status>
+<status status="PASS" start="2024-02-15T14:41:32.579029" elapsed="18.514157"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="FAIL" start="2024-02-15T11:10:48.955317" elapsed="10.160043"/>
+<status status="PASS" start="2024-02-15T14:41:32.196297" elapsed="18.900397"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">1004</stat>
-<stat pass="0" fail="1" skip="0">Checkboxes</stat>
-<stat pass="0" fail="1" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">1005</stat>
+<stat pass="1" fail="0" skip="0">ContextMenu</stat>
+<stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Heroku">Heroku</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>

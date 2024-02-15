@@ -56,3 +56,13 @@ Verify Checkboxes Page
     Herokuapp.Validate Checkboxes Are Tick  1
     Herokuapp.Tick Checkboxes       2
     Herokuapp.Validate Checkboxes Are Tick  2
+
+Verify Context Menu Page
+    [Documentation]     This test verifies the context menu
+    [Tags]              1005    ContextMenu   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link      ${ContextMenu}
+    Herokuapp.Verify Context Menu Page
+    Herokuapp.Right Click Context Menu
+    Herokuapp.Validate Context Menu Alert
+    Herokuapp.Validate Context Menu Alert Dismiss

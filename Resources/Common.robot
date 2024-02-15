@@ -9,5 +9,5 @@ Start Web Test
     go to           ${URL}
 
 End Web Test
-    close all browsers
+    close browser
 

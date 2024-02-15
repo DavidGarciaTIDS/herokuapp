@@ -47,3 +47,8 @@ ${BrokenImageContainer}=        xpath=//*[@id="content"]/div
 #Checkboxes
 ${CheckboxesTitle}=             Checkboxes
 ${CheckboxesOnPage}=            xpath=//*[@id="checkboxes"]/input
+
+#ContextMenu
+${ContextMenuTitle}=            Context Menu
+${ContextMenuArea}=             xpath=//*[@id="hot-spot"]
+${ContextMenuAlertText}=        You selected a context menu

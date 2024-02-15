@@ -4,6 +4,7 @@ Resource            ../Resources/PO/Landing.robot
 Resource            ../Resources/PO/BasicAuth.robot
 Resource            ../Resources/PO/BrokenImages.robot
 Resource            ../Resources/PO/Checkboxes.robot
+Resource            ../Resources/PO/ContextMenu.robot
 
 *** Keywords ***
 
@@ -52,3 +53,15 @@ Tick Checkboxes
     [Arguments]    ${CheckboxToTick}
     log    ${CheckboxToTick}
     Checkboxes.Tick box     ${CheckboxToTick}
+
+Verify Context Menu Page
+    ContextMenu.Context Menu Page loaded
+
+Right Click Context Menu
+    ContextMenu.Right Click Context Menu
+
+Validate Context Menu Alert
+    ContextMenu.Validate Alert
+
+Validate Context Menu Alert Dismiss
+    ContextMenu.Verify Alert is Gone
