@@ -66,3 +66,12 @@ Verify Context Menu Page
     Herokuapp.Right Click Context Menu
     Herokuapp.Validate Context Menu Alert
     Herokuapp.Validate Context Menu Alert Dismiss
+
+Verify Dissaapearing Elements Page
+    [Documentation]     This test verifies the disappearing elements
+    [Tags]              1006    DisappearingElements   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link      ${DisappearingElements}
+    Herokuapp.Verify Disappearing Elements Page
+    Herokuapp.Validate Gallery Button Exists
+    Herokuapp.Validate Gallery Button Does Not Exists

@@ -52,3 +52,7 @@ ${CheckboxesOnPage}=            xpath=//*[@id="checkboxes"]/input
 ${ContextMenuTitle}=            Context Menu
 ${ContextMenuArea}=             xpath=//*[@id="hot-spot"]
 ${ContextMenuAlertText}=        You selected a context menu
+
+#DisappearingElements
+${DisappearingElementsTitle}=   Disappearing Elements
+${Gallery}=                     xpath=//*[@id="content"]/div/ul/li[5]/a

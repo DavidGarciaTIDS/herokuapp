@@ -1,126 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T14:41:32.194296" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T15:29:06.974494" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Verify Context Menu Page" line="60">
+<test id="s1-t1" name="Verify Dissaapearing Elements Page" line="70">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:41:32.580028" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<msg time="2024-02-15T15:29:07.339361" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-15T14:41:32.580028" elapsed="5.144842"/>
+<status status="PASS" start="2024-02-15T15:29:07.339361" elapsed="5.260003"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:41:37.724870" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-15T15:29:12.599364" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-15T14:41:37.724870" elapsed="1.586313"/>
+<status status="PASS" start="2024-02-15T15:29:12.599364" elapsed="1.420061"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:32.580028" elapsed="6.731155"/>
+<status status="PASS" start="2024-02-15T15:29:07.338331" elapsed="6.681094"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
+<status status="PASS" start="2024-02-15T15:29:14.020643" elapsed="0.009976"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
+<status status="PASS" start="2024-02-15T15:29:14.020643" elapsed="0.009976"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:39.311871" elapsed="0.009976"/>
+<status status="PASS" start="2024-02-15T15:29:14.020643" elapsed="0.009976"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:41:39.323866" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[7]/a'.</msg>
+<msg time="2024-02-15T15:29:14.032613" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[9]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
+<status status="PASS" start="2024-02-15T15:29:14.031615" elapsed="0.164541"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
+<status status="PASS" start="2024-02-15T15:29:14.031615" elapsed="0.165558"/>
 </kw>
-<arg>${ContextMenu}</arg>
-<status status="PASS" start="2024-02-15T14:41:39.322844" elapsed="0.162741"/>
+<arg>${DisappearingElements}</arg>
+<status status="PASS" start="2024-02-15T15:29:14.031615" elapsed="0.165558"/>
 </kw>
-<kw name="Verify Context Menu Page" owner="Herokuapp">
-<kw name="Context Menu Page loaded" owner="ContextMenu">
+<kw name="Verify Disappearing Elements Page" owner="Herokuapp">
+<kw name="Disappearing Elements Page loaded" owner="DisappearingElements">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${ContextMenuTitle}</arg>
+<arg>${DisappearingElementsTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
+<status status="PASS" start="2024-02-15T15:29:14.198141" elapsed="0.003987"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
+<status status="PASS" start="2024-02-15T15:29:14.197173" elapsed="0.004955"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:39.486583" elapsed="0.003690"/>
+<status status="PASS" start="2024-02-15T15:29:14.197173" elapsed="0.004955"/>
 </kw>
-<kw name="Right Click Context Menu" owner="Herokuapp">
-<kw name="Right Click Context Menu" owner="ContextMenu">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:41:40.491780" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.000391"/>
+<kw name="Validate Disappearing Elements" owner="Herokuapp">
+<kw name="Validate Disappearing Elements" owner="DisappearingElements">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-15T15:29:14.206120" level="INFO">Current page does not contain element 'xpath=//*[@id="content"]/div/ul/li[5]/a'.</msg>
+<arg>${Gallery}</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="PASS" start="2024-02-15T15:29:14.203126" elapsed="0.002994"/>
 </kw>
-<kw name="Open Context Menu" owner="SeleniumLibrary">
-<arg>${ContextMenuArea}</arg>
-<doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-15T14:41:40.491780" elapsed="0.330754"/>
+<msg time="2024-02-15T15:29:14.206120" level="INFO">${loop} = True</msg>
+<var>${loop}</var>
+<arg>page should not contain element</arg>
+<arg>${Gallery}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-02-15T15:29:14.203126" elapsed="0.002994"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:41:41.322932" level="INFO">Slept 500 milliseconds.</msg>
-<arg>0.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:41:40.822534" elapsed="0.500398"/>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-15T15:29:14.206120" level="INFO">True</msg>
+<arg>${loop}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-15T15:29:14.206120" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.831543"/>
-</kw>
-<status status="PASS" start="2024-02-15T14:41:39.491389" elapsed="1.831543"/>
-</kw>
-<kw name="Validate Context Menu Alert" owner="Herokuapp">
-<kw name="Validate Alert" owner="ContextMenu">
-<kw name="Alert Should Be Present" owner="SeleniumLibrary">
-<msg time="2024-02-15T14:41:41.324668" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<status status="PASS" start="2024-02-15T14:41:41.324668" elapsed="0.012074"/>
+<while condition="${loop}">
+<iter>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-02-15T15:29:14.206120" elapsed="0.942637"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-15T14:41:43.337899" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-15T15:29:17.149239" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-15T14:41:41.336742" elapsed="2.001157"/>
+<status status="PASS" start="2024-02-15T15:29:15.148757" elapsed="2.000482"/>
 </kw>
-<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
-<doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2024-02-15T14:41:43.338916" elapsed="5.055084"/>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-15T15:29:17.211556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-65.png"&gt;&lt;img src="selenium-screenshot-65.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-15T15:29:17.211556" level="FAIL">Page should not have contained element 'xpath=//*[@id="content"]/div/ul/li[5]/a'.</msg>
+<arg>${Gallery}</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="FAIL" start="2024-02-15T15:29:17.150248" elapsed="0.065435">Page should not have contained element 'xpath=//*[@id="content"]/div/ul/li[5]/a'.</status>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:41.323634" elapsed="7.070366"/>
+<msg time="2024-02-15T15:29:17.215683" level="INFO">${loop} = False</msg>
+<var>${loop}</var>
+<arg>page should not contain element</arg>
+<arg>${Gallery}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-02-15T15:29:17.150248" elapsed="0.065435"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:41.323634" elapsed="7.070366"/>
+<status status="PASS" start="2024-02-15T15:29:14.206120" elapsed="3.009563"/>
+</iter>
+<status status="PASS" start="2024-02-15T15:29:14.206120" elapsed="3.009563"/>
+</while>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-15T15:29:17.215683" level="INFO">False</msg>
+<arg>${loop}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-15T15:29:17.215683" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-02-15T15:29:14.203126" elapsed="3.013556"/>
+</kw>
+<status status="PASS" start="2024-02-15T15:29:14.203126" elapsed="3.013556"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-15T14:41:48.395894" elapsed="2.696024"/>
+<status status="PASS" start="2024-02-15T15:29:17.217685" elapsed="2.806341"/>
 </kw>
-<status status="PASS" start="2024-02-15T14:41:48.394857" elapsed="2.697061"/>
+<status status="PASS" start="2024-02-15T15:29:17.216682" elapsed="2.807344"/>
 </kw>
-<doc>This test verifies the context menu</doc>
-<tag>1005</tag>
-<tag>ContextMenu</tag>
+<doc>This test verifies the disappearing elements</doc>
+<tag>1006</tag>
+<tag>DisappearingElements</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-15T14:41:32.579029" elapsed="18.514157"/>
+<status status="PASS" start="2024-02-15T15:29:07.338331" elapsed="12.686692"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-15T14:41:32.196297" elapsed="18.900397"/>
+<status status="PASS" start="2024-02-15T15:29:06.976519" elapsed="13.049745"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1005</stat>
-<stat pass="1" fail="0" skip="0">ContextMenu</stat>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">DisappearingElements</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>

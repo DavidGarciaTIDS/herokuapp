@@ -5,6 +5,7 @@ Resource            ../Resources/PO/BasicAuth.robot
 Resource            ../Resources/PO/BrokenImages.robot
 Resource            ../Resources/PO/Checkboxes.robot
 Resource            ../Resources/PO/ContextMenu.robot
+Resource            ../Resources/PO/DisappearingElements.robot
 
 *** Keywords ***
 
@@ -65,3 +66,13 @@ Validate Context Menu Alert
 
 Validate Context Menu Alert Dismiss
     ContextMenu.Verify Alert is Gone
+
+Verify Disappearing Elements Page
+    DisappearingElements.Disappearing Elements Page loaded
+
+Validate Gallery Button Exists
+    DisappearingElements.Refresh Until Visibile
+
+Validate Gallery Button Does Not Exists
+    DisappearingElements.Refresh Until Not Visibile
+
