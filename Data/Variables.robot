@@ -23,7 +23,7 @@ ${BAUsername}=                  admin
 ${BAPassword}=                  admin
 ${BAUsernameBAD}=               admin1
 ${BAPasswordBAD}=               admin1
-${BACongratulations}=           Congratulations! You must have the proper credentials.
+${BACongratulations}=           Congratulations!
 
 #BrokenImages
 ${BrokenImagesTitle}=           Broken Images

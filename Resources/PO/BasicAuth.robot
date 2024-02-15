@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Process for the landing page
 Library           SeleniumLibrary
+Library           RequestsLibrary
 Library           String
 Resource      ../../Data/Variables.robot
 
@@ -13,29 +14,19 @@ BasicAuth Page loaded
     wait until page contains    ${LandingPageTitle}
 
 Login to the BasicAuth
-    [Arguments]    ${Username}    ${Password}
+    [Arguments]    ${Username}    ${Password}   ${StatusExpected}
     handle alert    DISMISS
     ${curURL}=   get location
     ${curURL}=   fetch from right    ${curURL}    //
     #log     ${curURL}
     ${login}=    Set Variable   ${Username}:${Password}@${curURL}
     #log     ${login}
-    go to   https://${login}
-
-Login Status Page
-    page should contain   ${BACongratulations}
-    IF
-        log    Login Successful
+    ${status}=    head   https://${login}  expected_status=${StatusExpected}
+    sleep    2s
+    IF  ${status}
+        log     ${status}
+        log    ${StatusExpected}
     ELSE
-        log    Login Failed
+        log     ${status}
+        log    ${StatusExpected}
     END
-
-#Did not work with the code below
-Fill Username
-    [Arguments]    ${Username}
-    input text into alert    ${Username}    action=LEAVE
-
-Fill Password
-    [Arguments]    ${Password}
-    input text into alert    ${Password}
-#Did not work with the code above

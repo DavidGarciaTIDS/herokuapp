@@ -7,6 +7,7 @@ Resource      ../../Data/Variables.robot
 Landing Page loaded
     wait until page contains    ${LandingPageTitle}
 
+
 Select Test Link
     [Arguments]    ${TestLink}
     click element    ${TestLink}

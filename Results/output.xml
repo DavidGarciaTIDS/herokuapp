@@ -1,483 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-14T15:33:33.337090" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-15T09:09:21.779022" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Verify Broken Images" line="27">
+<test id="s1-t1" name="Verify Basic Good Auth Page" line="35">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:33.700023" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<msg time="2024-02-15T09:09:22.153251" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-14T15:33:33.700023" elapsed="5.262941"/>
+<status status="PASS" start="2024-02-15T09:09:22.153251" elapsed="5.266215"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:38.963961" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-15T09:09:27.419466" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-14T15:33:38.963961" elapsed="2.843968"/>
+<status status="PASS" start="2024-02-15T09:09:27.419466" elapsed="1.264639"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:33.698998" elapsed="8.108931"/>
+<status status="PASS" start="2024-02-15T09:09:22.153251" elapsed="6.530854"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-14T15:33:41.808956" elapsed="0.008575"/>
+<status status="PASS" start="2024-02-15T09:09:28.685102" elapsed="0.007978"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:41.808956" elapsed="0.008575"/>
+<status status="PASS" start="2024-02-15T09:09:28.685102" elapsed="0.008976"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:41.807929" elapsed="0.009602"/>
+<status status="PASS" start="2024-02-15T09:09:28.684105" elapsed="0.009973"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:41.818471" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[4]/a'.</msg>
+<msg time="2024-02-15T09:09:28.695075" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[3]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:41.818471" elapsed="0.216185"/>
+<status status="PASS" start="2024-02-15T09:09:28.695075" elapsed="0.145702"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-14T15:33:41.818471" elapsed="0.216185"/>
+<status status="PASS" start="2024-02-15T09:09:28.694078" elapsed="0.146699"/>
 </kw>
-<arg>${BrokenImages}</arg>
-<status status="PASS" start="2024-02-14T15:33:41.818471" elapsed="0.216185"/>
+<arg>${BasicAuth}</arg>
+<status status="PASS" start="2024-02-15T09:09:28.694078" elapsed="0.146699"/>
 </kw>
-<kw name="Verify Broken Images Page" owner="Herokuapp">
-<kw name="BrokenImages Page loaded" owner="BrokenImages">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${BrokenImagesTitle}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-14T15:33:42.035651" elapsed="0.006981"/>
+<kw name="Basic Auth" owner="Herokuapp">
+<kw name="Login to the BasicAuth" owner="BasicAuth">
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:28.842907" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-02-15T09:09:28.842907" elapsed="0.027189"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:42.035651" elapsed="0.006981"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:28.871093" level="INFO">${curURL} = https://the-internet.herokuapp.com/basic_auth</msg>
+<var>${curURL}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-02-15T09:09:28.870096" elapsed="0.000997"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:42.035651" elapsed="0.006981"/>
+<kw name="Fetch From Right" owner="String">
+<msg time="2024-02-15T09:09:28.871093" level="INFO">${curURL} = the-internet.herokuapp.com/basic_auth</msg>
+<var>${curURL}</var>
+<arg>${curURL}</arg>
+<arg>//</arg>
+<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
+<status status="PASS" start="2024-02-15T09:09:28.871093" elapsed="0.000000"/>
 </kw>
-<kw name="Validate Broken Images" owner="Herokuapp">
-<kw name="Validate Broken Images" owner="BrokenImages">
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:42.046284" level="INFO">@{images} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="5539365e-91cf-4876-a4e2-c3c30fa8e8e6")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement ...</msg>
-<var>@{images}</var>
-<arg>${BrokenImageContainer}//img</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:42.043629" elapsed="0.002655"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-15T09:09:28.872090" level="INFO">${login} = admin:admin@the-internet.herokuapp.com/basic_auth</msg>
+<var>${login}</var>
+<arg>${Username}:${Password}@${curURL}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-15T09:09:28.872090" elapsed="0.000000"/>
 </kw>
-<for flavor="IN">
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:42.052268" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/asdf.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:42.046284" elapsed="0.005984"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:43.033658" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/asdf.jpg 
- path_url=/asdf.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+<msg time="2024-02-15T09:09:29.859700" level="INFO">HEAD Request : url=https://admin:admin@the-internet.herokuapp.com/basic_auth 
+ path_url=/basic_auth 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic YWRtaW46YWRtaW4='} 
  body=None 
  </msg>
-<msg time="2024-02-14T15:33:43.033658" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/asdf.jpg 
- status=404, reason=Not Found 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=SzjqFDeauCwi7UuIFdAjjEt00yafd%2B2VQSbo0YGiuSM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=SzjqFDeauCwi7UuIFdAjjEt00yafd%2B2VQSbo0YGiuSM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'X-Cascade': 'pass', 'Content-Length': '18', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:43 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTcwYjM2ZTY1MjVmNTVkYjVmNmRj%0AYzZiODQ0M2FmYjZmMTc4NWU4NTQ3YjE1YzI3YzZkM2EwOGQ0M2M5NzBiMjMG%0AOwBGSSIJY3NyZgY7AEZJIiVkZWYzNmY0NmNmMjZkOTFiZDIzYTU4Y2ZmMzBh%0AZDg1YQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--0963cdde65a53775f330e609c0552a0610b4a340; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:43.033658" level="FAIL">Url: https://the-internet.herokuapp.com/asdf.jpg Expected status: 404 != 200</msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="FAIL" start="2024-02-14T15:33:42.053265" elapsed="0.984393">Url: https://the-internet.herokuapp.com/asdf.jpg Expected status: 404 != 200</status>
-</kw>
-<msg time="2024-02-14T15:33:43.037658" level="INFO">${resp} = False</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:42.052268" elapsed="0.985390"/>
-</kw>
-<if>
-<branch type="IF" condition="${resp}">
-<kw name="Log" owner="BuiltIn">
-<arg>${imageSrc} is not broken</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:43.037658" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2024-02-14T15:33:43.037658" elapsed="0.000000"/>
-</branch>
-<branch type="ELSE">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-02-14T15:33:43.038645" level="INFO">${broken} = 1</msg>
-<var>${broken}</var>
-<arg>${broken}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-02-14T15:33:43.037658" elapsed="0.000987"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:43.037658" elapsed="0.000987"/>
-</branch>
-<status status="PASS" start="2024-02-14T15:33:43.037658" elapsed="0.000987"/>
-</if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="5539365e-91cf-4876-a4e2-c3c30fa8e8e6")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:42.046284" elapsed="0.992361"/>
-</iter>
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:43.042605" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/hjkl.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:43.038645" elapsed="0.003960"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:44.010893" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/hjkl.jpg 
- path_url=/hjkl.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:44.010893" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/hjkl.jpg 
- status=404, reason=Not Found 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=SzjqFDeauCwi7UuIFdAjjEt00yafd%2B2VQSbo0YGiuSM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950023&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=SzjqFDeauCwi7UuIFdAjjEt00yafd%2B2VQSbo0YGiuSM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'X-Cascade': 'pass', 'Content-Length': '18', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:43 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTU1ZWQ4OGU1ZTI4NTgyNjFkMzRh%0AOWY2NmQ5YWVmN2MxZWQxOTFhMzcyNGUzNjIzNmY5YjdkYWVmYTQwOGNkOWIG%0AOwBGSSIJY3NyZgY7AEZJIiU2Mjg3MWFmOWRjNGI4MGJkYmI2OTIyZWEzM2Zk%0ANTRhNAY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--5706d787472d4233639143813fff71e12d575699; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:44.010893" level="FAIL">Url: https://the-internet.herokuapp.com/hjkl.jpg Expected status: 404 != 200</msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="FAIL" start="2024-02-14T15:33:43.042605" elapsed="0.969322">Url: https://the-internet.herokuapp.com/hjkl.jpg Expected status: 404 != 200</status>
-</kw>
-<msg time="2024-02-14T15:33:44.011927" level="INFO">${resp} = False</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:43.042605" elapsed="0.969322"/>
-</kw>
-<if>
-<branch type="IF" condition="${resp}">
-<kw name="Log" owner="BuiltIn">
-<arg>${imageSrc} is not broken</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:44.011927" elapsed="0.000995"/>
-</kw>
-<status status="NOT RUN" start="2024-02-14T15:33:44.011927" elapsed="0.000995"/>
-</branch>
-<branch type="ELSE">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-02-14T15:33:44.012922" level="INFO">${broken} = 2</msg>
-<var>${broken}</var>
-<arg>${broken}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-02-14T15:33:44.012922" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:44.012922" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-02-14T15:33:44.011927" elapsed="0.000995"/>
-</if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="6ff823de-0e68-454f-8c30-9bb82dcac6d8")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:43.038645" elapsed="0.974277"/>
-</iter>
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:44.016470" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/img/avatar-blank.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:44.012922" elapsed="0.003548"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:45.148707" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/img/avatar-blank.jpg 
- path_url=/img/avatar-blank.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:45.148707" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/img/avatar-blank.jpg 
+<msg time="2024-02-15T09:09:29.859700" level="INFO">HEAD Response : url=https://admin:admin@the-internet.herokuapp.com/basic_auth 
  status=200, reason=OK 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=uE71nsyCikCWf8nG7N2dohxOraolyi%2FYBrlQ0NOZ58Y%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950025&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=uE71nsyCikCWf8nG7N2dohxOraolyi%2FYBrlQ0NOZ58Y%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'image/jpeg', 'Last-Modified': 'Mon, 15 Feb 2021 17:29:38 GMT', 'Content-Length': '2464', 'X-Content-Type-Options': 'nosniff', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:45 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTZhOWMxNGFmOWI0M2Q5OWViYTgx%0AZTMzY2IzNDcxMjdjZDE5NjA1MGY4NzY0OWQzOTY5MGQ5NjdkNWU5ZDhiZjEG%0AOwBGSSIJY3NyZgY7AEZJIiUxMmUyNzJmZWM3NjgwMjkxOGFhODg4ODk2MmM1%0AYzNhYgY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--50eeff120646dea88f69b703a35bb288e8907443; path=/; HttpOnly', 'Via': '1.1 vegur'} 
+ headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708013369&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=obk1SsxQXgn8834IVoXJb3kyf5rgb0hUMNemzkmTnmw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708013369&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=obk1SsxQXgn8834IVoXJb3kyf5rgb0hUMNemzkmTnmw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'Content-Length': '1643', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Thu, 15 Feb 2024 16:09:29 GMT', 'Set-Cookie': 'rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiRTljMDdiYTg4NjQ1OWIwNzY0YmRm%0ANTM1YjRmZDNkMjBmMmY0ODE3NTYzMmRhOTZiZDJhZjVkOWQ1YzUwZDNkMzkG%0AOwBGSSIJY3NyZgY7AEZJIiVkMjg4Y2JhMmQ0ZTVhNzlhNjQ1MDgxOTAxM2Yw%0ANDYzNQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBGSSIKZmxhc2gGOwBG%0AewA%3D%0A--7065f2a9c5a724d64b9dc4de3904027a83b2b774; path=/; HttpOnly', 'Via': '1.1 vegur'} 
  body=None 
  </msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
+<msg time="2024-02-15T09:09:29.860696" level="INFO">${status} = &lt;Response [200]&gt;</msg>
+<var>${status}</var>
+<arg>https://${login}</arg>
+<arg>expected_status=${StatusExpected}</arg>
 <doc>Sends a HEAD request.</doc>
-<status status="PASS" start="2024-02-14T15:33:44.016470" elapsed="1.135229"/>
+<status status="PASS" start="2024-02-15T09:09:28.872090" elapsed="0.988606"/>
 </kw>
-<msg time="2024-02-14T15:33:45.151699" level="INFO">${resp} = True</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=200</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:44.016470" elapsed="1.136216"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T09:09:31.862162" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T09:09:29.861684" elapsed="2.000478"/>
 </kw>
 <if>
-<branch type="IF" condition="${resp}">
+<branch type="IF" condition="${status}">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-02-14T15:33:45.152686" level="INFO">https://the-internet.herokuapp.com/img/avatar-blank.jpg is not broken</msg>
-<arg>${imageSrc} is not broken</arg>
+<msg time="2024-02-15T09:09:31.862925" level="INFO">&lt;Response [200]&gt;</msg>
+<arg>${status}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.152686" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.000763"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:45.152686" elapsed="0.000000"/>
-</branch>
-<branch type="ELSE">
-<kw name="Evaluate" owner="BuiltIn">
-<var>${broken}</var>
-<arg>${broken}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:45.152686" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2024-02-14T15:33:45.152686" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-02-14T15:33:45.152686" elapsed="0.000000"/>
-</if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="d73ade37-de03-4309-8f10-e69c2aa5362c")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:44.012922" elapsed="1.139764"/>
-</iter>
-<var>${image}</var>
-<value>@{images}</value>
-<status status="PASS" start="2024-02-14T15:33:42.046284" elapsed="3.106402"/>
-</for>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-02-14T15:33:45.153683" level="INFO">2 broken images found</msg>
-<arg>${broken} broken images found</arg>
+<msg time="2024-02-15T09:09:31.862925" level="INFO">200</msg>
+<arg>${StatusExpected}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.152686" elapsed="0.000997"/>
+<status status="PASS" start="2024-02-15T09:09:31.862925" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:42.043629" elapsed="3.110054"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:42.042632" elapsed="3.111051"/>
-</kw>
-<kw name="Validate Functional Images" owner="Herokuapp">
-<kw name="Validate Functional Images" owner="BrokenImages">
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:45.156676" level="INFO">@{images} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="5539365e-91cf-4876-a4e2-c3c30fa8e8e6")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement ...</msg>
-<var>@{images}</var>
-<arg>${BrokenImageContainer}//img</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.154651" elapsed="0.002025"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:45.160565" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/asdf.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.157672" elapsed="0.002893"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:46.452398" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/asdf.jpg 
- path_url=/asdf.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:46.452398" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/asdf.jpg 
- status=404, reason=Not Found 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950026&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Npt5m%2BtKNOm5cL7iRTs4wpWlhi04Vd%2BCEcAA8QSEtQw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950026&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Npt5m%2BtKNOm5cL7iRTs4wpWlhi04Vd%2BCEcAA8QSEtQw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'X-Cascade': 'pass', 'Content-Length': '18', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:46 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTE2NDM2ZjM0M2NhYzA5ZGEzMzc2%0AOWJiOGQwZTFhOTU1MzEyOTJhNDZlNGExMGI2ZTAzYTI5MzYzMDNkYjExNWQG%0AOwBGSSIJY3NyZgY7AEZJIiUzN2ZkNThlZjc1YzBiNjIxZmJkODAyNWJjMTE4%0AMzU5MgY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--a98da841d8b3d8d57cb6d5f2d845467760572449; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.160565" elapsed="1.295822"/>
-</kw>
-<msg time="2024-02-14T15:33:46.456387" level="INFO">${resp} = True</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:45.160565" elapsed="1.296821"/>
-</kw>
-<if>
-<branch type="IF" condition="${resp}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-02-14T15:33:46.458383" level="INFO">${functional} = 1</msg>
-<var>${functional}</var>
-<arg>${functional}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-02-14T15:33:46.458383" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:46.457386" elapsed="0.001997"/>
+<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.000763"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log" owner="BuiltIn">
-<arg>${imageSrc} is not broken</arg>
+<arg>${status}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:46.459383" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-02-14T15:33:46.459383" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-02-14T15:33:46.457386" elapsed="0.002991"/>
-</if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="5539365e-91cf-4876-a4e2-c3c30fa8e8e6")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:45.157672" elapsed="1.302705"/>
-</iter>
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:46.476340" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/hjkl.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:46.461375" elapsed="0.014965"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:47.700972" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/hjkl.jpg 
- path_url=/hjkl.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:47.700972" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/hjkl.jpg 
- status=404, reason=Not Found 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Sdq%2BIgyah6d8kYYdMzNoPMrkIieuAqsNM7swlwtiX7A%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950027&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Sdq%2BIgyah6d8kYYdMzNoPMrkIieuAqsNM7swlwtiX7A%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'X-Cascade': 'pass', 'Content-Length': '18', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:47 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRWE0NTcwNTUxNTNlN2Y3YmQ1ZmI4%0AMWI0Mzg4MzI2YzExNTdhYTczNTMyMDkwMGNjMzU1NzczMGQwMjhhZTU1YTAG%0AOwBGSSIJY3NyZgY7AEZJIiVlNDU4YjA5YTRlOTI1ZDJhNGY4OGMwMTkwYzEy%0ANzlmNQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--d5f5461edd46353c831f8fa776d38ecac07d30fc; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="PASS" start="2024-02-14T15:33:46.477335" elapsed="1.226628"/>
-</kw>
-<msg time="2024-02-14T15:33:47.703963" level="INFO">${resp} = True</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:46.477335" elapsed="1.226628"/>
-</kw>
-<if>
-<branch type="IF" condition="${resp}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-02-14T15:33:47.704952" level="INFO">${functional} = 2</msg>
-<var>${functional}</var>
-<arg>${functional}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-02-14T15:33:47.704952" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:47.703963" elapsed="0.000989"/>
-</branch>
-<branch type="ELSE">
 <kw name="Log" owner="BuiltIn">
-<arg>${imageSrc} is not broken</arg>
+<arg>${StatusExpected}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:47.704952" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000995"/>
 </kw>
-<status status="NOT RUN" start="2024-02-14T15:33:47.704952" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-15T09:09:31.862925" elapsed="0.000995"/>
 </branch>
-<status status="PASS" start="2024-02-14T15:33:47.703963" elapsed="0.000989"/>
+<status status="PASS" start="2024-02-15T09:09:31.862162" elapsed="0.001758"/>
 </if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="6ff823de-0e68-454f-8c30-9bb82dcac6d8")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:46.460377" elapsed="1.244575"/>
-</iter>
-<iter>
-<kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-02-14T15:33:47.709967" level="INFO">${imageSrc} = https://the-internet.herokuapp.com/img/avatar-blank.jpg</msg>
-<var>${imageSrc}</var>
-<arg>${image}</arg>
-<arg>src</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-02-14T15:33:47.704952" elapsed="0.005015"/>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${StatusExpected}</arg>
+<status status="PASS" start="2024-02-15T09:09:28.841882" elapsed="3.022038"/>
 </kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="HEAD" owner="RequestsLibrary">
-<msg time="2024-02-14T15:33:48.670058" level="INFO">HEAD Request : url=https://the-internet.herokuapp.com/img/avatar-blank.jpg 
- path_url=/img/avatar-blank.jpg 
- headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:48.670058" level="INFO">HEAD Response : url=https://the-internet.herokuapp.com/img/avatar-blank.jpg 
- status=200, reason=OK 
- headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950028&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=ojm7bEkpQu6bfbNNZFVBbj6HGM%2BdGcEJ6cwm1aQPGNE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950028&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=ojm7bEkpQu6bfbNNZFVBbj6HGM%2BdGcEJ6cwm1aQPGNE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'image/jpeg', 'Last-Modified': 'Mon, 15 Feb 2021 17:29:38 GMT', 'Content-Length': '2464', 'X-Content-Type-Options': 'nosniff', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Wed, 14 Feb 2024 22:33:48 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTk0MzNhYWEzZDI4MWQ3MDU4OTI0%0AOWQ5NTBhMjc5Y2FiNDUxODkyNWRkMDQ3MjIwYWNiNTg0ZTM4YjdiOGRlMGEG%0AOwBGSSIJY3NyZgY7AEZJIiVmN2Q3ZjE3ODhhYjVlYmU5YzIwNzYwMjM0OTY0%0AODEyYgY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--a6655a8c5ae1770f5c56a019b70295689d1a0dfe; path=/; HttpOnly', 'Via': '1.1 vegur'} 
- body=None 
- </msg>
-<msg time="2024-02-14T15:33:48.671058" level="FAIL">Url: https://the-internet.herokuapp.com/img/avatar-blank.jpg Expected status: 200 != 404</msg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Sends a HEAD request.</doc>
-<status status="FAIL" start="2024-02-14T15:33:47.709967" elapsed="0.962087">Url: https://the-internet.herokuapp.com/img/avatar-blank.jpg Expected status: 200 != 404</status>
-</kw>
-<msg time="2024-02-14T15:33:48.672054" level="INFO">${resp} = False</msg>
-<var>${resp}</var>
-<arg>HEAD</arg>
-<arg>url=${imageSrc}</arg>
-<arg>expected_status=404</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-02-14T15:33:47.709967" elapsed="0.962087"/>
-</kw>
-<if>
-<branch type="IF" condition="${resp}">
-<kw name="Evaluate" owner="BuiltIn">
-<var>${functional}</var>
-<arg>${functional}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2024-02-14T15:33:48.672054" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2024-02-14T15:33:48.672054" elapsed="0.000000"/>
-</branch>
-<branch type="ELSE">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-14T15:33:48.673052" level="INFO">https://the-internet.herokuapp.com/img/avatar-blank.jpg is not broken</msg>
-<arg>${imageSrc} is not broken</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-14T15:33:48.672054" elapsed="0.000998"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:48.672054" elapsed="0.000998"/>
-</branch>
-<status status="PASS" start="2024-02-14T15:33:48.672054" elapsed="0.000998"/>
-</if>
-<var name="${image}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0561699d-c342-4cbe-9177-60b0412f1def", element="d73ade37-de03-4309-8f10-e69c2aa5362c")&gt;</var>
-<status status="PASS" start="2024-02-14T15:33:47.704952" elapsed="0.968100"/>
-</iter>
-<var>${image}</var>
-<value>@{images}</value>
-<status status="PASS" start="2024-02-14T15:33:45.156676" elapsed="3.516376"/>
-</for>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-14T15:33:48.673052" level="INFO">2 functional images found</msg>
-<arg>${functional} functional images found</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-14T15:33:48.673052" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:45.154651" elapsed="3.518401"/>
-</kw>
-<status status="PASS" start="2024-02-14T15:33:45.153683" elapsed="3.519369"/>
+<arg>${BAUsername}</arg>
+<arg>${BAPassword}</arg>
+<arg>200</arg>
+<status status="PASS" start="2024-02-15T09:09:28.841882" elapsed="3.022038"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-14T15:33:48.673920" elapsed="2.726579"/>
+<status status="PASS" start="2024-02-15T09:09:31.864886" elapsed="6.786400"/>
 </kw>
-<status status="PASS" start="2024-02-14T15:33:48.673920" elapsed="2.726579"/>
+<status status="PASS" start="2024-02-15T09:09:31.864886" elapsed="6.786400"/>
 </kw>
-<doc>This test verifies the broken images</doc>
-<tag>1002</tag>
+<doc>This test Logs into the Basic Auth Page</doc>
+<tag>1003a</tag>
+<tag>BasicAuth</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-14T15:33:33.698998" elapsed="17.701501"/>
+<status status="PASS" start="2024-02-15T09:09:22.152251" elapsed="16.499997"/>
+</test>
+<test id="s1-t2" name="Verify Basic Bad Auth Page" line="42">
+<kw name="Start Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:38.660306" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-15T09:09:38.660306" elapsed="5.278760"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:43.940063" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-15T09:09:43.940063" elapsed="1.415595"/>
+</kw>
+<status status="PASS" start="2024-02-15T09:09:38.658315" elapsed="6.697343"/>
+</kw>
+<kw name="Verify Landing Page" owner="Herokuapp">
+<kw name="Landing Page loaded" owner="Landing">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${LandingPageTitle}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.008980"/>
+</kw>
+<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.010001"/>
+</kw>
+<status status="PASS" start="2024-02-15T09:09:45.356479" elapsed="0.010001"/>
+</kw>
+<kw name="Select Test Link" owner="Herokuapp">
+<kw name="Select Test Link" owner="Landing">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:45.366895" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[3]/a'.</msg>
+<arg>${TestLink}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.144300"/>
+</kw>
+<arg>${TestLink}</arg>
+<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.145272"/>
+</kw>
+<arg>${BasicAuth}</arg>
+<status status="PASS" start="2024-02-15T09:09:45.366895" elapsed="0.145272"/>
+</kw>
+<kw name="Basic Auth" owner="Herokuapp">
+<kw name="Login to the BasicAuth" owner="BasicAuth">
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:45.513163" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.513163" elapsed="0.018950"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-02-15T09:09:45.541118" level="INFO">${curURL} = https://the-internet.herokuapp.com/basic_auth</msg>
+<var>${curURL}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.532113" elapsed="0.009005"/>
+</kw>
+<kw name="Fetch From Right" owner="String">
+<msg time="2024-02-15T09:09:45.541118" level="INFO">${curURL} = the-internet.herokuapp.com/basic_auth</msg>
+<var>${curURL}</var>
+<arg>${curURL}</arg>
+<arg>//</arg>
+<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-15T09:09:45.541118" level="INFO">${login} = admin1:admin1@the-internet.herokuapp.com/basic_auth</msg>
+<var>${login}</var>
+<arg>${Username}:${Password}@${curURL}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="0.000000"/>
+</kw>
+<kw name="HEAD" owner="RequestsLibrary">
+<msg time="2024-02-15T09:09:46.571527" level="INFO">HEAD Request : url=https://admin1:admin1@the-internet.herokuapp.com/basic_auth 
+ path_url=/basic_auth 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic YWRtaW4xOmFkbWluMQ=='} 
+ body=None 
+ </msg>
+<msg time="2024-02-15T09:09:46.571527" level="INFO">HEAD Response : url=https://admin1:admin1@the-internet.herokuapp.com/basic_auth 
+ status=401, reason=Unauthorized 
+ headers={'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708013386&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=w3tcJYOny%2Bz%2BBU3LQ01kOiMEbBRV165r103TYv3cVD8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708013386&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=w3tcJYOny%2Bz%2BBU3LQ01kOiMEbBRV165r103TYv3cVD8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'Content-Type': 'text/html;charset=utf-8', 'Www-Authenticate': 'Basic realm="Restricted Area"', 'Content-Length': '15', 'X-Xss-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'Server': 'WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)', 'Date': 'Thu, 15 Feb 2024 16:09:46 GMT', 'Set-Cookie': 'rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRWQ2MTE3ODJhYjlmYjgzZDgzMWUx%0ANTI2YWI0YzAwYWVkNDdmNmJlNmVhNmU5NWRmZjI4MmFmYTUwNTA1YjIwOTUG%0AOwBGSSIJY3NyZgY7AEZJIiU3OTM2YjUyMWQxMGI5YjVkMzMwMDRjYjI2OTE4%0AMTE3OAY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi04NGEwMjRkMGJlMjgwOWIwZTgwMzkwOTFmODY5YzM0ZWZlN2MzMGUx%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--398e0c338ad5398af86bce1c68e8e897793857d3; path=/; HttpOnly', 'Via': '1.1 vegur'} 
+ body=None 
+ </msg>
+<msg time="2024-02-15T09:09:46.572525" level="INFO">${status} = &lt;Response [401]&gt;</msg>
+<var>${status}</var>
+<arg>https://${login}</arg>
+<arg>expected_status=${StatusExpected}</arg>
+<doc>Sends a HEAD request.</doc>
+<status status="PASS" start="2024-02-15T09:09:45.541118" elapsed="1.031407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T09:09:48.573977" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T09:09:46.572525" elapsed="2.001452"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Log" owner="BuiltIn">
+<arg>${status}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-02-15T09:09:48.575022" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${StatusExpected}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-02-15T09:09:48.576019" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-15T09:09:48.573977" elapsed="0.002042"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-15T09:09:48.577014" level="INFO">&lt;Response [401]&gt;</msg>
+<arg>${status}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-15T09:09:48.577014" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-15T09:09:48.579009" level="INFO">401</msg>
+<arg>${StatusExpected}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-15T09:09:48.578011" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2024-02-15T09:09:48.576019" elapsed="0.002990"/>
+</branch>
+<status status="PASS" start="2024-02-15T09:09:48.573977" elapsed="0.005032"/>
+</if>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${StatusExpected}</arg>
+<status status="PASS" start="2024-02-15T09:09:45.513163" elapsed="3.065846"/>
+</kw>
+<arg>${BAUsernameBAD}</arg>
+<arg>${BAPasswordBAD}</arg>
+<arg>401</arg>
+<status status="PASS" start="2024-02-15T09:09:45.512167" elapsed="3.066842"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-15T09:09:48.579996" elapsed="7.516240"/>
+</kw>
+<status status="PASS" start="2024-02-15T09:09:48.579996" elapsed="7.516240"/>
+</kw>
+<doc>This test Logs into the Basic Auth Page</doc>
+<tag>1003b</tag>
+<tag>BasicAuth</tag>
+<tag>Functional</tag>
+<status status="PASS" start="2024-02-15T09:09:38.656319" elapsed="17.440924"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-14T15:33:33.339090" elapsed="18.063405"/>
+<status status="PASS" start="2024-02-15T09:09:21.781048" elapsed="34.319186"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1002</stat>
-<stat pass="1" fail="0" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">1003a</stat>
+<stat pass="1" fail="0" skip="0">1003b</stat>
+<stat pass="2" fail="0" skip="0">BasicAuth</stat>
+<stat pass="2" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>

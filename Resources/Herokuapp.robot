@@ -27,17 +27,9 @@ Count Elements Added
     [Arguments]    ${Expected}
     AddRemove.Count Elements    ${Expected}
 
-Verify Basic Auth Page
-    BasicAuth.Login Status Page
-
 Basic Auth
-    [Arguments]    ${username}    ${password}
-    sleep   2s
-    BasicAuth.Login to the BasicAuth    ${username}    ${password}
-    sleep   2s
-
-Verify Basic Auth Success
-    log     verify
+    [Arguments]    ${username}    ${password}    ${StatusExpected}
+    BasicAuth.Login to the BasicAuth    ${username}    ${password}  ${StatusExpected}
 
 Verify Broken Images Page
     BrokenImages.BrokenImages Page loaded
