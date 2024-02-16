@@ -84,3 +84,11 @@ Drag and Drop
     Herokuapp.Verify Drag And Drop Page
     Herokuapp.Drag And Drop Then Verify     ${DragAndDropA}  ${DragAndDropB}
     Herokuapp.Drag And Drop Then Verify     ${DragAndDropB}  ${DragAndDropA}
+
+Dynamic Content
+    [Documentation]     This test verifies the dynamic content
+    [Tags]              1008    DynamicContent   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${DynamicContent}
+    Herokuapp.Verify Dynamic Content Page
+    Herokuapp.Validate Dynamic Content

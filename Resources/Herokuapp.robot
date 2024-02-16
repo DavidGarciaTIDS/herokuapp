@@ -7,6 +7,7 @@ Resource            ../Resources/PO/Checkboxes.robot
 Resource            ../Resources/PO/ContextMenu.robot
 Resource            ../Resources/PO/DisappearingElements.robot
 Resource            ../Resources/PO/DragAndDrop.robot
+Resource            ../Resources/PO/DynamicContent.robot
 
 *** Keywords ***
 
@@ -86,3 +87,9 @@ Drag And Drop Then Verify
     ${ColmnA}   Get Text    ${To}//header
     DragAndDrop.Drag And Drop A to B   ${From}   ${To}
     DragAndDrop.Validate Drag And Drop    ${From}   ${To}   ${ColmnA}   ${ColmnB}
+
+Verify Dynamic Content Page
+    DynamicContent.Dynamic Content Page loaded
+
+Validate Dynamic Content
+    DynamicContent.Validate Dynamic Content

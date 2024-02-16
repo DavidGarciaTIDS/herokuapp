@@ -1,288 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T10:20:28.107529" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T11:54:12.944117" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Drag and Drop" line="79">
+<test id="s1-t1" name="Dynamic Content" line="88">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:28.475656" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-16T11:54:13.317522" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-16T10:20:28.475656" elapsed="1.705991"/>
+<status status="PASS" start="2024-02-16T11:54:13.317522" elapsed="1.633514"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-16T10:20:30.182644" elapsed="0.128321"/>
+<status status="PASS" start="2024-02-16T11:54:14.951036" elapsed="0.119288"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:30.310965" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-16T11:54:15.071319" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-16T10:20:30.310965" elapsed="1.243848"/>
+<status status="PASS" start="2024-02-16T11:54:15.071319" elapsed="1.080778"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:28.474658" elapsed="3.080155"/>
+<status status="PASS" start="2024-02-16T11:54:13.316494" elapsed="2.835603"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.556807" elapsed="0.010856"/>
+<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:31.555809" elapsed="0.011854"/>
+<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:31.555809" elapsed="0.011854"/>
+<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:31.569664" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[10]/a'.</msg>
+<msg time="2024-02-16T11:54:16.167088" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[12]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.568665" elapsed="0.165406"/>
+<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-16T10:20:31.568665" elapsed="0.165406"/>
+<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
 </kw>
-<arg>${DragAndDrop}</arg>
-<status status="PASS" start="2024-02-16T10:20:31.568665" elapsed="0.165406"/>
+<arg>${DynamicContent}</arg>
+<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
 </kw>
-<kw name="Verify Drag And Drop Page" owner="Herokuapp">
-<kw name="Drag And Drop Page loaded" owner="DragAndDrop">
+<kw name="Verify Dynamic Content Page" owner="Herokuapp">
+<kw name="Dynamic Content Page loaded" owner="DynamicContent">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${DragAndDropTitle}</arg>
+<arg>${DynamicContentTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.735067" elapsed="0.011968"/>
+<status status="PASS" start="2024-02-16T11:54:16.408434" elapsed="0.008951"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:31.735067" elapsed="0.011968"/>
+<status status="PASS" start="2024-02-16T11:54:16.407419" elapsed="0.009966"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:31.734071" elapsed="0.012964"/>
+<status status="PASS" start="2024-02-16T11:54:16.407419" elapsed="0.009966"/>
 </kw>
-<kw name="Drag And Drop Then Verify" owner="Herokuapp">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:31.768276" level="INFO">${ColmnB} = A</msg>
-<var>${ColmnB}</var>
-<arg>${From}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.748061" elapsed="0.021212"/>
+<kw name="Validate Dynamic Content" owner="Herokuapp">
+<kw name="Validate Dynamic Content" owner="DynamicContent">
+<kw name="Set Local Variable" owner="BuiltIn">
+<msg time="2024-02-16T11:54:16.418412" level="FAIL">Invalid variable name 'Empt'.</msg>
+<var>@{CharList}</var>
+<arg>Empt</arg>
+<doc>Makes a variable available everywhere within the local scope.</doc>
+<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000000">Invalid variable name 'Empt'.</status>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:31.784825" level="INFO">${ColmnA} = B</msg>
-<var>${ColmnA}</var>
-<arg>${To}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.769273" elapsed="0.015552"/>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<var>@{imglist}</var>
+<arg>${DynamicContentImages}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
 </kw>
-<kw name="Drag And Drop A to B" owner="DragAndDrop">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-16T10:20:33.786271" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-16T10:20:31.785862" elapsed="2.000409"/>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>@{CharList} &lt; 5</arg>
+<arg>insert into list</arg>
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
 </kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>${From}</arg>
-<arg>${To}</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-02-16T10:20:33.786271" elapsed="0.567613"/>
+<var name="${src}"/>
+<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
+</iter>
+<var>${src}</var>
+<value>@{imglist}</value>
+<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
+</for>
+<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000967">Invalid variable name 'Empt'.</status>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-16T10:20:36.354301" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-16T10:20:34.353884" elapsed="2.000417"/>
-</kw>
-<arg>${From}</arg>
-<arg>${To}</arg>
-<status status="PASS" start="2024-02-16T10:20:31.784825" elapsed="4.569476"/>
-</kw>
-<kw name="Validate Drag And Drop" owner="DragAndDrop">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:36.377593" level="INFO">${ItemA} = B</msg>
-<var>${ItemA}</var>
-<arg>${From}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.357346" elapsed="0.020247"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:36.388150" level="INFO">${ItemB} = A</msg>
-<var>${ItemB}</var>
-<arg>${To}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.377593" elapsed="0.010557"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${ColmnA}</arg>
-<arg>${ItemA}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.388150" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:36.389150" level="INFO">B</msg>
-<arg>${ColmnA}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.389150" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:36.389150" level="INFO">B</msg>
-<arg>${ItemA}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.389150" elapsed="0.000000"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${ColmnB}</arg>
-<arg>${ItemB}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.389150" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:36.389150" level="INFO">A</msg>
-<arg>${ColmnB}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.389150" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:36.390177" level="INFO">A</msg>
-<arg>${ItemB}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.389150" elapsed="0.001027"/>
-</kw>
-<arg>${From}</arg>
-<arg>${To}</arg>
-<arg>${ColmnA}</arg>
-<arg>${ColmnB}</arg>
-<status status="PASS" start="2024-02-16T10:20:36.355351" elapsed="0.034826"/>
-</kw>
-<arg>${DragAndDropA}</arg>
-<arg>${DragAndDropB}</arg>
-<status status="PASS" start="2024-02-16T10:20:31.748061" elapsed="4.642116"/>
-</kw>
-<kw name="Drag And Drop Then Verify" owner="Herokuapp">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:36.403618" level="INFO">${ColmnB} = A</msg>
-<var>${ColmnB}</var>
-<arg>${From}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.390177" elapsed="0.013441"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:36.414924" level="INFO">${ColmnA} = B</msg>
-<var>${ColmnA}</var>
-<arg>${To}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.403618" elapsed="0.011306"/>
-</kw>
-<kw name="Drag And Drop A to B" owner="DragAndDrop">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-16T10:20:38.415519" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-16T10:20:36.414924" elapsed="2.000595"/>
-</kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>${From}</arg>
-<arg>${To}</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-02-16T10:20:38.416529" elapsed="0.606549"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-16T10:20:41.023484" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-16T10:20:39.023078" elapsed="2.000406"/>
-</kw>
-<arg>${From}</arg>
-<arg>${To}</arg>
-<status status="PASS" start="2024-02-16T10:20:36.414924" elapsed="4.608560"/>
-</kw>
-<kw name="Validate Drag And Drop" owner="DragAndDrop">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:41.036453" level="INFO">${ItemA} = B</msg>
-<var>${ItemA}</var>
-<arg>${From}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.023484" elapsed="0.012969"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-16T10:20:41.047425" level="INFO">${ItemB} = A</msg>
-<var>${ItemB}</var>
-<arg>${To}//header</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.036453" elapsed="0.010972"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${ColmnA}</arg>
-<arg>${ItemA}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.048422" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:41.048422" level="INFO">B</msg>
-<arg>${ColmnA}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.048422" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:41.048422" level="INFO">B</msg>
-<arg>${ItemA}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.048422" elapsed="0.000000"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${ColmnB}</arg>
-<arg>${ItemB}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.048422" elapsed="0.000997"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:41.049419" level="INFO">A</msg>
-<arg>${ColmnB}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.049419" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-16T10:20:41.049419" level="INFO">A</msg>
-<arg>${ItemB}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.049419" elapsed="0.000000"/>
-</kw>
-<arg>${From}</arg>
-<arg>${To}</arg>
-<arg>${ColmnA}</arg>
-<arg>${ColmnB}</arg>
-<status status="PASS" start="2024-02-16T10:20:41.023484" elapsed="0.025935"/>
-</kw>
-<arg>${DragAndDropB}</arg>
-<arg>${DragAndDropA}</arg>
-<status status="PASS" start="2024-02-16T10:20:36.390177" elapsed="4.659242"/>
+<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000967">Invalid variable name 'Empt'.</status>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-16T10:20:41.050415" elapsed="2.180751"/>
+<status status="PASS" start="2024-02-16T11:54:16.420377" elapsed="2.145604"/>
 </kw>
-<status status="PASS" start="2024-02-16T10:20:41.050415" elapsed="2.181800"/>
+<status status="PASS" start="2024-02-16T11:54:16.420377" elapsed="2.146654"/>
 </kw>
-<doc>This test verifies the drag and drop</doc>
-<tag>1007</tag>
-<tag>DragAndDrop</tag>
+<doc>This test verifies the dynamic content</doc>
+<tag>1008</tag>
+<tag>DynamicContent</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-16T10:20:28.474658" elapsed="14.758503"/>
+<status status="FAIL" start="2024-02-16T11:54:13.316494" elapsed="5.251490">Invalid variable name 'Empt'.</status>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-16T10:20:28.109521" elapsed="15.128403"/>
+<status status="FAIL" start="2024-02-16T11:54:12.945856" elapsed="5.626920"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1007</stat>
-<stat pass="1" fail="0" skip="0">DragAndDrop</stat>
-<stat pass="1" fail="0" skip="0">Functional</stat>
+<stat pass="0" fail="1" skip="0">1008</stat>
+<stat pass="0" fail="1" skip="0">DynamicContent</stat>
+<stat pass="0" fail="1" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>
