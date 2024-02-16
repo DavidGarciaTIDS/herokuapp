@@ -1,6 +1,6 @@
 
 *** Variables ***
-${BROWSER}=                     ff
+${BROWSER}=                     chrome
 ${URL}=                         https://the-internet.herokuapp.com/
 
 #Landing
@@ -59,3 +59,5 @@ ${Gallery}=                     xpath=//*[@id="content"]/div/ul/li[5]/a
 
 #DragAndDrop
 ${DragAndDropTitle}=            Drag and Drop
+${DragAndDropA}=                xpath=//*[@id="column-a"]
+${DragAndDropB}=                xpath=//*[@id="column-b"]

@@ -82,7 +82,5 @@ Drag and Drop
     Herokuapp.Verify Landing Page
     Herokuapp.Select Test Link              ${DragAndDrop}
     Herokuapp.Verify Drag And Drop Page
-    Herokuapp.Drag And Drop                 ${DragAndDropA}  ${DragAndDropB}
-    Herokuapp.Validate Drag And Drop        ${DragAndDropA}  ${DragAndDropB}
-    Herokuapp.Drag And Drop                 ${DragAndDropB}  ${DragAndDropA}
-    Herokuapp.Validate Drag And Drop        ${DragAndDropB}  ${DragAndDropA}
+    Herokuapp.Drag And Drop Then Verify     ${DragAndDropA}  ${DragAndDropB}
+    Herokuapp.Drag And Drop Then Verify     ${DragAndDropB}  ${DragAndDropA}

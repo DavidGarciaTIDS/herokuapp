@@ -80,10 +80,9 @@ Validate Gallery Button Does Not Exists
 Verify Drag And Drop Page
     DragAndDrop.Drag And Drop Page loaded
 
-Drag And Drop
+Drag And Drop Then Verify
     [Arguments]    ${From}   ${To}
-    DragAndDrop.Drag And Drop    ${From}   ${To}
-
-Validate Drag And Drop
-    [Arguments]    ${From}   ${To}
-    DragAndDrop.Validate Drag And Drop    ${From}   ${To}
+    ${ColmnB}   Get Text    ${From}//header
+    ${ColmnA}   Get Text    ${To}//header
+    DragAndDrop.Drag And Drop A to B   ${From}   ${To}
+    DragAndDrop.Validate Drag And Drop    ${From}   ${To}   ${ColmnA}   ${ColmnB}
