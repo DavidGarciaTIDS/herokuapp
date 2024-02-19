@@ -73,3 +73,6 @@ ${DynamicControlsCheckbox}=     xpath=//*[@id="checkbox"]//input[type="checkbox"
 ${DynamicControlsInputButton}=  xpath=//form[@id="input-example"]//button
 ${DynamicControlsInput}=        xpath=//*[@id="input-example"]//input
 
+#ExitIntent
+${ExitIntentTitle}=             Exit Intent
+${ExitIntentModal}=             xpath=//*[@id="ouibounce-modal"]

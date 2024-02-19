@@ -101,3 +101,12 @@ Dynamic Controls
     Herokuapp.Verify Dynamic Controls Page
     Herokuapp.Remove Checkbox
     Herokuapp.Enable Input
+
+Exit Intent
+    [Documentation]     This test verifies the exit intent
+    [Tags]              1010    ExitIntent   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${ExitIntent}
+    Herokuapp.Verify Exit Intent Page
+    Herokuapp.Validate Exit Intent
+

@@ -9,6 +9,7 @@ Resource            ../Resources/PO/DisappearingElements.robot
 Resource            ../Resources/PO/DragAndDrop.robot
 Resource            ../Resources/PO/DynamicContent.robot
 Resource            ../Resources/PO/DynamicControls.robot
+Resource            ../Resources/PO/ExitIntent.robot
 
 *** Keywords ***
 
@@ -103,3 +104,10 @@ Remove Checkbox
 
 Enable Input
     DynamicControls.Enable Input by button
+
+Verify Exit Intent Page
+    ExitIntent.Exit Intent Page loaded
+
+Validate Exit Intent
+    ExitIntent.Validate Exit Intent
+

@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-19T09:32:45.510557" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-19T12:08:22.746341" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Dynamic Controls" line="96">
+<test id="s1-t1" name="Exit Intent" line="105">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-19T09:32:45.896946" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-19T12:08:23.314411" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-19T09:32:45.896946" elapsed="1.663319"/>
+<status status="PASS" start="2024-02-19T12:08:23.313415" elapsed="1.644598"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-19T09:32:47.560265" elapsed="0.112695"/>
+<status status="PASS" start="2024-02-19T12:08:24.958976" elapsed="0.128152"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-19T09:32:47.672960" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-19T12:08:25.089158" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-19T09:32:47.672960" elapsed="1.205409"/>
+<status status="PASS" start="2024-02-19T12:08:25.088167" elapsed="1.163465"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:45.896946" elapsed="2.981423"/>
+<status status="PASS" start="2024-02-19T12:08:23.313415" elapsed="2.938217"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-19T09:32:48.879365" elapsed="0.011969"/>
+<status status="PASS" start="2024-02-19T12:08:26.252630" elapsed="0.013962"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:48.879365" elapsed="0.011969"/>
+<status status="PASS" start="2024-02-19T12:08:26.252630" elapsed="0.013962"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:48.878369" elapsed="0.013970"/>
+<status status="PASS" start="2024-02-19T12:08:26.251632" elapsed="0.014960"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-19T09:32:48.893329" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[13]/a'.</msg>
+<msg time="2024-02-19T12:08:26.267614" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[16]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-19T09:32:48.893329" elapsed="0.471982"/>
+<status status="PASS" start="2024-02-19T12:08:26.267614" elapsed="0.228846"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-19T09:32:48.893329" elapsed="0.471982"/>
+<status status="PASS" start="2024-02-19T12:08:26.267614" elapsed="0.229804"/>
 </kw>
-<arg>${DynamicControls}</arg>
-<status status="PASS" start="2024-02-19T09:32:48.892339" elapsed="0.472972"/>
+<arg>${ExitIntent}</arg>
+<status status="PASS" start="2024-02-19T12:08:26.267614" elapsed="0.229804"/>
 </kw>
-<kw name="Verify Dynamic Controls Page" owner="Herokuapp">
-<kw name="Dynamic Controls Page loaded" owner="DynamicControls">
+<kw name="Verify Exit Intent Page" owner="Herokuapp">
+<kw name="Exit Intent Page loaded" owner="ExitIntent">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${DynamicControlsTitle}</arg>
+<arg>${ExitIntentTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-19T09:32:49.366307" elapsed="0.010969"/>
+<status status="PASS" start="2024-02-19T12:08:26.498443" elapsed="0.010566"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:49.366307" elapsed="0.010969"/>
+<status status="PASS" start="2024-02-19T12:08:26.497418" elapsed="0.011591"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:49.366307" elapsed="0.010969"/>
+<status status="PASS" start="2024-02-19T12:08:26.497418" elapsed="0.011591"/>
 </kw>
-<kw name="Remove Checkbox" owner="Herokuapp">
-<kw name="Remove Checkbox by button" owner="DynamicControls">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-19T09:32:49.378302" level="INFO">Clicking element 'xpath=//form[@id="checkbox-example"]//button'.</msg>
-<arg>${DynamicControlsCBButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-19T09:32:49.378302" elapsed="0.037879"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
-<arg>${DynamicControlsCheckbox}</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" start="2024-02-19T09:32:49.417192" elapsed="0.008962"/>
-</kw>
+<kw name="Validate Exit Intent" owner="Herokuapp">
+<kw name="Validate Exit Intent" owner="ExitIntent">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-19T09:32:51.426954" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-19T12:08:28.510229" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-19T09:32:49.426154" elapsed="2.000800"/>
+<status status="PASS" start="2024-02-19T12:08:26.510031" elapsed="2.000198"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:49.378302" elapsed="2.048652"/>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-19T12:08:28.527523" level="INFO">Element 'xpath=//*[@id="ouibounce-modal"]' attribute 'style' contains value 'display: none;'.</msg>
+<arg>${ExitIntentModal}</arg>
+<arg>style</arg>
+<arg>display: none;</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2024-02-19T12:08:28.510229" elapsed="0.017294"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:49.377276" elapsed="2.049678"/>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Move Mouse To" owner="CustomLibrary">
+<arg>30</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-02-19T12:08:28.527523" elapsed="0.000000"/>
 </kw>
-<kw name="Enable Input" owner="Herokuapp">
-<kw name="Enable Input by button" owner="DynamicControls">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-19T09:32:51.427951" level="INFO">Clicking element 'xpath=//form[@id="input-example"]//button'.</msg>
-<arg>${DynamicControlsInputButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-19T09:32:51.427951" elapsed="0.029666"/>
+<arg>CustomLibrary.move mouse to</arg>
+<arg>30</arg>
+<arg>5</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-02-19T12:08:28.527523" elapsed="0.000000"/>
 </kw>
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${DynamicControlsInput}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-02-19T09:32:51.457617" elapsed="3.034834"/>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-19T12:08:28.548470" level="INFO">Element 'xpath=//*[@id="ouibounce-modal"]' attribute 'style' contains value 'display: block;'.</msg>
+<arg>${ExitIntentModal}</arg>
+<arg>style</arg>
+<arg>display: block;</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2024-02-19T12:08:28.528537" elapsed="0.019933"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-19T09:32:56.492839" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-19T12:08:30.548844" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-19T09:32:54.492451" elapsed="2.000388"/>
+<status status="PASS" start="2024-02-19T12:08:28.548470" elapsed="2.000374"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:51.427951" elapsed="5.064888"/>
+<status status="PASS" start="2024-02-19T12:08:26.510031" elapsed="4.038813"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:51.426954" elapsed="5.066936"/>
+<status status="PASS" start="2024-02-19T12:08:26.509009" elapsed="4.039835"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-19T09:32:56.496875" elapsed="2.219482"/>
+<status status="PASS" start="2024-02-19T12:08:30.549845" elapsed="2.195859"/>
 </kw>
-<status status="PASS" start="2024-02-19T09:32:56.494847" elapsed="2.222522"/>
+<status status="PASS" start="2024-02-19T12:08:30.549845" elapsed="2.195859"/>
 </kw>
-<doc>This test verifies the dynamic controls</doc>
-<tag>1009</tag>
-<tag>DynamicControls</tag>
+<doc>This test verifies the exit intent</doc>
+<tag>1010</tag>
+<tag>ExitIntent</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-19T09:32:45.895920" elapsed="12.822446"/>
+<status status="PASS" start="2024-02-19T12:08:23.312385" elapsed="9.433879"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-19T09:32:45.512522" elapsed="13.210877"/>
+<status status="PASS" start="2024-02-19T12:08:22.748365" elapsed="9.999037"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1009</stat>
-<stat pass="1" fail="0" skip="0">DynamicControls</stat>
+<stat pass="1" fail="0" skip="0">1010</stat>
+<stat pass="1" fail="0" skip="0">ExitIntent</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
@@ -134,5 +134,30 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-19T12:08:23.295275" level="ERROR">Error in file 'C:\dev\robot-scripts\herokuapp\Resources\PO\ExitIntent.robot' on line 4: Initializing library 'Browser' with no arguments failed: Couldn't execute node. Please ensure you have node.js installed and in PATH. See https://nodejs.org/ for instructions. Original error is [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\playwright.py", line 69, in ensure_node_dependencies
+    run(["node", "-v"], stdout=DEVNULL, check=True)
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\browser.py", line 831, in __init__
+    self.playwright = Playwright(
+                      ^^^^^^^^^^^
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\playwright.py", line 53, in __init__
+    self.ensure_node_dependencies()
+  File "C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\playwright.py", line 71, in ensure_node_dependencies
+    raise RuntimeError(
+RuntimeError: Couldn't execute node. Please ensure you have node.js installed and in PATH. See https://nodejs.org/ for instructions. Original error is [WinError 2] The system cannot find the file specified</msg>
 </errors>
 </robot>
