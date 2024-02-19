@@ -11,6 +11,7 @@ Resource            ../Resources/PO/DynamicContent.robot
 Resource            ../Resources/PO/DynamicControls.robot
 Resource            ../Resources/PO/ExitIntent.robot
 Resource            ../Resources/PO/FileDownload.robot
+Resource            ../Resources/PO/FileUpload.robot
 
 *** Keywords ***
 
@@ -117,3 +118,11 @@ Verify File Download Page
 
 Download File
     FileDownload.Download File
+
+Verify File Upload Page
+    FileUpload.File Upload Page loaded
+
+Upload File
+    [Arguments]    ${FilePath}
+    FileUpload.Upload File    ${FilePath}
+

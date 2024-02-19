@@ -81,3 +81,10 @@ ${ExitIntentModal}=             xpath=//*[@id="ouibounce-modal"]
 ${FileDownloadTitle}=           File Downloader
 ${FileDownloadLinks}=           xpath=//*[@id="content"]//a
 ${DownloadPath}=                C:\\Users\\degarcia\\Downloads\\
+
+#FileUpload
+${FileUploadTitle}=             File Uploader
+${FileUploadPath}=              C:\\Users\\degarcia\\Downloads\\test.txt
+${FileUploadInput}=             xpath=//*[@id="file-upload"]
+${FileUploadButton}=            xpath=//*[@id="file-submit"]
+${FileUploadedTitle}=           File Uploaded!

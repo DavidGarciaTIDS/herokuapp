@@ -117,3 +117,11 @@ File Download
     Herokuapp.Select Test Link              ${FileDownload}
     Herokuapp.Verify File Download Page
     Herokuapp.Download File
+
+File Upload
+    [Documentation]     This test verifies the file upload
+    [Tags]              1012    FileUpload   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${FileUpload}
+    Herokuapp.Verify File Upload Page
+    Herokuapp.Upload File                   ${FileUploadPath}
