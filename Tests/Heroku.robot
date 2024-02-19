@@ -92,3 +92,12 @@ Dynamic Content
     Herokuapp.Select Test Link              ${DynamicContent}
     Herokuapp.Verify Dynamic Content Page
     Herokuapp.Validate Dynamic Content
+
+Dynamic Controls
+    [Documentation]     This test verifies the dynamic controls
+    [Tags]              1009    DynamicControls   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${DynamicControls}
+    Herokuapp.Verify Dynamic Controls Page
+    Herokuapp.Remove Checkbox
+    Herokuapp.Enable Input

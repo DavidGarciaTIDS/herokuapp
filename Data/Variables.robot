@@ -66,3 +66,10 @@ ${DragAndDropB}=                xpath=//*[@id="column-b"]
 ${DynamicContentTitle}=         Dynamic Content
 ${DynamicContentImages}=        xpath=//*[@id="content"]//img
 
+#DynamicControls
+${DynamicControlsTitle}=        Dynamic Controls
+${DynamicControlsCBButton}=     xpath=//form[@id="checkbox-example"]//button
+${DynamicControlsCheckbox}=     xpath=//*[@id="checkbox"]//input[type="checkbox"]
+${DynamicControlsInputButton}=  xpath=//form[@id="input-example"]//button
+${DynamicControlsInput}=        xpath=//*[@id="input-example"]//input
+

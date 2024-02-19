@@ -8,6 +8,7 @@ Resource            ../Resources/PO/ContextMenu.robot
 Resource            ../Resources/PO/DisappearingElements.robot
 Resource            ../Resources/PO/DragAndDrop.robot
 Resource            ../Resources/PO/DynamicContent.robot
+Resource            ../Resources/PO/DynamicControls.robot
 
 *** Keywords ***
 
@@ -93,3 +94,12 @@ Verify Dynamic Content Page
 
 Validate Dynamic Content
     DynamicContent.Validate Dynamic Content
+
+Verify Dynamic Controls Page
+    DynamicControls.Dynamic Controls Page loaded
+
+Remove Checkbox
+    DynamicControls.Remove Checkbox by button
+
+Enable Input
+    DynamicControls.Enable Input by button
