@@ -110,3 +110,10 @@ Exit Intent
     Herokuapp.Verify Exit Intent Page
     Herokuapp.Validate Exit Intent
 
+File Download
+    [Documentation]     This test verifies the file download
+    [Tags]              1011    FileDownload   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${FileDownload}
+    Herokuapp.Verify File Download Page
+    Herokuapp.Download File

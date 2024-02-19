@@ -16,3 +16,5 @@ class CustomLibrary:
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, x, y, 0, 0)
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, x, y, 0, 0)
 
+    def replace_with_space(self, word,sentence):
+        return sentence.replace(word, " ")

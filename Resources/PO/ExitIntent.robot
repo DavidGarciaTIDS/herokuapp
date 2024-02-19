@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation       A test suite with a single test for Exit Intent
 Library             SeleniumLibrary
-Library             Browser
 Library             ../../Libraries/CustomLibrary.py
 Resource            ../../Data/Variables.robot
 

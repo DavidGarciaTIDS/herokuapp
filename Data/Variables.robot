@@ -17,7 +17,7 @@ ${DragAndDrop}=                 xpath=//*[@id="content"]/ul/li[10]/a
 ${DynamicContent}=              xpath=//*[@id="content"]/ul/li[12]/a
 ${DynamicControls}=             xpath=//*[@id="content"]/ul/li[13]/a
 ${ExitIntent}=                  xpath=//*[@id="content"]/ul/li[16]/a
-${FielDownload}=                xpath=//*[@id="content"]/ul/li[17]/a
+${FileDownload}=                xpath=//*[@id="content"]/ul/li[17]/a
 ${FileUpload}=                  xpath=//*[@id="content"]/ul/li[18]/a
 ${FloatingMenu}=                xpath=//*[@id="content"]/ul/li[19]/a
 ${FormAuthentication}=          xpath=//*[@id="content"]/ul/li[21]/a
@@ -76,3 +76,8 @@ ${DynamicControlsInput}=        xpath=//*[@id="input-example"]//input
 #ExitIntent
 ${ExitIntentTitle}=             Exit Intent
 ${ExitIntentModal}=             xpath=//*[@id="ouibounce-modal"]
+
+#FileDownload
+${FileDownloadTitle}=           File Downloader
+${FileDownloadLinks}=           xpath=//*[@id="content"]//a
+${DownloadPath}=                C:\\Users\\degarcia\\Downloads\\

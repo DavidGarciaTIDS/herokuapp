@@ -10,6 +10,7 @@ Resource            ../Resources/PO/DragAndDrop.robot
 Resource            ../Resources/PO/DynamicContent.robot
 Resource            ../Resources/PO/DynamicControls.robot
 Resource            ../Resources/PO/ExitIntent.robot
+Resource            ../Resources/PO/FileDownload.robot
 
 *** Keywords ***
 
@@ -111,3 +112,8 @@ Verify Exit Intent Page
 Validate Exit Intent
     ExitIntent.Validate Exit Intent
 
+Verify File Download Page
+    FileDownload.File Download Page loaded
+
+Download File
+    FileDownload.Download File
