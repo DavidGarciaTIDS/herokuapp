@@ -65,9 +65,4 @@ ${DragAndDropB}=                xpath=//*[@id="column-b"]
 #DynamicContent
 ${DynamicContentTitle}=         Dynamic Content
 ${DynamicContentImages}=        xpath=//*[@id="content"]//img
-@{Characters}=                  /img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg
-...                             /img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg
-...                             /img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg
-...                             /img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg
-...                             /img/avatars/Original-Facebook-Geek-Profile-Avatar-7.jpg
 

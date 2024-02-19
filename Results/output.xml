@@ -1,126 +1,583 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T11:54:12.944117" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-19T09:10:19.743649" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
 <test id="s1-t1" name="Dynamic Content" line="88">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-16T11:54:13.317522" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-19T09:10:20.135811" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-16T11:54:13.317522" elapsed="1.633514"/>
+<status status="PASS" start="2024-02-19T09:10:20.135811" elapsed="1.709536"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-16T11:54:14.951036" elapsed="0.119288"/>
+<status status="PASS" start="2024-02-19T09:10:21.845347" elapsed="0.120938"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-16T11:54:15.071319" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-19T09:10:21.966285" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-16T11:54:15.071319" elapsed="1.080778"/>
+<status status="PASS" start="2024-02-19T09:10:21.966285" elapsed="1.325049"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:13.316494" elapsed="2.835603"/>
+<status status="PASS" start="2024-02-19T09:10:20.134785" elapsed="3.156549"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
+<status status="PASS" start="2024-02-19T09:10:23.293330" elapsed="0.013962"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
+<status status="PASS" start="2024-02-19T09:10:23.293330" elapsed="0.013962"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:16.153094" elapsed="0.012965"/>
+<status status="PASS" start="2024-02-19T09:10:23.292333" elapsed="0.014959"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-16T11:54:16.167088" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[12]/a'.</msg>
+<msg time="2024-02-19T09:10:23.309286" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[12]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
+<status status="PASS" start="2024-02-19T09:10:23.308323" elapsed="0.272782"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
+<status status="PASS" start="2024-02-19T09:10:23.308323" elapsed="0.272782"/>
 </kw>
 <arg>${DynamicContent}</arg>
-<status status="PASS" start="2024-02-16T11:54:16.167088" elapsed="0.240331"/>
+<status status="PASS" start="2024-02-19T09:10:23.308323" elapsed="0.272782"/>
 </kw>
 <kw name="Verify Dynamic Content Page" owner="Herokuapp">
 <kw name="Dynamic Content Page loaded" owner="DynamicContent">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${DynamicContentTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-16T11:54:16.408434" elapsed="0.008951"/>
+<status status="PASS" start="2024-02-19T09:10:23.583099" elapsed="0.015957"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:16.407419" elapsed="0.009966"/>
+<status status="PASS" start="2024-02-19T09:10:23.583099" elapsed="0.015957"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:16.407419" elapsed="0.009966"/>
+<status status="PASS" start="2024-02-19T09:10:23.582102" elapsed="0.017951"/>
 </kw>
 <kw name="Validate Dynamic Content" owner="Herokuapp">
 <kw name="Validate Dynamic Content" owner="DynamicContent">
-<kw name="Set Local Variable" owner="BuiltIn">
-<msg time="2024-02-16T11:54:16.418412" level="FAIL">Invalid variable name 'Empt'.</msg>
-<var>@{CharList}</var>
-<arg>Empt</arg>
-<doc>Makes a variable available everywhere within the local scope.</doc>
-<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000000">Invalid variable name 'Empt'.</status>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-02-19T09:10:23.601051" level="INFO">Length is 0.</msg>
+<msg time="2024-02-19T09:10:23.601051" level="INFO">${Charlen} = 0</msg>
+<var>${Charlen}</var>
+<arg>${CharList}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.601051" elapsed="0.000000"/>
+</kw>
+<while condition="${Charlen} != 5">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:23.602047" level="INFO">[]</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.602047" elapsed="0.000000"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:23.611437" level="INFO">@{imglist} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="FC3C55DA5285AB9443B9EBE3B168B560_element_20")&gt; | &lt;selenium.webdriver.remote.webelement.WebEleme...</msg>
 <var>@{imglist}</var>
 <arg>${DynamicContentImages}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-19T09:10:23.602047" elapsed="0.009390"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>@{CharList} &lt; 5</arg>
-<arg>insert into list</arg>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:23.620660" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.611437" elapsed="0.009223"/>
+</kw>
+<kw name="Append To List" owner="Collections">
 <arg>${CharList}</arg>
 <arg>${src}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.620660" elapsed="0.000000"/>
 </kw>
-<var name="${src}"/>
-<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:23.620660" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.620660" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="FC3C55DA5285AB9443B9EBE3B168B560_element_20")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:23.611437" elapsed="0.009223"/>
 </iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:23.626244" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg</msg>
 <var>${src}</var>
-<value>@{imglist}</value>
-<status status="NOT RUN" start="2024-02-16T11:54:16.419379" elapsed="0.000000"/>
-</for>
-<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000967">Invalid variable name 'Empt'.</status>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.620660" elapsed="0.005584"/>
 </kw>
-<status status="FAIL" start="2024-02-16T11:54:16.418412" elapsed="0.000967">Invalid variable name 'Empt'.</status>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.626244" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:23.626244" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.626244" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="FC3C55DA5285AB9443B9EBE3B168B560_element_21")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:23.620660" elapsed="0.005584"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:23.630554" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.626244" elapsed="0.004310"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.630554" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:23.630554" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.630554" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="FC3C55DA5285AB9443B9EBE3B168B560_element_22")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:23.626244" elapsed="0.004310"/>
+</iter>
+<var>${img}</var>
+<value>@{imglist}</value>
+<status status="PASS" start="2024-02-19T09:10:23.611437" elapsed="0.019117"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.632530" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T09:10:23.631583" elapsed="2.000947"/>
+</kw>
+<kw name="Remove Duplicates" owner="Collections">
+<msg time="2024-02-19T09:10:25.632530" level="INFO">0 duplicates removed.</msg>
+<msg time="2024-02-19T09:10:25.632530" level="INFO">${CharList} = ['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://th...</msg>
+<var>${CharList}</var>
+<arg>${CharList}</arg>
+<doc>Returns a list without duplicates based on the given ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.632530" elapsed="0.000000"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.632530" elapsed="0.196671"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.830199" level="INFO">Length is 3.</msg>
+<msg time="2024-02-19T09:10:25.830199" level="INFO">${Charlen} = 3</msg>
+<var>${Charlen}</var>
+<arg>${CharList}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.830199" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-19T09:10:23.601051" elapsed="2.229148"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.831195" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.831195" elapsed="0.000000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:25.850026" level="INFO">@{imglist} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="F9DD43AABF3387EE872E846C04E11C25_element_28")&gt; | &lt;selenium.webdriver.remote.webelement.WebEleme...</msg>
+<var>@{imglist}</var>
+<arg>${DynamicContentImages}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.832193" elapsed="0.017833"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:25.864109" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.851064" elapsed="0.014043"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.865107" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.866104" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.865107" elapsed="0.000997"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="F9DD43AABF3387EE872E846C04E11C25_element_28")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:25.851064" elapsed="0.015040"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:25.875403" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.866104" elapsed="0.009299"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.875403" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.876426" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.875403" elapsed="0.001023"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="F9DD43AABF3387EE872E846C04E11C25_element_29")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:25.866104" elapsed="0.010322"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:25.883646" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.876426" elapsed="0.007220"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.883646" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:25.883646" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.883646" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="F9DD43AABF3387EE872E846C04E11C25_element_25")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:25.876426" elapsed="0.007220"/>
+</iter>
+<var>${img}</var>
+<value>@{imglist}</value>
+<status status="PASS" start="2024-02-19T09:10:25.851064" elapsed="0.033581"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T09:10:27.885549" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T09:10:25.884645" elapsed="2.000904"/>
+</kw>
+<kw name="Remove Duplicates" owner="Collections">
+<msg time="2024-02-19T09:10:27.886556" level="INFO">2 duplicates removed.</msg>
+<msg time="2024-02-19T09:10:27.886556" level="INFO">${CharList} = ['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://th...</msg>
+<var>${CharList}</var>
+<arg>${CharList}</arg>
+<doc>Returns a list without duplicates based on the given ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:27.886556" elapsed="0.000997"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-02-19T09:10:27.887553" elapsed="0.125534"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-02-19T09:10:28.013087" level="INFO">Length is 4.</msg>
+<msg time="2024-02-19T09:10:28.013087" level="INFO">${Charlen} = 4</msg>
+<var>${Charlen}</var>
+<arg>${CharList}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.013087" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-19T09:10:25.830199" elapsed="2.182888"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:28.014054" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.014054" elapsed="0.000000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:28.022358" level="INFO">@{imglist} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="BAB06631235B7B56A9A73E833BE3B4C5_element_32")&gt; | &lt;selenium.webdriver.remote.webelement.WebEleme...</msg>
+<var>@{imglist}</var>
+<arg>${DynamicContentImages}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.014054" elapsed="0.008304"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:28.028454" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.022358" elapsed="0.006096"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.028454" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:28.028454" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.028454" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="BAB06631235B7B56A9A73E833BE3B4C5_element_32")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:28.022358" elapsed="0.007093"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:28.033187" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.029451" elapsed="0.003736"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.033187" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:28.033187" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.033187" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="BAB06631235B7B56A9A73E833BE3B4C5_element_33")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:28.029451" elapsed="0.003736"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:28.036923" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.033187" elapsed="0.003736"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.036923" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:28.037920" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.037920" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="BAB06631235B7B56A9A73E833BE3B4C5_element_34")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:28.033187" elapsed="0.004733"/>
+</iter>
+<var>${img}</var>
+<value>@{imglist}</value>
+<status status="PASS" start="2024-02-19T09:10:28.022358" elapsed="0.015562"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.038349" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T09:10:28.037920" elapsed="2.000429"/>
+</kw>
+<kw name="Remove Duplicates" owner="Collections">
+<msg time="2024-02-19T09:10:30.039392" level="INFO">3 duplicates removed.</msg>
+<msg time="2024-02-19T09:10:30.040389" level="INFO">${CharList} = ['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://th...</msg>
+<var>${CharList}</var>
+<arg>${CharList}</arg>
+<doc>Returns a list without duplicates based on the given ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.039392" elapsed="0.000997"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.040389" elapsed="0.276345"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.316734" level="INFO">Length is 4.</msg>
+<msg time="2024-02-19T09:10:30.316734" level="INFO">${Charlen} = 4</msg>
+<var>${Charlen}</var>
+<arg>${CharList}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.316734" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-19T09:10:28.013087" elapsed="2.303647"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.317735" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.317735" elapsed="0.000000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:30.325534" level="INFO">@{imglist} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="B5456FED9DCF9B5425C6956FA04B4846_element_37")&gt; | &lt;selenium.webdriver.remote.webelement.WebEleme...</msg>
+<var>@{imglist}</var>
+<arg>${DynamicContentImages}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.317735" elapsed="0.007799"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:30.331082" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.325534" elapsed="0.005548"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.331082" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.332110" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.331082" elapsed="0.001028"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="B5456FED9DCF9B5425C6956FA04B4846_element_37")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:30.325534" elapsed="0.006576"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:30.336394" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-5.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.332110" elapsed="0.004284"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.336394" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.336394" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-5.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.336394" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="B5456FED9DCF9B5425C6956FA04B4846_element_41")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:30.332110" elapsed="0.004284"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-02-19T09:10:30.340123" level="INFO">${src} = https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg</msg>
+<var>${src}</var>
+<arg>${img}</arg>
+<arg>src</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.336394" elapsed="0.003729"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${CharList}</arg>
+<arg>${src}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.340123" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-19T09:10:30.341123" level="INFO">['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-5.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg']</msg>
+<arg>${CharList}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.341123" elapsed="0.000000"/>
+</kw>
+<var name="${img}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9424bb4190d29784aa7b33bf5e2fac7b", element="B5456FED9DCF9B5425C6956FA04B4846_element_38")&gt;</var>
+<status status="PASS" start="2024-02-19T09:10:30.336394" elapsed="0.004729"/>
+</iter>
+<var>${img}</var>
+<value>@{imglist}</value>
+<status status="PASS" start="2024-02-19T09:10:30.325534" elapsed="0.015589"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T09:10:32.341206" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T09:10:30.341123" elapsed="2.000083"/>
+</kw>
+<kw name="Remove Duplicates" owner="Collections">
+<msg time="2024-02-19T09:10:32.341206" level="INFO">2 duplicates removed.</msg>
+<msg time="2024-02-19T09:10:32.341206" level="INFO">${CharList} = ['https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg', 'https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg', 'https://th...</msg>
+<var>${CharList}</var>
+<arg>${CharList}</arg>
+<doc>Returns a list without duplicates based on the given ``list``.</doc>
+<status status="PASS" start="2024-02-19T09:10:32.341206" elapsed="0.000000"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-02-19T09:10:32.341206" elapsed="0.133332"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-02-19T09:10:32.474538" level="INFO">Length is 5.</msg>
+<msg time="2024-02-19T09:10:32.474538" level="INFO">${Charlen} = 5</msg>
+<var>${Charlen}</var>
+<arg>${CharList}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-02-19T09:10:32.474538" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-19T09:10:30.316734" elapsed="2.157804"/>
+</iter>
+<status status="PASS" start="2024-02-19T09:10:23.601051" elapsed="8.874516"/>
+</while>
+<status status="PASS" start="2024-02-19T09:10:23.601051" elapsed="8.874516"/>
+</kw>
+<status status="PASS" start="2024-02-19T09:10:23.600053" elapsed="8.875514"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-16T11:54:16.420377" elapsed="2.145604"/>
+<status status="PASS" start="2024-02-19T09:10:32.475567" elapsed="2.175567"/>
 </kw>
-<status status="PASS" start="2024-02-16T11:54:16.420377" elapsed="2.146654"/>
+<status status="PASS" start="2024-02-19T09:10:32.475567" elapsed="2.176632"/>
 </kw>
 <doc>This test verifies the dynamic content</doc>
 <tag>1008</tag>
 <tag>DynamicContent</tag>
 <tag>Functional</tag>
-<status status="FAIL" start="2024-02-16T11:54:13.316494" elapsed="5.251490">Invalid variable name 'Empt'.</status>
+<status status="PASS" start="2024-02-19T09:10:20.134785" elapsed="14.518351"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="FAIL" start="2024-02-16T11:54:12.945856" elapsed="5.626920"/>
+<status status="PASS" start="2024-02-19T09:10:19.745786" elapsed="14.912564"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">1008</stat>
-<stat pass="0" fail="1" skip="0">DynamicContent</stat>
-<stat pass="0" fail="1" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">1008</stat>
+<stat pass="1" fail="0" skip="0">DynamicContent</stat>
+<stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Heroku">Heroku</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>
