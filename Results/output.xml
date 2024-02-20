@@ -1,143 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-19T15:31:11.049658" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T11:18:00.807163" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="File Upload" line="121">
+<test id="s1-t1" name="Floating Menu" line="129">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-19T15:31:11.497606" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-20T11:18:02.141960" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-19T15:31:11.496613" elapsed="1.686832"/>
+<status status="PASS" start="2024-02-20T11:18:02.141960" elapsed="2.369558"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-19T15:31:13.183445" elapsed="0.117876"/>
+<status status="PASS" start="2024-02-20T11:18:04.512516" elapsed="0.113484"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-19T15:31:13.302317" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-20T11:18:04.626000" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-19T15:31:13.301321" elapsed="1.192528"/>
+<status status="PASS" start="2024-02-20T11:18:04.626000" elapsed="1.171878"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:11.496613" elapsed="2.997236"/>
+<status status="PASS" start="2024-02-20T11:18:02.141960" elapsed="3.655918"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-19T15:31:14.494846" elapsed="0.013963"/>
+<status status="PASS" start="2024-02-20T11:18:05.799875" elapsed="0.011975"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:14.494846" elapsed="0.013963"/>
+<status status="PASS" start="2024-02-20T11:18:05.798877" elapsed="0.012973"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:14.493849" elapsed="0.014960"/>
+<status status="PASS" start="2024-02-20T11:18:05.798877" elapsed="0.012973"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-19T15:31:14.509836" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[18]/a'.</msg>
+<msg time="2024-02-20T11:18:05.813845" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[19]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-19T15:31:14.509836" elapsed="0.317289"/>
+<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-19T15:31:14.509836" elapsed="0.317289"/>
+<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
 </kw>
-<arg>${FileUpload}</arg>
-<status status="PASS" start="2024-02-19T15:31:14.508809" elapsed="0.319347"/>
+<arg>${FloatingMenu}</arg>
+<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
 </kw>
-<kw name="Verify File Upload Page" owner="Herokuapp">
-<kw name="File Upload Page loaded" owner="FileUpload">
+<kw name="Verify Floating Menu Page" owner="Herokuapp">
+<kw name="Floating Menu Page loaded" owner="FloatingMenu">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${FileUploadTitle}</arg>
+<arg>${FloatingMenuTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-19T15:31:14.829154" elapsed="0.014923"/>
+<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:14.829154" elapsed="0.014923"/>
+<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:14.828156" elapsed="0.015921"/>
+<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
 </kw>
-<kw name="Upload File" owner="Herokuapp">
-<kw name="Upload File" owner="FileUpload">
-<kw name="Create File" owner="OperatingSystem">
-<msg time="2024-02-19T15:31:14.847070" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\degarcia\Downloads\test.txt"&gt;C:\Users\degarcia\Downloads\test.txt&lt;/a&gt;'.</msg>
-<arg>${FilePath}</arg>
-<arg>testing</arg>
-<doc>Creates a file with the given content and encoding.</doc>
-<status status="PASS" start="2024-02-19T15:31:14.846102" elapsed="0.000968"/>
+<kw name="Scroll To Bottom" owner="Herokuapp">
+<kw name="Scroll To Bottom" owner="FloatingMenu">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FloatingMenuFooter}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="0.286943"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-19T15:31:16.849040" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-20T11:18:08.331646" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-19T15:31:14.847070" elapsed="2.001970"/>
+<status status="PASS" start="2024-02-20T11:18:06.330773" elapsed="2.000873"/>
 </kw>
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2024-02-19T15:31:16.849040" level="INFO">Sending C:\Users\degarcia\Downloads\test.txt to browser.</msg>
-<arg>${FileUploadInput}</arg>
-<arg>${FilePath}</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2024-02-19T15:31:16.849040" elapsed="0.030917"/>
+<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="2.287816"/>
+</kw>
+<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="2.288825"/>
+</kw>
+<kw name="Validate Floating Menu" owner="Herokuapp">
+<kw name="Validate Floating Menu" owner="FloatingMenu">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-02-20T11:18:08.349057" level="INFO">${menu} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2c2f5cbd410889646491bdfb6c456239", element="2E0AF78289FB89374E012A0C2AE54997_element_21")&gt;</msg>
+<var>${menu}</var>
+<arg>${FloatingMenuHeader}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-02-20T11:18:08.336472" elapsed="0.012585"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T11:18:08.349057" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2c2f5cbd410889646491bdfb6c456239", element="2E0AF78289FB89374E012A0C2AE54997_element_21")&gt;'.</msg>
+<arg>${menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T11:18:08.349057" elapsed="0.029672"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-19T15:31:21.881635" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-02-20T11:18:13.379200" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-19T15:31:16.879957" elapsed="5.001678"/>
+<status status="PASS" start="2024-02-20T11:18:08.378729" elapsed="5.000471"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-19T15:31:21.882671" level="INFO">Clicking button 'xpath=//*[@id="file-submit"]'.</msg>
-<arg>${FileUploadButton}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-19T15:31:21.882671" elapsed="0.174425"/>
+<status status="PASS" start="2024-02-20T11:18:08.335471" elapsed="5.043729"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-19T15:31:27.057225" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-19T15:31:22.057096" elapsed="5.000129"/>
-</kw>
-<kw name="Remove File" owner="OperatingSystem">
-<msg time="2024-02-19T15:31:27.060227" level="INFO" html="true">Removed file '&lt;a href="file://C:\Users\degarcia\Downloads\test.txt"&gt;C:\Users\degarcia\Downloads\test.txt&lt;/a&gt;'.</msg>
-<arg>${FilePath}</arg>
-<doc>Removes a file with the given path.</doc>
-<status status="PASS" start="2024-02-19T15:31:27.058274" elapsed="0.001953"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${FileUploadedTitle}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-19T15:31:27.061265" elapsed="0.041188"/>
-</kw>
-<arg>${FilePath}</arg>
-<status status="PASS" start="2024-02-19T15:31:14.845109" elapsed="12.257344"/>
-</kw>
-<arg>${FileUploadPath}</arg>
-<status status="PASS" start="2024-02-19T15:31:14.845109" elapsed="12.258383"/>
+<status status="PASS" start="2024-02-20T11:18:08.334477" elapsed="5.045782"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-19T15:31:27.104485" elapsed="2.181248"/>
+<status status="PASS" start="2024-02-20T11:18:13.383245" elapsed="2.200006"/>
 </kw>
-<status status="PASS" start="2024-02-19T15:31:27.104485" elapsed="2.182255"/>
+<status status="PASS" start="2024-02-20T11:18:13.382248" elapsed="2.201003"/>
 </kw>
-<doc>This test verifies the file upload</doc>
-<tag>1012</tag>
-<tag>FileUpload</tag>
+<doc>This test verifies the floating menu</doc>
+<tag>1013</tag>
+<tag>FloatingMenu</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-19T15:31:11.495583" elapsed="17.792212"/>
+<status status="PASS" start="2024-02-20T11:18:02.138936" elapsed="13.444315"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-19T15:31:11.051655" elapsed="18.240784"/>
+<status status="PASS" start="2024-02-20T11:18:00.809130" elapsed="14.814661"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1012</stat>
-<stat pass="1" fail="0" skip="0">FileUpload</stat>
+<stat pass="1" fail="0" skip="0">1013</stat>
+<stat pass="1" fail="0" skip="0">FloatingMenu</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
@@ -145,5 +130,18 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-20T11:18:01.468784" level="ERROR">Error in file 'C:\dev\robot-scripts\herokuapp\Resources\PO\FloatingMenu.robot' on line 6: Importing library '../../Libraries/InViewPort.js' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32\lib
+  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Pythonwin</msg>
 </errors>
 </robot>

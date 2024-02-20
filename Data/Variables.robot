@@ -88,3 +88,8 @@ ${FileUploadPath}=              C:\\Users\\degarcia\\Downloads\\test.txt
 ${FileUploadInput}=             xpath=//*[@id="file-upload"]
 ${FileUploadButton}=            xpath=//*[@id="file-submit"]
 ${FileUploadedTitle}=           File Uploaded!
+
+#FloatingMenu
+${FloatingMenuTitle}=           Floating Menu
+${FloatingMenuHeader}=          xpath=//*[@id="menu"]
+${FloatingMenuFooter}=          xpath=//*[@id="page-footer"]

@@ -12,6 +12,7 @@ Resource            ../Resources/PO/DynamicControls.robot
 Resource            ../Resources/PO/ExitIntent.robot
 Resource            ../Resources/PO/FileDownload.robot
 Resource            ../Resources/PO/FileUpload.robot
+Resource            ../Resources/PO/FloatingMenu.robot
 
 *** Keywords ***
 
@@ -126,3 +127,11 @@ Upload File
     [Arguments]    ${FilePath}
     FileUpload.Upload File    ${FilePath}
 
+Verify Floating Menu Page
+    FloatingMenu.Floating Menu Page loaded
+
+Scroll To Bottom
+    FloatingMenu.Scroll To Bottom
+
+Validate Floating Menu
+    FloatingMenu.Validate Floating Menu

@@ -5,10 +5,10 @@ Resource            ../Data/Variables.robot
 
 *** Keywords ***
 Start Web Test
-    open browser    about:blank     ${BROWSER}
-    maximize browser window
-    go to           ${URL}
+    SeleniumLibrary.open browser    about:blank     ${BROWSER}
+    SeleniumLibrary.maximize browser window
+    SeleniumLibrary.go to           ${URL}
 
 End Web Test
-    close browser
+    SeleniumLibrary.close browser
 

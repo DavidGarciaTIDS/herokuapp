@@ -125,3 +125,12 @@ File Upload
     Herokuapp.Select Test Link              ${FileUpload}
     Herokuapp.Verify File Upload Page
     Herokuapp.Upload File                   ${FileUploadPath}
+
+Floating Menu
+    [Documentation]     This test verifies the floating menu
+    [Tags]              1013    FloatingMenu   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${FloatingMenu}
+    Herokuapp.Verify Floating Menu Page
+    Herokuapp.Scroll To Bottom
+    Herokuapp.Validate Floating Menu
