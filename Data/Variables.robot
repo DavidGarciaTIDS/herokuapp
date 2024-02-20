@@ -112,3 +112,9 @@ ${HorizontalSliderTitle}=       Horizontal Slider
 ${Slider}=                      xpath=//*[@id="content"]//input
 ${SliderDisplay}=               xpath=//*[@id="content"]//span
 ${SliderValue}=                 3.5
+
+#JQueryUIMenus
+${JQueryUIMenusTitle}=          JQuery UI Menus
+@{JQueryPath}=                  xpath=//*[@id="ui-id-3"]/a
+...                             xpath=//*[@id="ui-id-4"]/a
+...                             xpath=//*[@id="ui-id-7"]/a

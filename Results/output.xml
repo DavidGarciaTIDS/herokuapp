@@ -1,150 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T14:26:10.165627" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T15:02:04.667258" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Horizontal Slider" line="155">
+<test id="s1-t1" name="JQuery UI Menus" line="164">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:11.386603" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-20T15:02:05.953720" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-20T14:26:11.386603" elapsed="1.618504"/>
+<status status="PASS" start="2024-02-20T15:02:05.953720" elapsed="1.606975"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-20T14:26:13.005107" elapsed="0.126470"/>
+<status status="PASS" start="2024-02-20T15:02:07.560695" elapsed="0.122260"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:13.133607" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-20T15:02:07.682955" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-20T14:26:13.132624" elapsed="1.109129"/>
+<status status="PASS" start="2024-02-20T15:02:07.682955" elapsed="1.175296"/>
 </kw>
-<status status="PASS" start="2024-02-20T14:26:11.385605" elapsed="2.857147"/>
+<status status="PASS" start="2024-02-20T15:02:05.952723" elapsed="2.906523"/>
 </kw>
 <kw name="Validate Page loaded" owner="Common">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${expected}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T14:26:14.243748" elapsed="0.012538"/>
+<status status="PASS" start="2024-02-20T15:02:08.860244" elapsed="0.011967"/>
 </kw>
 <arg>${LandingPageTitle}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.242752" elapsed="0.013534"/>
+<status status="PASS" start="2024-02-20T15:02:08.859246" elapsed="0.012965"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:14.258246" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[24]/a'.</msg>
+<msg time="2024-02-20T15:02:08.874172" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[28]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T14:26:14.257246" elapsed="0.170927"/>
+<status status="PASS" start="2024-02-20T15:02:08.873172" elapsed="0.393064"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.257246" elapsed="0.170927"/>
+<status status="PASS" start="2024-02-20T15:02:08.873172" elapsed="0.393064"/>
 </kw>
-<arg>${HorizontalSlider}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.257246" elapsed="0.170927"/>
+<arg>${JQueryUIMenus}</arg>
+<status status="PASS" start="2024-02-20T15:02:08.873172" elapsed="0.393064"/>
 </kw>
 <kw name="Validate Page loaded" owner="Common">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${expected}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T14:26:14.429170" elapsed="0.011967"/>
+<status status="PASS" start="2024-02-20T15:02:09.268170" elapsed="0.017836"/>
 </kw>
-<arg>${HorizontalSliderTitle}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.429170" elapsed="0.011967"/>
+<arg>${JQueryUIMenusTitle}</arg>
+<status status="PASS" start="2024-02-20T15:02:09.267168" elapsed="0.018838"/>
 </kw>
-<kw name="Slide Horizontal Slider" owner="Herokuapp">
-<kw name="Slide Horizontal Slider" owner="HorizontalSlider">
+<kw name="Select JQuery UI Menus" owner="Herokuapp">
+<kw name="Navigate path" owner="JQueryUIMenus">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-20T15:02:09.288996" level="INFO">xpath=//*[@id="ui-id-3"]/a</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-20T15:02:09.288000" elapsed="0.000996"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T15:02:09.288996" elapsed="0.012514"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T15:02:09.301510" level="INFO">Clicking element 'xpath=//*[@id="ui-id-3"]/a'.</msg>
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T15:02:09.301510" elapsed="0.038172"/>
+</kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T14:26:15.442305" level="INFO">Slept 1 second.</msg>
+<msg time="2024-02-20T15:02:10.339975" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T14:26:14.442135" elapsed="1.000170"/>
+<status status="PASS" start="2024-02-20T15:02:09.339682" elapsed="1.000293"/>
 </kw>
-<kw name="Click Element At Coordinates" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:15.443090" level="INFO">Clicking element 'xpath=//*[@id="content"]//input' at coordinates x=20, y=0.</msg>
-<arg>${slider}</arg>
-<arg>20</arg>
-<arg>0</arg>
-<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
-<status status="PASS" start="2024-02-20T14:26:15.442305" elapsed="0.555416"/>
+<var name="${i}">xpath=//*[@id="ui-id-3"]/a</var>
+<status status="PASS" start="2024-02-20T15:02:09.288000" elapsed="1.051975"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-20T15:02:10.341980" level="INFO">xpath=//*[@id="ui-id-4"]/a</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-20T15:02:10.341980" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T15:02:10.342977" elapsed="0.012084"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T15:02:10.356093" level="INFO">Clicking element 'xpath=//*[@id="ui-id-4"]/a'.</msg>
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T15:02:10.355061" elapsed="0.031681"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T14:26:17.999139" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<msg time="2024-02-20T15:02:11.387188" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T14:26:15.998716" elapsed="2.000423"/>
+<status status="PASS" start="2024-02-20T15:02:10.386742" elapsed="1.000446"/>
 </kw>
-<arg>${SliderValue}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.442135" elapsed="3.557004"/>
+<var name="${i}">xpath=//*[@id="ui-id-4"]/a</var>
+<status status="PASS" start="2024-02-20T15:02:10.340984" elapsed="1.046204"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-20T15:02:11.387188" level="INFO">xpath=//*[@id="ui-id-7"]/a</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-20T15:02:11.387188" elapsed="0.000000"/>
 </kw>
-<arg>${SliderValue}</arg>
-<status status="PASS" start="2024-02-20T14:26:14.441137" elapsed="3.559046"/>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${i}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T15:02:11.387188" elapsed="0.010971"/>
 </kw>
-<kw name="Validate Horizontal Slider" owner="Herokuapp">
-<kw name="Validate Horizontal Sliders Value" owner="HorizontalSlider">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:18.028003" level="INFO">${value} = 3.5</msg>
-<var>${value}</var>
-<arg>${SliderDisplay}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T14:26:18.005138" elapsed="0.022865"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T15:02:11.398159" level="INFO">Clicking element 'xpath=//*[@id="ui-id-7"]/a'.</msg>
+<arg>${i}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T15:02:11.398159" elapsed="0.117038"/>
 </kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${value}</arg>
-<arg>${Expected}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-02-20T14:26:18.028003" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T15:02:12.515565" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T15:02:11.515197" elapsed="1.000368"/>
 </kw>
-<kw name="Get Value" owner="SeleniumLibrary">
-<msg time="2024-02-20T14:26:18.051680" level="INFO">${value} = 3.5</msg>
-<var>${value}</var>
-<arg>${Slider}</arg>
-<doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T14:26:18.028003" elapsed="0.023677"/>
+<var name="${i}">xpath=//*[@id="ui-id-7"]/a</var>
+<status status="PASS" start="2024-02-20T15:02:11.387188" elapsed="1.128377"/>
+</iter>
+<var>${i}</var>
+<value>@{path}</value>
+<status status="PASS" start="2024-02-20T15:02:09.288000" elapsed="3.227565"/>
+</for>
+<arg>@{JQueryPath}</arg>
+<status status="PASS" start="2024-02-20T15:02:09.288000" elapsed="3.227565"/>
 </kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${value}</arg>
-<arg>${Expected}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-02-20T14:26:18.051680" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-20T15:02:09.286967" elapsed="3.228598"/>
 </kw>
-<arg>${Expected}</arg>
-<status status="PASS" start="2024-02-20T14:26:18.004140" elapsed="0.047540"/>
+<kw name="Validate Excel File" owner="Herokuapp">
+<kw name="Validate Downloaded File" owner="FileDownload">
+<kw name="Split String From Right" owner="String">
+<msg time="2024-02-20T15:02:12.518797" level="INFO">${fileLink} = ['https:', '', 'the-internet.herokuapp.com', 'download', 'jqueryui', 'menu', 'menu.xls']</msg>
+<var>${fileLink}</var>
+<arg>${href}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` starting from right.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.517808" elapsed="0.000989"/>
 </kw>
-<arg>${SliderValue}</arg>
-<status status="PASS" start="2024-02-20T14:26:18.002148" elapsed="0.049532"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-20T15:02:12.518797" level="INFO">${fileName} = menu.xls</msg>
+<var>${fileName}</var>
+<arg>${fileLink}[-1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.518797" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-20T15:02:12.519800" level="INFO">menu.xls</msg>
+<arg>${fileName}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.519800" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-20T15:02:12.520795" level="INFO">${fileName} = menu.xls</msg>
+<var>${fileName}</var>
+<arg>${fileName}</arg>
+<arg>%20</arg>
+<arg>${SPACE}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.519800" elapsed="0.000995"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-20T15:02:12.520795" level="INFO">C:\Users\degarcia\Downloads\menu.xls</msg>
+<arg>${DownloadPath}${fileName}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.520795" elapsed="0.000996"/>
+</kw>
+<kw name="Wait Until Created" owner="OperatingSystem">
+<msg time="2024-02-20T15:02:12.522791" level="INFO" html="true">'&lt;a href="file://C:\Users\degarcia\Downloads\menu.xls"&gt;C:\Users\degarcia\Downloads\menu.xls&lt;/a&gt;' was created.</msg>
+<arg>${DownloadPath}${fileName}</arg>
+<doc>Waits until the given file or directory is created.</doc>
+<status status="PASS" start="2024-02-20T15:02:12.521791" elapsed="0.001000"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/download/jqueryui/menu/menu.xls</arg>
+<status status="PASS" start="2024-02-20T15:02:12.517808" elapsed="0.004983"/>
+</kw>
+<status status="PASS" start="2024-02-20T15:02:12.516769" elapsed="0.006022"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-20T14:26:18.052715" elapsed="2.162377"/>
+<status status="PASS" start="2024-02-20T15:02:12.524862" elapsed="2.259930"/>
 </kw>
-<status status="PASS" start="2024-02-20T14:26:18.052715" elapsed="2.163420"/>
+<status status="PASS" start="2024-02-20T15:02:12.523859" elapsed="2.260933"/>
 </kw>
-<doc>This test verifies the horizontal slider</doc>
-<tag>1015</tag>
+<doc>This test verifies the JQuery UI Menus</doc>
+<tag>1016</tag>
 <tag>Functional</tag>
-<tag>HorizontalSlider</tag>
-<status status="PASS" start="2024-02-20T14:26:11.382614" elapsed="8.834491"/>
+<tag>JQueryUIMenus</tag>
+<status status="PASS" start="2024-02-20T15:02:05.950728" elapsed="8.834064"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-20T14:26:10.168618" elapsed="10.091511"/>
+<status status="PASS" start="2024-02-20T15:02:04.668223" elapsed="10.153433"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1015</stat>
+<stat pass="1" fail="0" skip="0">1016</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
-<stat pass="1" fail="0" skip="0">HorizontalSlider</stat>
+<stat pass="1" fail="0" skip="0">JQueryUIMenus</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-20T15:02:05.327794" level="ERROR">Error in file 'C:\dev\robot-scripts\herokuapp\Resources\PO\JQueryUIMenus.robot' on line 4: Resource file '..\..\Data\Variables.txt' does not exist.</msg>
 </errors>
 </robot>

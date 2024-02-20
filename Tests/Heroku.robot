@@ -160,3 +160,12 @@ Horizontal Slider
     Common.Validate Page loaded             ${HorizontalSliderTitle}
     Herokuapp.Slide Horizontal Slider        ${SliderValue}
     Herokuapp.Validate Horizontal Slider      ${SliderValue}
+
+JQuery UI Menus
+    [Documentation]     This test verifies the JQuery UI Menus
+    [Tags]              1016    JQueryUIMenus   Functional
+    Common.Validate Page loaded             ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${JQueryUIMenus}
+    Common.Validate Page loaded             ${JQueryUIMenusTitle}
+    Herokuapp.Select JQuery UI Menus
+    Herokuapp.Validate Excel File

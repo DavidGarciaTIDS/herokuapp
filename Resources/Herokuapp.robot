@@ -16,6 +16,7 @@ Resource            ../Resources/PO/FileUpload.robot
 Resource            ../Resources/PO/FloatingMenu.robot
 Resource            ../Resources/PO/FormAuthentication.robot
 Resource            ../Resources/PO/HorizontalSlider.robot
+Resource            ../Resources/PO/JQueryUIMenus.robot
 
 *** Keywords ***
 
@@ -118,3 +119,9 @@ Slide Horizontal Slider
 Validate Horizontal Slider
     [Arguments]    ${Expected}
     HorizontalSlider.Validate Horizontal Sliders Value      ${Expected}
+
+Select JQuery UI Menus
+    JQueryUIMenus.Navigate path     @{JQueryPath}
+
+Validate Excel File
+    FileDownload.Validate Downloaded File    https://the-internet.herokuapp.com/download/jqueryui/menu/menu.xls

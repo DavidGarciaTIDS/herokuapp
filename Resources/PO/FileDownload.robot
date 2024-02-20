@@ -18,12 +18,13 @@ Download File
         #Mouse Down On Link    ${link}
         #mouse up    ${link}
         ${href}=    Get Element Attribute    ${link}    href
-        ${fileLink}=    Split String From Right    ${href}    /
-        Validate Downloaded File    ${fileLink}
+
+        Validate Downloaded File    ${href}
     END
 
 Validate Downloaded File
-        [Arguments]    ${fileLink}
+        [Arguments]    ${href}
+        ${fileLink}=    Split String From Right    ${href}    /
         ${fileName}=    Set Variable        ${fileLink}[-1]
         log    ${fileName}
         ${fileName}=    Replace String      ${fileName}    %20    ${SPACE}
