@@ -118,3 +118,10 @@ ${JQueryUIMenusTitle}=          JQuery UI Menus
 @{JQueryPath}=                  xpath=//*[@id="ui-id-3"]/a
 ...                             xpath=//*[@id="ui-id-4"]/a
 ...                             xpath=//*[@id="ui-id-7"]/a
+
+#JavaScriptAlerts
+${JavaScriptAlertsTitle}=       JavaScript Alerts
+${SimpleAlertButton}=                 xpath=//*[@id="content"]/div/ul/li[1]/button
+${ConfirmAlertButton}=                xpath=//*[@id="content"]/div/ul/li[2]/button
+${PromptAlertButton}=                 xpath=//*[@id="content"]/div/ul/li[3]/button
+${JSAlertText}=                 'This is a text'

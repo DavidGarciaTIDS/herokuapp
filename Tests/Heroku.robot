@@ -169,3 +169,11 @@ JQuery UI Menus
     Common.Validate Page loaded             ${JQueryUIMenusTitle}
     Herokuapp.Select JQuery UI Menus
     Herokuapp.Validate Excel File
+
+Javascript Alerts
+    [Documentation]     This test verifies the Javascript Alerts
+    [Tags]              1017    JavascriptAlerts   Functional
+    Common.Validate Page loaded             ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${JavascriptAlerts}
+    Common.Validate Page loaded             ${JavascriptAlertsTitle}
+    Herokuapp.Validate Javascript Alerts

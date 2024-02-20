@@ -17,6 +17,7 @@ Resource            ../Resources/PO/FloatingMenu.robot
 Resource            ../Resources/PO/FormAuthentication.robot
 Resource            ../Resources/PO/HorizontalSlider.robot
 Resource            ../Resources/PO/JQueryUIMenus.robot
+Resource            ../Resources/PO/JavascriptAlerts.robot
 
 *** Keywords ***
 
@@ -125,3 +126,8 @@ Select JQuery UI Menus
 
 Validate Excel File
     FileDownload.Validate Downloaded File    https://the-internet.herokuapp.com/download/jqueryui/menu/menu.xls
+
+Validate Javascript Alerts
+    JavascriptAlerts.Simple Alert
+    JavascriptAlerts.Confirm Alert      DISMISS
+    JavascriptAlerts.Prompt Alert       ${JSAlertText}    ACCEPT
