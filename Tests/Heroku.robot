@@ -188,3 +188,12 @@ Key Press
     Herokuapp.Validate Key Presses          SPACE
     Herokuapp.Press Key                     ESCAPE
     Herokuapp.Validate Key Presses          ESCAPE
+
+Multiple Windows
+    [Documentation]     This test verifies the Multiple Windows
+    [Tags]              1019    MultipleWindows   Functional
+    Common.Validate Page loaded             ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${MultipleWindows}
+    Common.Validate Page loaded             ${MultipleWindowsTitle}
+    Herokuapp.Open New Window
+    Common.Validate Page loaded             ${NewWindowTitle}

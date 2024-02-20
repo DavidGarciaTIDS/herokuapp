@@ -19,6 +19,7 @@ Resource            ../Resources/PO/HorizontalSlider.robot
 Resource            ../Resources/PO/JQueryUIMenus.robot
 Resource            ../Resources/PO/JavascriptAlerts.robot
 Resource            ../Resources/PO/PressKeys.robot
+Resource            ../Resources/PO/MultipleWindows.robot
 
 *** Keywords ***
 
@@ -140,3 +141,6 @@ Press Key
 Validate Key Presses
     [Arguments]    ${KeyPressed}
     PressKeys.Validate Key Pressed    ${KeyOutput}    ${KeyPressed}
+
+Open New Window
+    MultipleWindows.Click on Link For New Window

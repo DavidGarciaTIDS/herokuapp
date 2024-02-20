@@ -130,3 +130,8 @@ ${JSAlertText}=                 This is a text
 ${KeyPressesTitle}=             Key Presses
 ${KeyPressesInput}=             xpath=//*[@id="target"]
 ${KeyOutput}=                   xpath=//*[@id="result"]
+
+#MultipleWindows
+${MultipleWindowsTitle}=        Opening a new window
+${NewWindowLink}=               xpath=//*[@id="content"]/div/a
+${NewWindowTitle}=              New Window
