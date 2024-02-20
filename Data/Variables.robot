@@ -124,4 +124,9 @@ ${JavaScriptAlertsTitle}=       JavaScript Alerts
 ${SimpleAlertButton}=                 xpath=//*[@id="content"]/div/ul/li[1]/button
 ${ConfirmAlertButton}=                xpath=//*[@id="content"]/div/ul/li[2]/button
 ${PromptAlertButton}=                 xpath=//*[@id="content"]/div/ul/li[3]/button
-${JSAlertText}=                 'This is a text'
+${JSAlertText}=                 This is a text
+
+#KeyPresses
+${KeyPressesTitle}=             Key Presses
+${KeyPressesInput}=             xpath=//*[@id="target"]
+${KeyOutput}=                   xpath=//*[@id="result"]

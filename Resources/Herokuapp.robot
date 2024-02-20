@@ -18,6 +18,7 @@ Resource            ../Resources/PO/FormAuthentication.robot
 Resource            ../Resources/PO/HorizontalSlider.robot
 Resource            ../Resources/PO/JQueryUIMenus.robot
 Resource            ../Resources/PO/JavascriptAlerts.robot
+Resource            ../Resources/PO/PressKeys.robot
 
 *** Keywords ***
 
@@ -131,3 +132,11 @@ Validate Javascript Alerts
     JavascriptAlerts.Simple Alert
     JavascriptAlerts.Confirm Alert      DISMISS
     JavascriptAlerts.Prompt Alert       ${JSAlertText}    ACCEPT
+
+Press Key
+    [Arguments]    ${KeyPress}
+    PressKeys.Press Key on Element    ${KeyPress}   ${KeyPressesInput}
+
+Validate Key Presses
+    [Arguments]    ${KeyPressed}
+    PressKeys.Validate Key Pressed    ${KeyOutput}    ${KeyPressed}

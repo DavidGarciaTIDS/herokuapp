@@ -177,3 +177,14 @@ Javascript Alerts
     Herokuapp.Select Test Link              ${JavascriptAlerts}
     Common.Validate Page loaded             ${JavascriptAlertsTitle}
     Herokuapp.Validate Javascript Alerts
+
+Key Press
+    [Documentation]     This test verifies the Key Presses
+    [Tags]              1018    KeyPress   Functional
+    Common.Validate Page loaded             ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${KeyPresses}
+    Common.Validate Page loaded             ${KeyPressesTitle}
+    Herokuapp.Press Key                     SPACE
+    Herokuapp.Validate Key Presses          SPACE
+    Herokuapp.Press Key                     ESCAPE
+    Herokuapp.Validate Key Presses          ESCAPE

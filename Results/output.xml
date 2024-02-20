@@ -1,163 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T15:25:53.396901" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T16:00:15.080030" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Javascript Alerts" line="173">
+<test id="s1-t1" name="Key Press" line="181">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:25:54.751659" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-20T16:00:16.346500" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-20T15:25:54.751659" elapsed="1.564015"/>
+<status status="PASS" start="2024-02-20T16:00:16.345504" elapsed="1.626108"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-20T15:25:56.315674" elapsed="0.117056"/>
+<status status="PASS" start="2024-02-20T16:00:17.971612" elapsed="0.127980"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:25:56.432730" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-20T16:00:18.100586" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-20T15:25:56.432730" elapsed="1.186189"/>
+<status status="PASS" start="2024-02-20T16:00:18.099592" elapsed="1.096911"/>
 </kw>
-<status status="PASS" start="2024-02-20T15:25:54.751659" elapsed="2.867260"/>
+<status status="PASS" start="2024-02-20T16:00:16.345504" elapsed="2.850999"/>
 </kw>
 <kw name="Validate Page loaded" owner="Common">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${expected}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T15:25:57.620912" elapsed="0.012819"/>
+<status status="PASS" start="2024-02-20T16:00:19.198496" elapsed="0.011973"/>
 </kw>
 <arg>${LandingPageTitle}</arg>
-<status status="PASS" start="2024-02-20T15:25:57.619935" elapsed="0.013796"/>
+<status status="PASS" start="2024-02-20T16:00:19.197540" elapsed="0.012929"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:25:57.635730" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[29]/a'.</msg>
+<msg time="2024-02-20T16:00:19.212550" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[31]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T15:25:57.634691" elapsed="0.168491"/>
+<status status="PASS" start="2024-02-20T16:00:19.212550" elapsed="0.189095"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-20T15:25:57.634691" elapsed="0.168491"/>
+<status status="PASS" start="2024-02-20T16:00:19.212485" elapsed="0.189160"/>
 </kw>
-<arg>${JavascriptAlerts}</arg>
-<status status="PASS" start="2024-02-20T15:25:57.634691" elapsed="0.168491"/>
+<arg>${KeyPresses}</arg>
+<status status="PASS" start="2024-02-20T16:00:19.211464" elapsed="0.190181"/>
 </kw>
 <kw name="Validate Page loaded" owner="Common">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${expected}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T15:25:57.803182" elapsed="0.009973"/>
+<status status="PASS" start="2024-02-20T16:00:19.401645" elapsed="0.012328"/>
 </kw>
-<arg>${JavascriptAlertsTitle}</arg>
-<status status="PASS" start="2024-02-20T15:25:57.803182" elapsed="0.009973"/>
+<arg>${KeyPressesTitle}</arg>
+<status status="PASS" start="2024-02-20T16:00:19.401645" elapsed="0.012328"/>
 </kw>
-<kw name="Validate Javascript Alerts" owner="Herokuapp">
-<kw name="Simple Alert" owner="JavascriptAlerts">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:25:57.814151" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/ul/li[1]/button'.</msg>
-<arg>${SimpleAlertButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T15:25:57.814151" elapsed="0.042190"/>
+<kw name="Press Key" owner="Herokuapp">
+<kw name="Press Key on Element" owner="PressKeys">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-20T16:00:19.414997" level="INFO">Sending key(s) ('SPACE',) to xpath=//*[@id="target"] element.</msg>
+<msg time="2024-02-20T16:00:19.701505" level="INFO">Pressing special key SPACE to element.</msg>
+<msg time="2024-02-20T16:00:19.701505" level="INFO">Releasing special key SPACE.</msg>
+<arg>${element}</arg>
+<arg>${key}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-20T16:00:19.414997" elapsed="0.292489"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T15:25:58.856443" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T15:25:57.856341" elapsed="1.000102"/>
+<arg>${KeyPress}</arg>
+<arg>${KeyPressesInput}</arg>
+<status status="PASS" start="2024-02-20T16:00:19.413973" elapsed="0.294509"/>
 </kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:25:58.856443" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-02-20T15:25:58.856443" elapsed="0.003342"/>
+<arg>SPACE</arg>
+<status status="PASS" start="2024-02-20T16:00:19.413973" elapsed="0.294509"/>
 </kw>
-<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
-<doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2024-02-20T15:25:58.859785" elapsed="5.044113"/>
+<kw name="Validate Key Presses" owner="Herokuapp">
+<kw name="Validate Key Pressed" owner="PressKeys">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T16:00:19.729517" level="INFO">${text} = You entered: SPACE</msg>
+<var>${text}</var>
+<arg>${Output}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T16:00:19.709496" elapsed="0.020021"/>
 </kw>
-<status status="PASS" start="2024-02-20T15:25:57.814151" elapsed="6.089747"/>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>You entered: ${key}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-20T16:00:19.729517" elapsed="0.000000"/>
 </kw>
-<kw name="Confirm Alert" owner="JavascriptAlerts">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:26:03.904932" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/ul/li[2]/button'.</msg>
-<arg>${ConfirmAlertButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T15:26:03.904932" elapsed="0.038636"/>
+<arg>Should Be Equal</arg>
+<arg>${text}</arg>
+<arg>You entered: ${key}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-02-20T16:00:19.729517" elapsed="0.001000"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T15:26:04.944048" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T15:26:03.943568" elapsed="1.000480"/>
+<arg>${KeyOutput}</arg>
+<arg>${KeyPressed}</arg>
+<status status="PASS" start="2024-02-20T16:00:19.708482" elapsed="0.022035"/>
 </kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:26:04.945057" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>${Option}</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-02-20T15:26:04.945057" elapsed="0.013549"/>
+<arg>SPACE</arg>
+<status status="PASS" start="2024-02-20T16:00:19.708482" elapsed="0.022035"/>
 </kw>
-<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
-<doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2024-02-20T15:26:04.959559" elapsed="5.041856"/>
+<kw name="Press Key" owner="Herokuapp">
+<kw name="Press Key on Element" owner="PressKeys">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-20T16:00:19.731985" level="INFO">Sending key(s) ('ESCAPE',) to xpath=//*[@id="target"] element.</msg>
+<msg time="2024-02-20T16:00:20.021256" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2024-02-20T16:00:20.021256" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>${element}</arg>
+<arg>${key}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-20T16:00:19.730986" elapsed="0.306455"/>
 </kw>
-<arg>DISMISS</arg>
-<status status="PASS" start="2024-02-20T15:26:03.903898" elapsed="6.097517"/>
+<arg>${KeyPress}</arg>
+<arg>${KeyPressesInput}</arg>
+<status status="PASS" start="2024-02-20T16:00:19.730986" elapsed="0.306455"/>
 </kw>
-<kw name="Prompt Alert" owner="JavascriptAlerts">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T15:26:10.004361" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/ul/li[3]/button'.</msg>
-<arg>${PromptAlertButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T15:26:10.004361" elapsed="0.038424"/>
+<arg>ESCAPE</arg>
+<status status="PASS" start="2024-02-20T16:00:19.730986" elapsed="0.306455"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T15:26:11.043176" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T15:26:10.042785" elapsed="1.000391"/>
+<kw name="Validate Key Presses" owner="Herokuapp">
+<kw name="Validate Key Pressed" owner="PressKeys">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T16:00:20.055750" level="INFO">${text} = You entered: ESCAPE</msg>
+<var>${text}</var>
+<arg>${Output}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T16:00:20.040629" elapsed="0.015121"/>
 </kw>
-<kw name="Input Text Into Alert" owner="SeleniumLibrary">
-<arg>${AlertText}</arg>
-<arg>${Option}</arg>
-<doc>Types the given ``text`` into an input field in an alert.</doc>
-<status status="PASS" start="2024-02-20T15:26:11.043176" elapsed="0.008369"/>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>You entered: ${key}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-20T16:00:20.055750" elapsed="0.001029"/>
 </kw>
-<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
-<doc>Verifies that no alert is present.</doc>
-<status status="PASS" start="2024-02-20T15:26:11.051545" elapsed="5.055269"/>
+<arg>Should Be Equal</arg>
+<arg>${text}</arg>
+<arg>You entered: ${key}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-02-20T16:00:20.055750" elapsed="0.001029"/>
 </kw>
-<arg>${JSAlertText}</arg>
-<arg>ACCEPT</arg>
-<status status="PASS" start="2024-02-20T15:26:10.002367" elapsed="6.104447"/>
+<arg>${KeyOutput}</arg>
+<arg>${KeyPressed}</arg>
+<status status="PASS" start="2024-02-20T16:00:20.039638" elapsed="0.017141"/>
 </kw>
-<status status="PASS" start="2024-02-20T15:25:57.814151" elapsed="18.292663"/>
+<arg>ESCAPE</arg>
+<status status="PASS" start="2024-02-20T16:00:20.038593" elapsed="0.018186"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-20T15:26:16.108817" elapsed="2.205957"/>
+<status status="PASS" start="2024-02-20T16:00:20.056779" elapsed="2.193300"/>
 </kw>
-<status status="PASS" start="2024-02-20T15:26:16.107821" elapsed="2.206953"/>
+<status status="PASS" start="2024-02-20T16:00:20.056779" elapsed="2.194346"/>
 </kw>
-<doc>This test verifies the Javascript Alerts</doc>
-<tag>1017</tag>
+<doc>This test verifies the Key Presses</doc>
+<tag>1018</tag>
 <tag>Functional</tag>
-<tag>JavascriptAlerts</tag>
-<status status="PASS" start="2024-02-20T15:25:54.748636" elapsed="23.566138"/>
+<tag>KeyPress</tag>
+<status status="PASS" start="2024-02-20T16:00:16.342509" elapsed="5.910492"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-20T15:25:53.398925" elapsed="24.955747"/>
+<status status="PASS" start="2024-02-20T16:00:15.082041" elapsed="7.213916"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1017</stat>
+<stat pass="1" fail="0" skip="0">1018</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
-<stat pass="1" fail="0" skip="0">JavascriptAlerts</stat>
+<stat pass="1" fail="0" skip="0">KeyPress</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Heroku">Heroku</stat>
