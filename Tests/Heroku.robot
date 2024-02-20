@@ -134,3 +134,18 @@ Floating Menu
     Herokuapp.Verify Floating Menu Page
     Herokuapp.Scroll To Bottom
     Herokuapp.Validate Floating Menu
+
+Form Authentication
+    [Documentation]     This test verifies the form authentication
+    [Tags]              1014    FormAuthentication   Functional
+    Herokuapp.Verify Landing Page
+    Herokuapp.Select Test Link              ${FormAuthentication}
+    Herokuapp.Verify Form Authentication Page
+    Herokuapp.Login Form Authentication      ${FAUsername}  ${FAPassword}
+    Herokuapp.Validate Form Authentication      True        True
+    Herokuapp.Verify Form Authentication Page
+    Herokuapp.Login Form Authentication      ${BADFAUsername}  ${FAPassword}
+    Herokuapp.Validate Form Authentication      False        True
+    Herokuapp.Verify Form Authentication Page
+    Herokuapp.Login Form Authentication      ${FAUsername}  ${BADFAPassword}
+    Herokuapp.Validate Form Authentication      True        False

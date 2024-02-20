@@ -13,6 +13,7 @@ Resource            ../Resources/PO/ExitIntent.robot
 Resource            ../Resources/PO/FileDownload.robot
 Resource            ../Resources/PO/FileUpload.robot
 Resource            ../Resources/PO/FloatingMenu.robot
+Resource            ../Resources/PO/FormAuthentication.robot
 
 *** Keywords ***
 
@@ -135,3 +136,14 @@ Scroll To Bottom
 
 Validate Floating Menu
     FloatingMenu.Validate Floating Menu
+
+Verify Form Authentication Page
+    FormAuthentication.Form Authentication Page loaded
+
+Login Form Authentication
+    [Arguments]    ${username}    ${password}
+    FormAuthentication.Login to the Form Authentication    ${username}    ${password}
+
+Validate Form Authentication
+    [Arguments]    ${FAExpected1}    ${FAExpected2}
+    FormAuthentication.Validate Form Authentication     ${FAExpected1}    ${FAExpected2}

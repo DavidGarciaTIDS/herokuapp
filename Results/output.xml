@@ -1,128 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T11:18:00.807163" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-20T13:07:14.652575" rpa="false" schemaversion="5">
 <suite id="s1" name="Heroku" source="C:\dev\robot-scripts\herokuapp\Tests\Heroku.robot">
-<test id="s1-t1" name="Floating Menu" line="129">
+<test id="s1-t1" name="Form Authentication" line="138">
 <kw name="Start Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-20T11:18:02.141960" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-02-20T13:07:15.905488" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-20T11:18:02.141960" elapsed="2.369558"/>
+<status status="PASS" start="2024-02-20T13:07:15.905488" elapsed="1.538449"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-20T11:18:04.512516" elapsed="0.113484"/>
+<status status="PASS" start="2024-02-20T13:07:17.443937" elapsed="0.115802"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-20T11:18:04.626000" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
+<msg time="2024-02-20T13:07:17.560738" level="INFO">Opening url 'https://the-internet.herokuapp.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-20T11:18:04.626000" elapsed="1.171878"/>
+<status status="PASS" start="2024-02-20T13:07:17.560738" elapsed="1.033552"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:02.141960" elapsed="3.655918"/>
+<status status="PASS" start="2024-02-20T13:07:15.905488" elapsed="2.688802"/>
 </kw>
 <kw name="Verify Landing Page" owner="Herokuapp">
 <kw name="Landing Page loaded" owner="Landing">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${LandingPageTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T11:18:05.799875" elapsed="0.011975"/>
+<status status="PASS" start="2024-02-20T13:07:18.595288" elapsed="0.013976"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:05.798877" elapsed="0.012973"/>
+<status status="PASS" start="2024-02-20T13:07:18.595288" elapsed="0.013976"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:05.798877" elapsed="0.012973"/>
+<status status="PASS" start="2024-02-20T13:07:18.594290" elapsed="0.014974"/>
 </kw>
 <kw name="Select Test Link" owner="Herokuapp">
 <kw name="Select Test Link" owner="Landing">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T11:18:05.813845" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[19]/a'.</msg>
+<msg time="2024-02-20T13:07:18.610262" level="INFO">Clicking element 'xpath=//*[@id="content"]/ul/li[21]/a'.</msg>
 <arg>${TestLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
+<status status="PASS" start="2024-02-20T13:07:18.610262" elapsed="0.326476"/>
 </kw>
 <arg>${TestLink}</arg>
-<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
+<status status="PASS" start="2024-02-20T13:07:18.610262" elapsed="0.326476"/>
 </kw>
-<arg>${FloatingMenu}</arg>
-<status status="PASS" start="2024-02-20T11:18:05.812848" elapsed="0.217792"/>
+<arg>${FormAuthentication}</arg>
+<status status="PASS" start="2024-02-20T13:07:18.609264" elapsed="0.327474"/>
 </kw>
-<kw name="Verify Floating Menu Page" owner="Herokuapp">
-<kw name="Floating Menu Page loaded" owner="FloatingMenu">
+<kw name="Verify Form Authentication Page" owner="Herokuapp">
+<kw name="Form Authentication Page loaded" owner="FormAuthentication">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${FloatingMenuTitle}</arg>
+<arg>${FormAuthenticationTitle}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
+<status status="PASS" start="2024-02-20T13:07:18.937736" elapsed="0.011012"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
+<status status="PASS" start="2024-02-20T13:07:18.937736" elapsed="0.011012"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:06.031665" elapsed="0.011166"/>
+<status status="PASS" start="2024-02-20T13:07:18.937736" elapsed="0.011012"/>
 </kw>
-<kw name="Scroll To Bottom" owner="Herokuapp">
-<kw name="Scroll To Bottom" owner="FloatingMenu">
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${FloatingMenuFooter}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="0.286943"/>
+<kw name="Login Form Authentication" owner="Herokuapp">
+<kw name="Login to the Form Authentication" owner="FormAuthentication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:18.949747" level="INFO">Typing text 'tomsmith' into text field 'xpath=//*[@id="username"]'.</msg>
+<arg>${FormAuthenticationUsername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:18.949747" elapsed="0.078835"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:19.028582" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<msg time="2024-02-20T13:07:19.055535" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${FormAuthenticationPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:19.028582" elapsed="0.067883"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:19.096465" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
+<arg>${FormAuthenticationButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:19.096465" elapsed="0.245582"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T11:18:08.331646" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-20T13:07:20.342328" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T13:07:19.342047" elapsed="1.000281"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-20T13:07:18.949747" elapsed="1.392581"/>
+</kw>
+<arg>${FAUsername}</arg>
+<arg>${FAPassword}</arg>
+<status status="PASS" start="2024-02-20T13:07:18.948748" elapsed="1.393580"/>
+</kw>
+<kw name="Validate Form Authentication" owner="Herokuapp">
+<kw name="Validate Form Authentication" owner="FormAuthentication">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T13:07:20.343326" elapsed="0.010982"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T13:07:22.354679" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T11:18:06.330773" elapsed="2.000873"/>
+<status status="PASS" start="2024-02-20T13:07:20.354308" elapsed="2.000371"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="2.287816"/>
-</kw>
-<status status="PASS" start="2024-02-20T11:18:06.043830" elapsed="2.288825"/>
-</kw>
-<kw name="Validate Floating Menu" owner="Herokuapp">
-<kw name="Validate Floating Menu" owner="FloatingMenu">
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-02-20T11:18:08.349057" level="INFO">${menu} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2c2f5cbd410889646491bdfb6c456239", element="2E0AF78289FB89374E012A0C2AE54997_element_21")&gt;</msg>
-<var>${menu}</var>
-<arg>${FloatingMenuHeader}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-02-20T11:18:08.336472" elapsed="0.012585"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-20T11:18:08.349057" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2c2f5cbd410889646491bdfb6c456239", element="2E0AF78289FB89374E012A0C2AE54997_element_21")&gt;'.</msg>
-<arg>${menu}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-20T11:18:08.349057" elapsed="0.029672"/>
+<if>
+<branch type="IF" condition="${ExpectedUsername} and ${ExpectedPassword}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:22.380689" level="INFO">Element 'xpath=//*[@id="flash"]' contains text 'You logged into a secure area!'.</msg>
+<arg>${FormAuthenticationAlert}</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-20T13:07:22.356684" elapsed="0.024005"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-20T11:18:13.379200" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2024-02-20T13:07:24.381162" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-20T11:18:08.378729" elapsed="5.000471"/>
+<status status="PASS" start="2024-02-20T13:07:22.380689" elapsed="2.000473"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:08.335471" elapsed="5.043729"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:24.383205" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/a'.</msg>
+<arg>${FALogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:24.382208" elapsed="0.276848"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:08.334477" elapsed="5.045782"/>
+<status status="PASS" start="2024-02-20T13:07:22.354679" elapsed="2.304377"/>
+</branch>
+<branch type="ELSE IF" condition="'!${ExpectedPassword}' and ${ExpectedUsername}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your password is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:24.659056" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:24.659056" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:24.659056" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:24.659056" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-02-20T13:07:22.354679" elapsed="2.304377"/>
+</if>
+<arg>${FAExpected1}</arg>
+<arg>${FAExpected2}</arg>
+<status status="PASS" start="2024-02-20T13:07:20.343326" elapsed="4.315730"/>
+</kw>
+<arg>True</arg>
+<arg>True</arg>
+<status status="PASS" start="2024-02-20T13:07:20.342328" elapsed="4.317755"/>
+</kw>
+<kw name="Verify Form Authentication Page" owner="Herokuapp">
+<kw name="Form Authentication Page loaded" owner="FormAuthentication">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${FormAuthenticationTitle}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T13:07:24.660083" elapsed="0.006953"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:24.660083" elapsed="0.006953"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:24.660083" elapsed="0.006953"/>
+</kw>
+<kw name="Login Form Authentication" owner="Herokuapp">
+<kw name="Login to the Form Authentication" owner="FormAuthentication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:24.669065" level="INFO">Typing text 'tomsmith1' into text field 'xpath=//*[@id="username"]'.</msg>
+<arg>${FormAuthenticationUsername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:24.669065" elapsed="0.058922"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:24.728985" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<msg time="2024-02-20T13:07:24.753027" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${FormAuthenticationPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:24.728985" elapsed="0.064001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:24.792986" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
+<arg>${FormAuthenticationButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:24.792986" elapsed="0.244998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T13:07:26.039333" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T13:07:25.038959" elapsed="1.000374"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-20T13:07:24.668036" elapsed="1.371297"/>
+</kw>
+<arg>${BADFAUsername}</arg>
+<arg>${FAPassword}</arg>
+<status status="PASS" start="2024-02-20T13:07:24.668036" elapsed="1.371297"/>
+</kw>
+<kw name="Validate Form Authentication" owner="Herokuapp">
+<kw name="Validate Form Authentication" owner="FormAuthentication">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T13:07:26.041367" elapsed="0.010972"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T13:07:28.052989" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T13:07:26.052339" elapsed="2.000650"/>
+</kw>
+<if>
+<branch type="IF" condition="${ExpectedUsername} and ${ExpectedPassword}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:28.055031" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:28.055031" elapsed="0.001017"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${FALogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:28.056048" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:28.052989" elapsed="0.004039"/>
+</branch>
+<branch type="ELSE IF" condition="'!${ExpectedPassword}' and ${ExpectedUsername}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your password is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:28.058033" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:28.057028" elapsed="0.001005"/>
+</branch>
+<branch type="ELSE">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:28.094924" level="INFO">Element 'xpath=//*[@id="flash"]' contains text 'Your username is invalid!'.</msg>
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.058994" elapsed="0.035930"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:28.058033" elapsed="0.036891"/>
+</branch>
+<status status="PASS" start="2024-02-20T13:07:28.052989" elapsed="0.041935"/>
+</if>
+<arg>${FAExpected1}</arg>
+<arg>${FAExpected2}</arg>
+<status status="PASS" start="2024-02-20T13:07:26.040337" elapsed="2.054587"/>
+</kw>
+<arg>False</arg>
+<arg>True</arg>
+<status status="PASS" start="2024-02-20T13:07:26.040337" elapsed="2.055620"/>
+</kw>
+<kw name="Verify Form Authentication Page" owner="Herokuapp">
+<kw name="Form Authentication Page loaded" owner="FormAuthentication">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${FormAuthenticationTitle}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.096959" elapsed="0.008753"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:28.096959" elapsed="0.008753"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:28.096959" elapsed="0.008753"/>
+</kw>
+<kw name="Login Form Authentication" owner="Herokuapp">
+<kw name="Login to the Form Authentication" owner="FormAuthentication">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:28.107708" level="INFO">Typing text 'tomsmith' into text field 'xpath=//*[@id="username"]'.</msg>
+<arg>${FormAuthenticationUsername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.107708" elapsed="0.066891"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:28.175604" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<msg time="2024-02-20T13:07:28.201548" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${FormAuthenticationPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.175604" elapsed="0.070868"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:28.246472" level="INFO">Clicking button 'xpath=//*[@id="login"]/button'.</msg>
+<arg>${FormAuthenticationButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.246472" elapsed="0.252634"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T13:07:29.500496" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T13:07:28.499106" elapsed="1.001390"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-20T13:07:28.106742" elapsed="1.393754"/>
+</kw>
+<arg>${FAUsername}</arg>
+<arg>${BADFAPassword}</arg>
+<status status="PASS" start="2024-02-20T13:07:28.106742" elapsed="1.393754"/>
+</kw>
+<kw name="Validate Form Authentication" owner="Herokuapp">
+<kw name="Validate Form Authentication" owner="FormAuthentication">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T13:07:29.504544" elapsed="0.009677"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-20T13:07:31.514610" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-20T13:07:29.514221" elapsed="2.000389"/>
+</kw>
+<if>
+<branch type="IF" condition="${ExpectedUsername} and ${ExpectedPassword}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:31.516652" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:31.516652" elapsed="0.000998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${FALogout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:31.517650" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:31.514610" elapsed="0.004039"/>
+</branch>
+<branch type="ELSE IF" condition="'!${ExpectedPassword}' and ${ExpectedUsername}">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-20T13:07:31.535116" level="INFO">Element 'xpath=//*[@id="flash"]' contains text 'Your password is invalid!'.</msg>
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your password is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-20T13:07:31.519647" elapsed="0.015469"/>
+</kw>
+<status status="PASS" start="2024-02-20T13:07:31.518649" elapsed="0.016467"/>
+</branch>
+<branch type="ELSE">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${FormAuthenticationAlert}</arg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2024-02-20T13:07:31.535116" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-20T13:07:31.535116" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-02-20T13:07:31.514610" elapsed="0.020506"/>
+</if>
+<arg>${FAExpected1}</arg>
+<arg>${FAExpected2}</arg>
+<status status="PASS" start="2024-02-20T13:07:29.503532" elapsed="2.031584"/>
+</kw>
+<arg>True</arg>
+<arg>False</arg>
+<status status="PASS" start="2024-02-20T13:07:29.501518" elapsed="2.033598"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-20T11:18:13.383245" elapsed="2.200006"/>
+<status status="PASS" start="2024-02-20T13:07:31.536119" elapsed="2.155849"/>
 </kw>
-<status status="PASS" start="2024-02-20T11:18:13.382248" elapsed="2.201003"/>
+<status status="PASS" start="2024-02-20T13:07:31.536119" elapsed="2.156855"/>
 </kw>
-<doc>This test verifies the floating menu</doc>
-<tag>1013</tag>
-<tag>FloatingMenu</tag>
+<doc>This test verifies the form authentication</doc>
+<tag>1014</tag>
+<tag>FormAuthentication</tag>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-20T11:18:02.138936" elapsed="13.444315"/>
+<status status="PASS" start="2024-02-20T13:07:15.902493" elapsed="17.791430"/>
 </test>
 <doc>This is a test suite for the Herokuapp</doc>
-<status status="PASS" start="2024-02-20T11:18:00.809130" elapsed="14.814661"/>
+<status status="PASS" start="2024-02-20T13:07:14.654572" elapsed="19.082457"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">1013</stat>
-<stat pass="1" fail="0" skip="0">FloatingMenu</stat>
+<stat pass="1" fail="0" skip="0">1014</stat>
+<stat pass="1" fail="0" skip="0">FormAuthentication</stat>
 <stat pass="1" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
@@ -130,18 +409,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-02-20T11:18:01.468784" level="ERROR">Error in file 'C:\dev\robot-scripts\herokuapp\Resources\PO\FloatingMenu.robot' on line 6: Importing library '../../Libraries/InViewPort.js' failed: ModuleNotFoundError: No module named '.'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32\lib
-  C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Pythonwin</msg>
 </errors>
 </robot>

@@ -1,10 +1,10 @@
-{"level":30,"time":"2024-02-20T18:18:01.914Z","pid":14784,"hostname":"PCPSE0314","msg":"Listening on 55948"}
-(node:14784) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-02-20T20:07:15.747Z","pid":26400,"hostname":"PCPSE0314","msg":"Listening on 60333"}
+(node:26400) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-02-20T18:18:02.137Z","pid":14784,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:02.137Z","pid":14784,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:02.140Z","pid":14784,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:02.140Z","pid":14784,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:15.901Z","pid":26400,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:15.901Z","pid":26400,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:15.903Z","pid":26400,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:15.904Z","pid":26400,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -18,8 +18,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-02-20T18:18:15.613Z","pid":14784,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:15.613Z","pid":14784,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:33.717Z","pid":26400,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:33.717Z","pid":26400,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -33,7 +33,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-02-20T18:18:15.646Z","pid":14784,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:15.646Z","pid":14784,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-20T18:18:15.693Z","pid":14784,"hostname":"PCPSE0314","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-02-20T18:18:15.693Z","pid":14784,"hostname":"PCPSE0314","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-20T20:07:33.750Z","pid":26400,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:33.750Z","pid":26400,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-20T20:07:33.798Z","pid":26400,"hostname":"PCPSE0314","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-20T20:07:33.798Z","pid":26400,"hostname":"PCPSE0314","msg":"End of node method closeAllBrowsers"}
