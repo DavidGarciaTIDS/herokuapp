@@ -15,54 +15,56 @@ Test Teardown    End Web Test
 Add Remove Elements Page
     [Documentation]     This test Adds a new item
     [Tags]              1001    AddRemove  Functional
-    Herokuapp.Verify Landing Page
-    Herokuapp.Select Test Link  ${AddRemoveElements}
-    Herokuapp.Verify Add Remove Elements Page
-    Herokuapp.Add Elements  ${NumberOfElements}
-    Herokuapp.Count Elements Added  ${NumberOfElements}
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${AddRemoveElements}
+    Common.Validate Page loaded             ${AddRemovePage}
+    Herokuapp.Add Elements                  ${NumberOfElements}
+    Herokuapp.Count Elements Added          ${NumberOfElements}
     Herokuapp.Delete Elements
     Herokuapp.Count Elements Added  0
 
 Broken Images
     [Documentation]     This test verifies the broken images
     [Tags]              1002    BrokenImages   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link  ${BrokenImages}
-    Herokuapp.Verify Broken Images Page
+    Common.Validate Page loaded             ${BrokenImagesTitle}
     Herokuapp.Validate Broken Images
     Herokuapp.Validate Functional Images
 
 Basic Good Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003a   BasicAuth    Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link  ${BasicAuth}
+    Common.Validate Page loaded             ${BasicAuthTitle}
     Herokuapp.Basic Auth  ${BAUsername}  ${BAPassword}  200
 
 Basic Bad Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003b   BasicAuth    Functional
-    Herokuapp.Verify Landing Page
-    Herokuapp.Select Test Link  ${BasicAuth}
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${BasicAuth}
+    Common.Validate Page loaded             ${BasicAuthTitle}
     Herokuapp.Basic Auth  ${BAUsernameBAD}  ${BAPasswordBAD}    401
 
 Checkboxes Page
     [Documentation]     This test verifies the checkboxes
     [Tags]              1004    Checkboxes   Functional
-    Herokuapp.Verify Landing Page
-    Herokuapp.Select Test Link      ${Checkboxes}
-    Herokuapp.Verify Checkboxes Page
-    Herokuapp.Tick Checkboxes       1
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${Checkboxes}
+    Common.Validate Page loaded             ${CheckboxesTitle}
+    Herokuapp.Tick Checkboxes               1
     Herokuapp.Validate Checkboxes Are Tick  1
-    Herokuapp.Tick Checkboxes       2
+    Herokuapp.Tick Checkboxes               2
     Herokuapp.Validate Checkboxes Are Tick  2
 
 Context Menu Page
     [Documentation]     This test verifies the context menu
     [Tags]              1005    ContextMenu   Functional
-    Herokuapp.Verify Landing Page
-    Herokuapp.Select Test Link      ${ContextMenu}
-    Herokuapp.Verify Context Menu Page
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${ContextMenu}
+    Common.Validate Page loaded             ${ContextMenuTitle}
     Herokuapp.Right Click Context Menu
     Herokuapp.Validate Context Menu Alert
     Herokuapp.Validate Context Menu Alert Dismiss
@@ -70,82 +72,91 @@ Context Menu Page
 Dissaapearing Elements Page
     [Documentation]     This test verifies the disappearing elements
     [Tags]              1006    DisappearingElements   Functional
-    Herokuapp.Verify Landing Page
-    Herokuapp.Select Test Link      ${DisappearingElements}
-    Herokuapp.Verify Disappearing Elements Page
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${DisappearingElements}
+    Common.Validate Page loaded             ${DisappearingElementsTitle}
     Herokuapp.Validate Gallery Button Exists
     Herokuapp.Validate Gallery Button Does Not Exists
 
 Drag and Drop
     [Documentation]     This test verifies the drag and drop
     [Tags]              1007    DragAndDrop   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${DragAndDrop}
-    Herokuapp.Verify Drag And Drop Page
+    Common.Validate Page loaded             ${DragAndDropTitle}
     Herokuapp.Drag And Drop Then Verify     ${DragAndDropA}  ${DragAndDropB}
     Herokuapp.Drag And Drop Then Verify     ${DragAndDropB}  ${DragAndDropA}
 
 Dynamic Content
     [Documentation]     This test verifies the dynamic content
     [Tags]              1008    DynamicContent   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${DynamicContent}
-    Herokuapp.Verify Dynamic Content Page
+    Common.Validate Page loaded             ${DynamicContentTitle}
     Herokuapp.Validate Dynamic Content
 
 Dynamic Controls
     [Documentation]     This test verifies the dynamic controls
     [Tags]              1009    DynamicControls   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${DynamicControls}
-    Herokuapp.Verify Dynamic Controls Page
+    Common.Validate Page loaded             ${DynamicControlsTitle}
     Herokuapp.Remove Checkbox
     Herokuapp.Enable Input
 
 Exit Intent
     [Documentation]     This test verifies the exit intent
     [Tags]              1010    ExitIntent   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${ExitIntent}
-    Herokuapp.Verify Exit Intent Page
+    Common.Validate Page loaded             ${ExitIntentTitle}
     Herokuapp.Validate Exit Intent
 
 File Download
     [Documentation]     This test verifies the file download
     [Tags]              1011    FileDownload   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${FileDownload}
-    Herokuapp.Verify File Download Page
+    Common.Validate Page loaded             ${FileDownloadTitle}
     Herokuapp.Download File
 
 File Upload
     [Documentation]     This test verifies the file upload
     [Tags]              1012    FileUpload   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${FileUpload}
-    Herokuapp.Verify File Upload Page
+    Common.Validate Page loaded             ${FileUploadTitle}
     Herokuapp.Upload File                   ${FileUploadPath}
 
 Floating Menu
     [Documentation]     This test verifies the floating menu
     [Tags]              1013    FloatingMenu   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${FloatingMenu}
-    Herokuapp.Verify Floating Menu Page
+    Common.Validate Page loaded             ${FloatingMenuTitle}
     Herokuapp.Scroll To Bottom
     Herokuapp.Validate Floating Menu
 
 Form Authentication
     [Documentation]     This test verifies the form authentication
     [Tags]              1014    FormAuthentication   Functional
-    Herokuapp.Verify Landing Page
+    Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${FormAuthentication}
-    Herokuapp.Verify Form Authentication Page
+    Common.Validate Page loaded             ${FormAuthenticationTitle}
     Herokuapp.Login Form Authentication      ${FAUsername}  ${FAPassword}
     Herokuapp.Validate Form Authentication      True        True
-    Herokuapp.Verify Form Authentication Page
+    Common.Validate Page loaded             ${FormAuthenticationTitle}
     Herokuapp.Login Form Authentication      ${BADFAUsername}  ${FAPassword}
     Herokuapp.Validate Form Authentication      False        True
-    Herokuapp.Verify Form Authentication Page
+    Common.Validate Page loaded             ${FormAuthenticationTitle}
     Herokuapp.Login Form Authentication      ${FAUsername}  ${BADFAPassword}
     Herokuapp.Validate Form Authentication      True        False
+
+Horizontal Slider
+    [Documentation]     This test verifies the horizontal slider
+    [Tags]              1015    HorizontalSlider   Functional
+    Common.Validate Page loaded            ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${HorizontalSlider}
+    Common.Validate Page loaded             ${HorizontalSliderTitle}
+    Herokuapp.Slide Horizontal Slider        ${SliderValue}
+    Herokuapp.Validate Horizontal Slider      ${SliderValue}

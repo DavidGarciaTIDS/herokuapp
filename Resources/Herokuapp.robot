@@ -1,4 +1,5 @@
 *** Settings ***
+Resource            ../Resources/Common.robot
 Resource            ../Resources/PO/AddRemove.robot
 Resource            ../Resources/PO/Landing.robot
 Resource            ../Resources/PO/BasicAuth.robot
@@ -14,18 +15,13 @@ Resource            ../Resources/PO/FileDownload.robot
 Resource            ../Resources/PO/FileUpload.robot
 Resource            ../Resources/PO/FloatingMenu.robot
 Resource            ../Resources/PO/FormAuthentication.robot
+Resource            ../Resources/PO/HorizontalSlider.robot
 
 *** Keywords ***
-
-Verify Landing Page
-    Landing.Landing Page loaded
 
 Select Test Link
     [Arguments]    ${TestLink}
     Landing.Select Test Link    ${TestLink}
-
-Verify Add Remove Elements Page
-    AddRemove.AddRemove Page loaded
 
 Add Elements
     [Arguments]    ${times}
@@ -42,17 +38,11 @@ Basic Auth
     [Arguments]    ${username}    ${password}    ${StatusExpected}
     BasicAuth.Login to the BasicAuth    ${username}    ${password}  ${StatusExpected}
 
-Verify Broken Images Page
-    BrokenImages.BrokenImages Page loaded
-
 Validate Broken Images
     BrokenImages.Validate Broken Images
 
 Validate Functional Images
     BrokenImages.Validate Functional Images
-
-Verify Checkboxes Page
-    Checkboxes.Checkboxes Page loaded
 
 Validate Checkboxes Are Tick
     [Arguments]    ${index}
@@ -63,9 +53,6 @@ Tick Checkboxes
     log    ${CheckboxToTick}
     Checkboxes.Tick box     ${CheckboxToTick}
 
-Verify Context Menu Page
-    ContextMenu.Context Menu Page loaded
-
 Right Click Context Menu
     ContextMenu.Right Click Context Menu
 
@@ -75,17 +62,11 @@ Validate Context Menu Alert
 Validate Context Menu Alert Dismiss
     ContextMenu.Verify Alert is Gone
 
-Verify Disappearing Elements Page
-    DisappearingElements.Disappearing Elements Page loaded
-
 Validate Gallery Button Exists
     DisappearingElements.Refresh Until Visibile
 
 Validate Gallery Button Does Not Exists
     DisappearingElements.Refresh Until Not Visibile
-
-Verify Drag And Drop Page
-    DragAndDrop.Drag And Drop Page loaded
 
 Drag And Drop Then Verify
     [Arguments]    ${From}   ${To}
@@ -94,23 +75,14 @@ Drag And Drop Then Verify
     DragAndDrop.Drag And Drop A to B   ${From}   ${To}
     DragAndDrop.Validate Drag And Drop    ${From}   ${To}   ${ColmnA}   ${ColmnB}
 
-Verify Dynamic Content Page
-    DynamicContent.Dynamic Content Page loaded
-
 Validate Dynamic Content
     DynamicContent.Validate Dynamic Content
-
-Verify Dynamic Controls Page
-    DynamicControls.Dynamic Controls Page loaded
 
 Remove Checkbox
     DynamicControls.Remove Checkbox by button
 
 Enable Input
     DynamicControls.Enable Input by button
-
-Verify Exit Intent Page
-    ExitIntent.Exit Intent Page loaded
 
 Validate Exit Intent
     ExitIntent.Validate Exit Intent
@@ -121,24 +93,15 @@ Verify File Download Page
 Download File
     FileDownload.Download File
 
-Verify File Upload Page
-    FileUpload.File Upload Page loaded
-
 Upload File
     [Arguments]    ${FilePath}
     FileUpload.Upload File    ${FilePath}
-
-Verify Floating Menu Page
-    FloatingMenu.Floating Menu Page loaded
 
 Scroll To Bottom
     FloatingMenu.Scroll To Bottom
 
 Validate Floating Menu
     FloatingMenu.Validate Floating Menu
-
-Verify Form Authentication Page
-    FormAuthentication.Form Authentication Page loaded
 
 Login Form Authentication
     [Arguments]    ${username}    ${password}
@@ -147,3 +110,11 @@ Login Form Authentication
 Validate Form Authentication
     [Arguments]    ${FAExpected1}    ${FAExpected2}
     FormAuthentication.Validate Form Authentication     ${FAExpected1}    ${FAExpected2}
+
+Slide Horizontal Slider
+    [Arguments]    ${SliderValue}
+    HorizontalSlider.Slide Horizontal Slider    ${SliderValue}
+
+Validate Horizontal Slider
+    [Arguments]    ${Expected}
+    HorizontalSlider.Validate Horizontal Sliders Value      ${Expected}

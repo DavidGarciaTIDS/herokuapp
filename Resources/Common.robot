@@ -12,3 +12,6 @@ Start Web Test
 End Web Test
     SeleniumLibrary.close browser
 
+Validate Page loaded
+    [Arguments]    ${expected}
+    wait until page contains    ${expected}

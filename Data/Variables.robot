@@ -35,6 +35,7 @@ ${DeleteElements}=              xpath=//*[@id="elements"]/button
 ${AddElementButton}=            xpath=//*[@id="content"]/div/button
 
 #BasicAuth
+${BasicAuthTitle}=              Basic Auth
 ${BAUsername}=                  admin
 ${BAPassword}=                  admin
 ${BAUsernameBAD}=               admin1
@@ -105,3 +106,9 @@ ${FormAuthenticationPassword}=  xpath=//*[@id="password"]
 ${FormAuthenticationButton}=    xpath=//*[@id="login"]/button
 ${FormAuthenticationAlert}=     xpath=//*[@id="flash"]
 ${FALogout}=                    xpath=//*[@id="content"]/div/a
+
+#HorizontalSlider
+${HorizontalSliderTitle}=       Horizontal Slider
+${Slider}=                      xpath=//*[@id="content"]//input
+${SliderDisplay}=               xpath=//*[@id="content"]//span
+${SliderValue}=                 3.5
