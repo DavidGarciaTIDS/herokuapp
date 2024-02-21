@@ -7,9 +7,6 @@ Resource            ../../Data/Variables.robot
 
 
 *** Keywords ***
-Floating Menu Page loaded
-    Wait Until Page Contains        ${FloatingMenuTitle}
-
 Scroll To Bottom
     scroll element into view        ${FloatingMenuFooter}
     sleep    1s

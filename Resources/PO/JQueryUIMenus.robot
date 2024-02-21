@@ -8,7 +8,6 @@ Resource            ../../Data/Variables.robot
 Navigate path
     [Arguments]    @{path}
     FOR    ${i}    IN   @{path}
-        log    ${i}
         Wait Until Page Contains Element    ${i}
         sleep   1s
         Click Element    ${i}

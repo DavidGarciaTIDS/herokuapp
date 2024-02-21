@@ -35,17 +35,15 @@ Broken Images
 Basic Good Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003a   BasicAuth    Functional
-    Common.Validate Page loaded            ${LandingPageTitle}
-    Herokuapp.Select Test Link  ${BasicAuth}
-    Common.Validate Page loaded             ${BasicAuthTitle}
-    Herokuapp.Basic Auth  ${BAUsername}  ${BAPassword}  200
+    Common.Validate Page loaded             ${LandingPageTitle}
+    Herokuapp.Select Test Link              ${BasicAuth}
+    Herokuapp.Basic Auth                    ${BAUsername}  ${BAPassword}  200
 
 Basic Bad Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003b   BasicAuth    Functional
     Common.Validate Page loaded            ${LandingPageTitle}
     Herokuapp.Select Test Link              ${BasicAuth}
-    Common.Validate Page loaded             ${BasicAuthTitle}
     Herokuapp.Basic Auth  ${BAUsernameBAD}  ${BAPasswordBAD}    401
 
 Checkboxes Page

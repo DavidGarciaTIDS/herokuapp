@@ -7,10 +7,6 @@ Resource            ../../Data/Variables.robot
 
 
 *** Keywords ***
-
-File Upload Page loaded
-    Wait Until Page Contains    ${FileUploadTitle}
-
 Upload File
     [Arguments]     ${FilePath}
     Create File     ${FilePath}  testing

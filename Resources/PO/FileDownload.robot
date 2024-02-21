@@ -1,33 +1,28 @@
 *** Settings ***
+Documentation       This is a test suite for downloading and verifing files
 Library             SeleniumLibrary
 Library             OperatingSystem
 Library             String
-Library            ../../Libraries/CustomLibrary.py
+Library             Browser
+Library             ../../Libraries/CustomLibrary.py
 Resource            ../../Data/Variables.robot
 
 
 *** Keywords ***
-
-File Download Page loaded
-    Wait Until Page Contains    ${FileDownloadTitle}
-
 Download File
+    ${currentURL}=    seleniumlibrary.get location
+    browser.open browser    ${currentURL}
+    sleep    2s
     @{Links}=    Get WebElements    ${FileDownloadLinks}
     FOR    ${link}    IN    @{Links}
-        Click Link    ${link}
-        #Mouse Down On Link    ${link}
-        #mouse up    ${link}
         ${href}=    Get Element Attribute    ${link}    href
-
-        Validate Downloaded File    ${href}
+        ${fileName}=    SeleniumLibrary.get text    ${link}
+        run keyword and continue on failure    Browser.Download    ${href}     ${DownloadPath}${fileName}
+        Validate Downloaded File    ${fileName}
     END
 
 Validate Downloaded File
-        [Arguments]    ${href}
-        ${fileLink}=    Split String From Right    ${href}    /
-        ${fileName}=    Set Variable        ${fileLink}[-1]
-        log    ${fileName}
-        ${fileName}=    Replace String      ${fileName}    %20    ${SPACE}
-        Log   ${DownloadPath}${fileName}
-        Wait Until Created    ${DownloadPath}${fileName}
+        [Arguments]    ${fileName}
+        run keyword and continue on failure    Wait Until Created    ${DownloadPath}${fileName}
+        remove file    ${DownloadPath}${fileName}
 

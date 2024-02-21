@@ -1,7 +1,6 @@
 *** Settings ***
 Resource            ../Resources/Common.robot
 Resource            ../Resources/PO/AddRemove.robot
-Resource            ../Resources/PO/Landing.robot
 Resource            ../Resources/PO/BasicAuth.robot
 Resource            ../Resources/PO/BrokenImages.robot
 Resource            ../Resources/PO/Checkboxes.robot
@@ -25,18 +24,22 @@ Resource            ../Resources/PO/MultipleWindows.robot
 
 Select Test Link
     [Arguments]    ${TestLink}
-    Landing.Select Test Link    ${TestLink}
+    Common.Click on Element     ${TestLink}
 
 Add Elements
     [Arguments]    ${times}
-    AddRemove.Add Elements  ${times}
+    Common.Click on Element     ${AddElementButton}   ${times}
 
 Delete Elements
-    AddRemove.Delete Elements
+    ${times}=  AddRemove.Count Elements
+    Common.Click on Element     ${DeleteElements}   ${times}
 
 Count Elements Added
     [Arguments]    ${Expected}
     AddRemove.Count Elements    ${Expected}
+
+Validates Basic Auth Page
+    BasicAuth.Basic Auth Page loaded
 
 Basic Auth
     [Arguments]    ${username}    ${password}    ${StatusExpected}
@@ -74,8 +77,8 @@ Validate Gallery Button Does Not Exists
 
 Drag And Drop Then Verify
     [Arguments]    ${From}   ${To}
-    ${ColmnB}   Get Text    ${From}//header
-    ${ColmnA}   Get Text    ${To}//header
+    ${ColmnB}   SeleniumLibrary.Get Text    ${From}//header
+    ${ColmnA}   SeleniumLibrary.Get Text    ${To}//header
     DragAndDrop.Drag And Drop A to B   ${From}   ${To}
     DragAndDrop.Validate Drag And Drop    ${From}   ${To}   ${ColmnA}   ${ColmnB}
 
@@ -90,9 +93,6 @@ Enable Input
 
 Validate Exit Intent
     ExitIntent.Validate Exit Intent
-
-Verify File Download Page
-    FileDownload.File Download Page loaded
 
 Download File
     FileDownload.Download File
@@ -127,7 +127,7 @@ Select JQuery UI Menus
     JQueryUIMenus.Navigate path     @{JQueryPath}
 
 Validate Excel File
-    FileDownload.Validate Downloaded File    https://the-internet.herokuapp.com/download/jqueryui/menu/menu.xls
+    FileDownload.Validate Downloaded File    menu.xls
 
 Validate Javascript Alerts
     JavascriptAlerts.Simple Alert

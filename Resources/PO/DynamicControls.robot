@@ -1,15 +1,9 @@
 *** Settings ***
+Documentation       This is a test suite for the dynamic controls page
 Library             SeleniumLibrary
 Resource            ../../Data/Variables.robot
 
-
-
-
 *** Keywords ***
-
-Dynamic Controls Page loaded
-    wait until page contains    ${DynamicControlsTitle}
-
 Remove Checkbox by button
     click element    ${DynamicControlsCBButton}
     wait until page does not contain element    ${DynamicControlsCheckbox}

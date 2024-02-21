@@ -6,9 +6,6 @@ Resource            ../../Data/Variables.robot
 
 
 *** Keywords ***
-Checkboxes Page loaded
-    wait until page contains    ${CheckboxesTitle}
-
 Validate Checkboxes are Checked
     [Arguments]    ${index}
         ${locator}=    catenate    ${CheckboxesOnPage}  [${index}]

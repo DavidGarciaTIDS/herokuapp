@@ -5,10 +5,6 @@ Resource            ../../Data/Variables.robot
 
 
 *** Keywords ***
-
-Form Authentication Page loaded
-    wait until page contains    ${FormAuthenticationTitle}
-
 Login to the Form Authentication
     [Arguments]         ${username}    ${password}
     input text          ${FormAuthenticationUsername}    ${username}
