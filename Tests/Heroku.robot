@@ -42,9 +42,9 @@ Basic Good Auth Page
 Basic Bad Auth Page
     [Documentation]     This test Logs into the Basic Auth Page
     [Tags]              1003b   BasicAuth    Functional
-    Common.Validate Page loaded            ${LandingPageTitle}
+    Common.Validate Page loaded             ${LandingPageTitle}
     Herokuapp.Select Test Link              ${BasicAuth}
-    Herokuapp.Basic Auth  ${BAUsernameBAD}  ${BAPasswordBAD}    401
+    Herokuapp.Basic Auth                    ${BAUsernameBAD}  ${BAPasswordBAD}    401
 
 Checkboxes Page
     [Documentation]     This test verifies the checkboxes

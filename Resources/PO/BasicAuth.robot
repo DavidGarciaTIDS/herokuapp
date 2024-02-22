@@ -13,6 +13,6 @@ Login to the BasicAuth
     [Arguments]    ${Username}    ${Password}   ${StatusExpected}
     ${curURL}=   get location
     ${curURL}=   fetch from right    ${curURL}    //
-    ${login}=    Set Local Variable   ${Username}:${Password}@${curURL}
+    ${login}=    Set Variable   ${Username}:${Password}@${curURL}
     ${status}=    head   https://${login}  expected_status=${StatusExpected}
     sleep    2s
