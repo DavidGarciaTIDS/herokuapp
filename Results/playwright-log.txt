@@ -1,10 +1,10 @@
-{"level":30,"time":"2024-02-22T18:41:19.075Z","pid":14236,"hostname":"PCPSE0314","msg":"Listening on 55956"}
-(node:14236) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-02-22T18:49:59.994Z","pid":23440,"hostname":"PCPSE0314","msg":"Listening on 56069"}
+(node:23440) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-02-22T18:41:19.259Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:19.259Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:19.262Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:19.262Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:00.220Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:00.220Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:00.222Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:00.223Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -18,10 +18,10 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-02-22T18:41:27.746Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:27.746Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:27.749Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:27.749Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:06.746Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:06.746Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:06.749Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:06.749Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -35,8 +35,10 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-02-22T18:41:35.955Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:35.955Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:19.182Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:19.183Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:19.186Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:19.186Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
@@ -50,7 +52,513 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2024-02-22T18:41:35.987Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:35.988Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-02-22T18:41:36.038Z","pid":14236,"hostname":"PCPSE0314","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-02-22T18:41:36.038Z","pid":14236,"hostname":"PCPSE0314","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-22T18:50:27.449Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:27.449Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:27.452Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:27.453Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:50:35.769Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:35.769Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:35.773Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:35.773Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:50:41.103Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:41.103Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:41.106Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:41.106Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:50:53.265Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:53.265Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:53.268Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:50:53.268Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:51:05.384Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:05.384Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:05.387Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:05.387Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:51:13.955Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:13.955Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:13.958Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:13.958Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:51:20.329Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:20.329Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:20.332Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:20.332Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:51:29.037Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:29.037Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:29.040Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:29.040Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10068:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10693:59)
+    at PlaywrightServer.setTimeout (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10943:57)
+    at Object.onReceiveHalfClose (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\degarcia\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-02-22T18:51:36.387Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:36.388Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:36.390Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:36.390Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:51:39.354Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-02-22T18:51:39.909Z","pid":23440,"hostname":"PCPSE0314","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-02-22T18:51:39.910Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-02-22T18:51:39.910Z","pid":23440,"hostname":"PCPSE0314","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-02-22T18:51:39.913Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-02-22T18:51:39.913Z","pid":23440,"hostname":"PCPSE0314","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-22T18:51:39.913Z","pid":23440,"hostname":"PCPSE0314","msg":"Trace file: "}
+{"level":30,"time":"2024-02-22T18:51:39.922Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active context"}
+{"level":30,"time":"2024-02-22T18:51:39.922Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method newContext"}
+{"level":30,"time":"2024-02-22T18:51:39.925Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-02-22T18:51:39.925Z","pid":23440,"hostname":"PCPSE0314","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-22T18:51:40.146Z","pid":23440,"hostname":"PCPSE0314","msg":"Video path: undefined"}
+{"level":30,"time":"2024-02-22T18:51:40.146Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active page"}
+{"level":30,"time":"2024-02-22T18:51:41.244Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method newPage"}
+{"level":30,"time":"2024-02-22T18:51:43.280Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:43.488Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_BrowserStack%20-%20List%20of%20devices%20to%20test%20on.csv saveAs path: C:\\Users\\degarcia\\Downloads\\BrowserStack - List of devices to test on.csv"}
+{"level":30,"time":"2024-02-22T18:51:43.488Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:43.509Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:43.678Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_requirements.txt saveAs path: C:\\Users\\degarcia\\Downloads\\requirements.txt"}
+{"level":30,"time":"2024-02-22T18:51:43.678Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:43.697Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.063Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_a.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\a.jpg"}
+{"level":30,"time":"2024-02-22T18:51:44.063Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.081Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.230Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_15CF273D-B8E1-4734-9D64-0947C2D54090.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\15CF273D-B8E1-4734-9D64-0947C2D54090.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:44.230Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.249Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.394Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_myfile.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\myfile.pdf"}
+{"level":30,"time":"2024-02-22T18:51:44.394Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.413Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.576Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Free_20_20Colorful_20Background_2C_20Gradient_20Background_2C_20Gradient_20Background_20Images_2C_20Dark_20Blue_20And_20Red_20Colorfull_20Background_20Photo_20Background_20PNG_20and_20Vectors.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\Free_20_20Colorful_20Background_2C_20Gradient_20Background_2C_20Gradient_20Background_20Images_2C_20Dark_20Blue_20And_20Red_20Colorfull_20Background_20Photo_20Background_20PNG_20and_20Vectors.jpg"}
+{"level":30,"time":"2024-02-22T18:51:44.577Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.596Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.752Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Cover%20Letter_West.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Cover Letter_West.pdf"}
+{"level":30,"time":"2024-02-22T18:51:44.752Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.769Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.929Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_CF_LOGO.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\CF_LOGO.jpg"}
+{"level":30,"time":"2024-02-22T18:51:44.929Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:44.948Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.120Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_file-example_PDF_1MB.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\file-example_PDF_1MB.pdf"}
+{"level":30,"time":"2024-02-22T18:51:46.120Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.138Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.287Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_4C7C3F46-421C-4639-82EC-38BF180A38C1.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\4C7C3F46-421C-4639-82EC-38BF180A38C1.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:46.287Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.305Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.451Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_screenhot.PNG saveAs path: C:\\Users\\degarcia\\Downloads\\screenhot.PNG"}
+{"level":30,"time":"2024-02-22T18:51:46.451Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.469Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.613Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_35AD3253-853B-470B-A01F-56527112F908.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\35AD3253-853B-470B-A01F-56527112F908.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:46.613Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.632Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.793Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Copeland_Cover%20Letter.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Copeland_Cover Letter.pdf"}
+{"level":30,"time":"2024-02-22T18:51:46.793Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.809Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.963Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_23566.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\23566.pdf"}
+{"level":30,"time":"2024-02-22T18:51:46.963Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:46.982Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.132Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Test%20plan.png saveAs path: C:\\Users\\degarcia\\Downloads\\Test plan.png"}
+{"level":30,"time":"2024-02-22T18:51:47.132Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.151Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.311Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Screenshot%20(1).png saveAs path: C:\\Users\\degarcia\\Downloads\\Screenshot (1).png"}
+{"level":30,"time":"2024-02-22T18:51:47.311Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.331Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.504Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_OOPS%20concept.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\OOPS concept.pdf"}
+{"level":30,"time":"2024-02-22T18:51:47.504Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.521Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.675Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_ammad%20bhai.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\ammad bhai.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:47.675Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.693Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.841Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Free%20%20Colorful%20Background,%20Gradient%20Background,%20Gradient%20Background%20Images,%20Dark%20Blue%20And%20Red%20Colorfull%20Background%20Photo%20Background%20PNG%20and%20Vectors.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\Free Colorful Background, Gradient Background, Gradient Background Images, Dark Blue And Red Colorfull Background Photo Background PNG and Vectors.jpg"}
+{"level":30,"time":"2024-02-22T18:51:47.841Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:47.858Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.020Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Screenshot%202024-02-05%20154845.png saveAs path: C:\\Users\\degarcia\\Downloads\\Screenshot 2024-02-05 154845.png"}
+{"level":30,"time":"2024-02-22T18:51:48.020Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.039Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.190Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_test.txt saveAs path: C:\\Users\\degarcia\\Downloads\\test.txt"}
+{"level":30,"time":"2024-02-22T18:51:48.190Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.208Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.366Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_helicobacter-pylori.png saveAs path: C:\\Users\\degarcia\\Downloads\\helicobacter-pylori.png"}
+{"level":30,"time":"2024-02-22T18:51:48.366Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.386Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.541Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Company.properties saveAs path: C:\\Users\\degarcia\\Downloads\\Company.properties"}
+{"level":30,"time":"2024-02-22T18:51:48.541Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.557Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.707Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_upload.png saveAs path: C:\\Users\\degarcia\\Downloads\\upload.png"}
+{"level":30,"time":"2024-02-22T18:51:48.707Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.728Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.891Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_picture.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\picture.jpg"}
+{"level":30,"time":"2024-02-22T18:51:48.891Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:48.910Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.067Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_demo.txt saveAs path: C:\\Users\\degarcia\\Downloads\\demo.txt"}
+{"level":30,"time":"2024-02-22T18:51:49.067Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.086Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.238Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_test.rtf saveAs path: C:\\Users\\degarcia\\Downloads\\test.rtf"}
+{"level":30,"time":"2024-02-22T18:51:49.238Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.258Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.404Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_sample-zip-file.zip saveAs path: C:\\Users\\degarcia\\Downloads\\sample-zip-file.zip"}
+{"level":30,"time":"2024-02-22T18:51:49.404Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.423Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.571Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Error%20access%20control.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\Error access control.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:49.571Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.589Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.739Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Circle.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\Circle.jpg"}
+{"level":30,"time":"2024-02-22T18:51:49.739Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.759Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.910Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Completions_File_20240221_EUprod_Version2.xlsx saveAs path: C:\\Users\\degarcia\\Downloads\\Completions_File_20240221_EUprod_Version2.xlsx"}
+{"level":30,"time":"2024-02-22T18:51:49.910Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:49.929Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.594Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Quality%20Bar%20FY16.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Quality Bar FY16.pdf"}
+{"level":30,"time":"2024-02-22T18:51:50.594Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.612Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.788Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Capture.PNG saveAs path: C:\\Users\\degarcia\\Downloads\\Capture.PNG"}
+{"level":30,"time":"2024-02-22T18:51:50.788Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.807Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.967Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_EXAMPLE3.png saveAs path: C:\\Users\\degarcia\\Downloads\\EXAMPLE3.png"}
+{"level":30,"time":"2024-02-22T18:51:50.967Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:50.986Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.156Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Screenshot%202024-02-02%20144352.png saveAs path: C:\\Users\\degarcia\\Downloads\\Screenshot 2024-02-02 144352.png"}
+{"level":30,"time":"2024-02-22T18:51:51.156Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.174Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.350Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_UploadFileTest.txt saveAs path: C:\\Users\\degarcia\\Downloads\\UploadFileTest.txt"}
+{"level":30,"time":"2024-02-22T18:51:51.350Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.370Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.699Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_HoverActualPage.png saveAs path: C:\\Users\\degarcia\\Downloads\\HoverActualPage.png"}
+{"level":30,"time":"2024-02-22T18:51:51.699Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.718Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.875Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_puppy.png saveAs path: C:\\Users\\degarcia\\Downloads\\puppy.png"}
+{"level":30,"time":"2024-02-22T18:51:51.875Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:51.892Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.038Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_luminoslogo.png saveAs path: C:\\Users\\degarcia\\Downloads\\luminoslogo.png"}
+{"level":30,"time":"2024-02-22T18:51:52.038Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.057Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.206Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_download.html saveAs path: C:\\Users\\degarcia\\Downloads\\download.html"}
+{"level":30,"time":"2024-02-22T18:51:52.206Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.224Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.374Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_dummy-1.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\dummy-1.pdf"}
+{"level":30,"time":"2024-02-22T18:51:52.374Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.393Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.768Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_image.png saveAs path: C:\\Users\\degarcia\\Downloads\\image.png"}
+{"level":30,"time":"2024-02-22T18:51:52.768Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:52.789Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.023Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_9A5DE006-5900-482A-B61B-71775C7CDC8D.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\9A5DE006-5900-482A-B61B-71775C7CDC8D.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:53.023Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.041Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.186Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_filename.txt saveAs path: C:\\Users\\degarcia\\Downloads\\filename.txt"}
+{"level":30,"time":"2024-02-22T18:51:53.186Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.205Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.371Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_selenium-snapshot.png saveAs path: C:\\Users\\degarcia\\Downloads\\selenium-snapshot.png"}
+{"level":30,"time":"2024-02-22T18:51:53.371Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.390Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.622Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_boat.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\boat.jpg"}
+{"level":30,"time":"2024-02-22T18:51:53.622Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.641Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.803Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_STUDENTS.xlsx saveAs path: C:\\Users\\degarcia\\Downloads\\STUDENTS.xlsx"}
+{"level":30,"time":"2024-02-22T18:51:53.804Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.823Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:53.988Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_578B6CAF-78E9-4135-BAE1-1C5BBAD291EB.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\578B6CAF-78E9-4135-BAE1-1C5BBAD291EB.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:53.988Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.007Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.245Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_sample.png saveAs path: C:\\Users\\degarcia\\Downloads\\sample.png"}
+{"level":30,"time":"2024-02-22T18:51:54.245Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.262Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.503Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_afinia.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\afinia.pdf"}
+{"level":30,"time":"2024-02-22T18:51:54.503Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.522Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.686Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_evening.png saveAs path: C:\\Users\\degarcia\\Downloads\\evening.png"}
+{"level":30,"time":"2024-02-22T18:51:54.686Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.705Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.873Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_garden-cart.png saveAs path: C:\\Users\\degarcia\\Downloads\\garden-cart.png"}
+{"level":30,"time":"2024-02-22T18:51:54.873Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:54.891Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.057Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_WhatsApp%20Image%202024-02-08%20at%207.30.37%20PM.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\WhatsApp Image 2024-02-08 at 7.30.37 PM.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:55.057Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.075Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.249Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_08446A81-6701-4C2B-9F0D-8C5E38D1BD5B.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\08446A81-6701-4C2B-9F0D-8C5E38D1BD5B.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:55.250Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.265Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.562Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_SourabhTest.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\SourabhTest.pdf"}
+{"level":30,"time":"2024-02-22T18:51:55.562Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.580Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.739Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_macbook.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\macbook.jpg"}
+{"level":30,"time":"2024-02-22T18:51:55.739Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.759Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.902Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_xbox-controller.png saveAs path: C:\\Users\\degarcia\\Downloads\\xbox-controller.png"}
+{"level":30,"time":"2024-02-22T18:51:55.902Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:55.918Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.210Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Test1.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Test1.pdf"}
+{"level":30,"time":"2024-02-22T18:51:56.210Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.229Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.400Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_29DB4D88-B346-41CF-BFEC-9E9510EF0AA2.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\29DB4D88-B346-41CF-BFEC-9E9510EF0AA2.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:56.400Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.417Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.590Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Jpeg_with_exif.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\Jpeg_with_exif.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:56.590Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.609Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.760Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_jax%20art.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\jax art.jpg"}
+{"level":30,"time":"2024-02-22T18:51:56.760Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.779Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.934Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_F836F7D4-A529-4C95-9C7F-02BF9AB5DE8F.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\F836F7D4-A529-4C95-9C7F-02BF9AB5DE8F.jpeg"}
+{"level":30,"time":"2024-02-22T18:51:56.934Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:56.950Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.257Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_wallpapersden.com_goku-y-vegeta-digital-art-22_1920x1080.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\wallpapersden.com_goku-y-vegeta-digital-art-22_1920x1080.jpg"}
+{"level":30,"time":"2024-02-22T18:51:57.257Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.276Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.434Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_some-file.txt saveAs path: C:\\Users\\degarcia\\Downloads\\some-file.txt"}
+{"level":30,"time":"2024-02-22T18:51:57.434Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.450Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.673Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Screenshot%202024-02-22%20095915.png saveAs path: C:\\Users\\degarcia\\Downloads\\Screenshot 2024-02-22 095915.png"}
+{"level":30,"time":"2024-02-22T18:51:57.674Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.692Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.857Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_photo_20_1_.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\photo_20_1_.jpg"}
+{"level":30,"time":"2024-02-22T18:51:57.857Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:57.876Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.022Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_sample_media_file.png saveAs path: C:\\Users\\degarcia\\Downloads\\sample_media_file.png"}
+{"level":30,"time":"2024-02-22T18:51:58.022Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.041Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.490Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Pukhraj.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Pukhraj.pdf"}
+{"level":30,"time":"2024-02-22T18:51:58.490Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.509Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.710Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_test-file.txt saveAs path: C:\\Users\\degarcia\\Downloads\\test-file.txt"}
+{"level":30,"time":"2024-02-22T18:51:58.710Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.729Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.890Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_2024-02-19_233953.webp saveAs path: C:\\Users\\degarcia\\Downloads\\2024-02-19_233953.webp"}
+{"level":30,"time":"2024-02-22T18:51:58.890Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:58.908Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.064Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_FileUploadingExample.txt saveAs path: C:\\Users\\degarcia\\Downloads\\FileUploadingExample.txt"}
+{"level":30,"time":"2024-02-22T18:51:59.064Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.082Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.314Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_SQA%20CV.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\SQA CV.pdf"}
+{"level":30,"time":"2024-02-22T18:51:59.314Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.332Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.498Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_WW.txt saveAs path: C:\\Users\\degarcia\\Downloads\\WW.txt"}
+{"level":30,"time":"2024-02-22T18:51:59.498Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.516Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.699Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_logo.svg saveAs path: C:\\Users\\degarcia\\Downloads\\logo.svg"}
+{"level":30,"time":"2024-02-22T18:51:59.699Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.718Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.866Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_webdriverIO.png saveAs path: C:\\Users\\degarcia\\Downloads\\webdriverIO.png"}
+{"level":30,"time":"2024-02-22T18:51:59.866Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:51:59.884Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:00.032Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_dummy-1.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\dummy-1.jpeg"}
+{"level":30,"time":"2024-02-22T18:52:00.032Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:00.049Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.025Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_D0EF21DD-ED33-4CC2-9056-C5C4DDF5A378.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\D0EF21DD-ED33-4CC2-9056-C5C4DDF5A378.jpeg"}
+{"level":30,"time":"2024-02-22T18:52:01.025Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.044Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.208Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Amer.docx saveAs path: C:\\Users\\degarcia\\Downloads\\Amer.docx"}
+{"level":30,"time":"2024-02-22T18:52:01.208Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.227Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.676Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Quality.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Quality.pdf"}
+{"level":30,"time":"2024-02-22T18:52:01.676Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.697Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.846Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_rr.txt saveAs path: C:\\Users\\degarcia\\Downloads\\rr.txt"}
+{"level":30,"time":"2024-02-22T18:52:01.846Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:01.866Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:02.697Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230805210546.png saveAs path: C:\\Users\\degarcia\\Downloads\\微信图片_20230805210546.png"}
+{"level":30,"time":"2024-02-22T18:52:02.697Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:02.716Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:02.863Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_LambdaTest.txt saveAs path: C:\\Users\\degarcia\\Downloads\\LambdaTest.txt"}
+{"level":30,"time":"2024-02-22T18:52:02.863Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:02.882Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.050Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Aircraft.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\Aircraft.jpeg"}
+{"level":30,"time":"2024-02-22T18:52:03.050Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.068Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.221Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_namechanged.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\namechanged.pdf"}
+{"level":30,"time":"2024-02-22T18:52:03.221Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.241Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.539Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_CTFL-Syllabus-2018-GA%20(1).pdf saveAs path: C:\\Users\\degarcia\\Downloads\\CTFL-Syllabus-2018-GA (1).pdf"}
+{"level":30,"time":"2024-02-22T18:52:03.539Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.556Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.709Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Untitled%20query.csv saveAs path: C:\\Users\\degarcia\\Downloads\\Untitled query.csv"}
+{"level":30,"time":"2024-02-22T18:52:03.709Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.727Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.880Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Abhisek.docx saveAs path: C:\\Users\\degarcia\\Downloads\\Abhisek.docx"}
+{"level":30,"time":"2024-02-22T18:52:03.880Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:03.898Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.047Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_test1.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\test1.pdf"}
+{"level":30,"time":"2024-02-22T18:52:04.047Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.067Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.215Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_cake.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\cake.jpg"}
+{"level":30,"time":"2024-02-22T18:52:04.215Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.234Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.389Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_pk.txt saveAs path: C:\\Users\\degarcia\\Downloads\\pk.txt"}
+{"level":30,"time":"2024-02-22T18:52:04.389Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.407Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.554Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_BCF13F16-EC37-4849-AAA6-FFC403A510A8.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\BCF13F16-EC37-4849-AAA6-FFC403A510A8.jpeg"}
+{"level":30,"time":"2024-02-22T18:52:04.554Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.572Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.805Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_imagenes.jpg saveAs path: C:\\Users\\degarcia\\Downloads\\imagenes.jpg"}
+{"level":30,"time":"2024-02-22T18:52:04.805Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:04.823Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.049Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_IMG_0015%202.PNG saveAs path: C:\\Users\\degarcia\\Downloads\\IMG_0015 2.PNG"}
+{"level":30,"time":"2024-02-22T18:52:05.049Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.068Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.534Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_2%20Basics%20part2.pptx saveAs path: C:\\Users\\degarcia\\Downloads\\2 Basics part2.pptx"}
+{"level":30,"time":"2024-02-22T18:52:05.534Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.554Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.709Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Cover%20Letter.pdf saveAs path: C:\\Users\\degarcia\\Downloads\\Cover Letter.pdf"}
+{"level":30,"time":"2024-02-22T18:52:05.709Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.725Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.877Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Dotdash_logo.png saveAs path: C:\\Users\\degarcia\\Downloads\\Dotdash_logo.png"}
+{"level":30,"time":"2024-02-22T18:52:05.877Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:05.893Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:06.045Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_Manas_CV_Softsell_1.6.docx saveAs path: C:\\Users\\degarcia\\Downloads\\Manas_CV_Softsell_1.6.docx"}
+{"level":30,"time":"2024-02-22T18:52:06.045Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:06.063Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:06.223Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_48D6AD95-0F73-4081-B0EB-8EA7B62C8EF7.jpeg saveAs path: C:\\Users\\degarcia\\Downloads\\48D6AD95-0F73-4081-B0EB-8EA7B62C8EF7.jpeg"}
+{"level":30,"time":"2024-02-22T18:52:06.223Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:06.241Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method download"}
+{"level":30,"time":"2024-02-22T18:52:06.410Z","pid":23440,"hostname":"PCPSE0314","msg":"suggestedFilename: https___the-internet.herokuapp.com_download_example.json saveAs path: C:\\Users\\degarcia\\Downloads\\example.json"}
+{"level":30,"time":"2024-02-22T18:52:06.410Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method download"}
+{"level":30,"time":"2024-02-22T18:52:08.676Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.679Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.681Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.683Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.685Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active context"}
+{"level":30,"time":"2024-02-22T18:52:08.685Z","pid":23440,"hostname":"PCPSE0314","msg":"Changing current active page: page=5816ecd3-bccb-48eb-a7ae-90d40a835d02"}
+{"level":30,"time":"2024-02-22T18:52:08.685Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active page"}
+{"level":30,"time":"2024-02-22T18:52:08.689Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.691Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.692Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-22T18:52:08.693Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-22T18:52:08.694Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-22T18:52:08.695Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-22T18:52:08.696Z","pid":23440,"hostname":"PCPSE0314","msg":"Changing current active page: page=5816ecd3-bccb-48eb-a7ae-90d40a835d02"}
+{"level":30,"time":"2024-02-22T18:52:08.696Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active page"}
+{"level":30,"time":"2024-02-22T18:52:08.699Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.700Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.702Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active context"}
+{"level":30,"time":"2024-02-22T18:52:08.702Z","pid":23440,"hostname":"PCPSE0314","msg":"Changing current active page: page=5816ecd3-bccb-48eb-a7ae-90d40a835d02"}
+{"level":30,"time":"2024-02-22T18:52:08.702Z","pid":23440,"hostname":"PCPSE0314","msg":"Changed active page"}
+{"level":30,"time":"2024-02-22T18:52:08.703Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-02-22T18:52:08.710Z","pid":23440,"hostname":"PCPSE0314","msg":"Removed page=c3c0727f-1c6f-4be4-a7f5-21ce2d7d5a01 from context=da23a5b9-0e5b-4ad3-bfe3-03262ff814dd page stack"}
+{"level":30,"time":"2024-02-22T18:52:08.745Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-02-22T18:52:08.749Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:08.749Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:17.456Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:17.456Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:17.463Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:17.464Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:24.045Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:24.045Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:24.051Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:24.051Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:33.966Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:33.966Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:33.968Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:33.968Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:39.693Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:39.693Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:39.704Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:39.704Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:48.639Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:48.639Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:48.650Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:52:48.650Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:09.112Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:09.112Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:09.115Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:09.115Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:14.989Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:14.989Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:14.998Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:14.998Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:20.330Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:20.331Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:20.343Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:20.343Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-22T18:53:20.510Z","pid":23440,"hostname":"PCPSE0314","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-22T18:53:20.636Z","pid":23440,"hostname":"PCPSE0314","msg":"End of node method closeAllBrowsers"}
