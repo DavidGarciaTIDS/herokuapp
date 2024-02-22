@@ -6,9 +6,8 @@ Resource            ../../Data/DragAndDropVariables.robot
 *** Keywords ***
 Drag And Drop A to B
     [Arguments]        ${From}   ${To}
-    sleep    2s
+    sleep    1s
     SeleniumLibrary.drag and drop    ${From}    ${To}
-    sleep    2s
 
 Validate Drag And Drop
     [Arguments]        ${From}   ${To}    ${ColmnA}   ${ColmnB}

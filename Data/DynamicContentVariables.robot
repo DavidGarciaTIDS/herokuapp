@@ -6,3 +6,4 @@ Resource    Variables.robot
 #DynamicContent
 ${DynamicContentTitle}=         Dynamic Content
 ${DynamicContentImages}=        xpath=//*[@id="content"]//img
+@{CharList}

@@ -7,9 +7,7 @@ Resource                ../../Data/HorizontalSliderVariables.robot
 
 Slide Horizontal Slider
     [Arguments]    ${SliderValue}
-    sleep    1s
     Click Element At Coordinates    ${slider}   20    0
-    sleep    2s
 
 
 Validate Horizontal Sliders Value

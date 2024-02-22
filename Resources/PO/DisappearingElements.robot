@@ -9,16 +9,16 @@ Refresh Until Visibile
     ${loop}=      run keyword and return status    page should not contain element    ${Gallery}
     WHILE    ${loop}
        reload page
-       sleep    2s
+       sleep    1s
        ${loop}=    run keyword and return status    page should not contain element    ${Gallery}
     END
-    sleep       2s
+    sleep       1s
 
 Refresh Until Not Visibile
     ${loop}=      run keyword and return status    page should contain element    ${Gallery}
     WHILE    ${loop}
        reload page
-       sleep    2s
+       sleep    1s
        ${loop}=    run keyword and return status    page should contain element    ${Gallery}
     END
-    sleep       2s
+    sleep       1s

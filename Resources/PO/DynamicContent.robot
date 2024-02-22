@@ -4,9 +4,6 @@ Library             SeleniumLibrary
 Library             Collections
 Resource            ../../Data/DynamicContentVariables.robot
 
-*** Variables ***
-@{CharList}
-
 *** Keywords ***
 Validate Dynamic Content
     ${Charlen}=    get length    ${CharList}
@@ -16,7 +13,6 @@ Validate Dynamic Content
                 ${src}=   get element attribute    ${img}    src
                 append to list    ${CharList}    ${src}
         END
-        sleep    2s
         ${CharList}=    remove duplicates    ${CharList}
         reload page
         ${Charlen}=    get length    ${CharList}

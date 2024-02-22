@@ -4,9 +4,6 @@ Library             SeleniumLibrary
 Library             RequestsLibrary
 Resource            ../../Data/BrokenImagesVariables.robot
 
-*** Variables ***
-${broken}=    0
-${functional}=    0
 *** Keywords ***
 Validate Broken Images
     @{images}=  Get WebElements    ${BrokenImageContainer}//img

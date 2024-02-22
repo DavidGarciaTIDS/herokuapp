@@ -16,11 +16,9 @@ Login to the Form Authentication
 Validate Form Authentication
     [Arguments]    ${ExpectedUsername}    ${ExpectedPassword}
     wait until page contains element    ${FormAuthenticationAlert}
-    sleep    2s
 
     IF    ${ExpectedUsername} and ${ExpectedPassword}
         element should contain    ${FormAuthenticationAlert}    You logged into a secure area!
-        sleep   2s
         click element    ${FALogout}
     ELSE IF    '!${ExpectedPassword}' and ${ExpectedUsername}
         element should contain      ${FormAuthenticationAlert}    Your password is invalid!

@@ -1,24 +1,5 @@
 *** Settings ***
-Resource            ../Resources/Common.robot
-Resource            ../Resources/PO/AddRemove.robot
-Resource            ../Resources/PO/BasicAuth.robot
-Resource            ../Resources/PO/BrokenImages.robot
-Resource            ../Resources/PO/Checkboxes.robot
-Resource            ../Resources/PO/ContextMenu.robot
-Resource            ../Resources/PO/DisappearingElements.robot
-Resource            ../Resources/PO/DragAndDrop.robot
-Resource            ../Resources/PO/DynamicContent.robot
-Resource            ../Resources/PO/DynamicControls.robot
-Resource            ../Resources/PO/ExitIntent.robot
-Resource            ../Resources/PO/FileDownload.robot
-Resource            ../Resources/PO/FileUpload.robot
-Resource            ../Resources/PO/FloatingMenu.robot
-Resource            ../Resources/PO/FormAuthentication.robot
-Resource            ../Resources/PO/HorizontalSlider.robot
-Resource            ../Resources/PO/JQueryUIMenus.robot
-Resource            ../Resources/PO/JavascriptAlerts.robot
-Resource            ../Resources/PO/PressKeys.robot
-Resource            ../Resources/PO/MultipleWindows.robot
+Resource    Herokuapp.resource
 
 *** Keywords ***
 
@@ -127,7 +108,7 @@ Select JQuery UI Menus
     JQueryUIMenus.Navigate path     @{JQueryPath}
 
 Validate Excel File
-    FileDownload.Validate Downloaded File    menu.xls
+    FileDownload.Validate Downloaded File    ${DownloadFile}
 
 Validate Javascript Alerts
     JavascriptAlerts.Simple Alert
