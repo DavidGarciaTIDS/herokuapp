@@ -1,9 +1,9 @@
 *** Settings ***
-Documentation    This is a test suite for the Herokuapp
-Library    SeleniumLibrary
-Resource      ../Data/Variables.robot
-Resource    ../resources/Common.robot
-Resource    ../resources/Herokuapp.robot
+Documentation       This is a test suite for the Herokuapp
+Library             SeleniumLibrary
+Resource            ../Data/Variables.robot
+Resource            ../resources/Common.robot
+Resource            ../resources/Herokuapp.robot
 
 Test Setup    Start Web Test
 Test Teardown    End Web Test

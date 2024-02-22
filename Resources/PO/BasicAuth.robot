@@ -1,9 +1,9 @@
 *** Settings ***
-Documentation    Process for the landing page
-Library           SeleniumLibrary
-Library           RequestsLibrary
-Library           String
-Resource      ../../Data/Variables.robot
+Documentation       Process for the landing page
+Library             SeleniumLibrary
+Library             RequestsLibrary
+Library             String
+Resource            ../../Data/BasicAuthVariables.robot
 
 *** Variables ***
 ${curURL}

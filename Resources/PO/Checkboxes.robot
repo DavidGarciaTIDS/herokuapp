@@ -2,7 +2,7 @@
 Documentation       This is a test suite for the checkboxes page
 Library             SeleniumLibrary
 Library             String
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/CheckboxesVariables.robot
 
 
 *** Keywords ***

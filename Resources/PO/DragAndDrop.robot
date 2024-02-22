@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       This is a sample test suite for drag and drop functionality
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/DragAndDropVariables.robot
 
 *** Keywords ***
 Drag And Drop A to B

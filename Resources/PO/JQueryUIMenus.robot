@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       A test suite with a single test for JQuery Menus.
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/JQueryUIMenusVariables.robot
 
 *** Keywords ***
 

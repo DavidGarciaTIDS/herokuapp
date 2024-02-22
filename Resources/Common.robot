@@ -14,7 +14,6 @@ End Web Test
     SeleniumLibrary.close browser
 
 #Common Keywords
-
 Validate Page loaded
     [Arguments]    ${expected}
     wait until page contains    ${expected}     10s

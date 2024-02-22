@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       A test suite for the Context Menu page.
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/ContextMenuVariables.robot
 
 
 *** Keywords ***

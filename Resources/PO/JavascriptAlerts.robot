@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       A test suite with a single test for Javascript Alerts.
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/JavascriptAlertsVariables.robot
 
 *** Keywords ***
 

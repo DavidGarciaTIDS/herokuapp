@@ -3,7 +3,7 @@ Library             SeleniumLibrary
 Library             OperatingSystem
 Library             String
 Library            ../../Libraries/CustomLibrary.py
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/FileUploadVariables.robot
 
 
 *** Keywords ***

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       This is a test suite for the dynamic controls page
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/DynamicControlsVariables.robot
 
 *** Keywords ***
 Remove Checkbox by button

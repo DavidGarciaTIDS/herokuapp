@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation           This file contains keywords for refreshing the page until a certain element is visible or not visible
 Library                 SeleniumLibrary
-Resource                ../../Data/Variables.robot
+Resource                ../../Data/DisappearingElementsVariables.robot
 
 
 *** Keywords ***

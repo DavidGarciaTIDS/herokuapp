@@ -2,7 +2,7 @@
 Documentation       A test suite with a single test for Exit Intent
 Library             SeleniumLibrary
 Library             ../../Libraries/CustomLibrary.py
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/ExitIntentVariables.robot
 
 
 *** Keywords ***

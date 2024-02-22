@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation    Process for the landing page
-Library           SeleniumLibrary
-Library           RequestsLibrary
-Resource      ../../Data/Variables.robot
+Documentation       Process for the landing page
+Library             SeleniumLibrary
+Library             RequestsLibrary
+Resource            ../../Data/BrokenImagesVariables.robot
 
 *** Variables ***
 ${broken}=    0

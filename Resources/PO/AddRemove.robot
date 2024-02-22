@@ -1,6 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
-Resource    ../../Data/Variables.robot
+Resource    ../../Data/AddRemoveVariables.robot
 
 *** Keywords ***
 

@@ -2,7 +2,7 @@
 Documentation       This is a test suite for the dynamic content page
 Library             SeleniumLibrary
 Library             Collections
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/DynamicContentVariables.robot
 
 *** Variables ***
 @{CharList}

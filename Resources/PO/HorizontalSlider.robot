@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation           A test suite with a single test for validating a sliders value.
 Library                 SeleniumLibrary
-Resource                ../../Data/Variables.robot
+Resource                ../../Data/HorizontalSliderVariables.robot
 
 *** Keywords ***
 

@@ -5,7 +5,7 @@ Library             OperatingSystem
 Library             String
 Library             Browser
 Library             ../../Libraries/CustomLibrary.py
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/FileDownloadVariables.robot
 
 
 *** Keywords ***

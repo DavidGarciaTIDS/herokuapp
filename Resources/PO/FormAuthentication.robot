@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       A test suite with a single test for valid login.
 Library             SeleniumLibrary
-Resource            ../../Data/Variables.robot
+Resource            ../../Data/FormAuthenticationVariables.robot
 
 
 *** Keywords ***
